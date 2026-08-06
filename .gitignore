@@ -10,3 +10,5 @@ Thumbs.db
 /node_modules
 
 # each app/package has its own .gitignore for node_modules, .next, .env, etc.
+
+.vercel
