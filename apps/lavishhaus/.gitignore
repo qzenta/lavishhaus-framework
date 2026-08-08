@@ -41,3 +41,9 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# raw photography staging — see photography-inbox/README.md
+photography-inbox/*
+!photography-inbox/README.md
+!photography-inbox/**/
+
