@@ -61,4 +61,59 @@ want to trim further.
 **Not yet done:** wiring these into the actual site (`content/*.ts`,
 `lib/placeholder-image.ts`) — that requires deciding what these real pieces
 are actually called/priced, since the current catalog is entirely
-placeholder fiction. Also not yet done: photo enhancement (see chat).
+placeholder fiction.
+
+## Correction log — 7 Aug 2026 (same day, follow-up pass)
+
+The initial naming pass above had real errors: several files were viewed as
+part of a batch of parallel reads, and the content I described didn't
+always match the file I was describing it for. Re-verified every file
+individually (one file per check, no batching) and fixed 6 mislabeled
+files:
+
+- What was named `bed-champagne-diamond-headboard-gold-trim.jpeg` was
+  actually the TV console shot → moved to
+  `living-room/tv-wall-console-marble-grey-04.jpeg`
+- What was named `bed-grey-mirror-panel-headboard-01.jpeg` was actually the
+  champagne/diamond headboard bed → renamed to
+  `bed-champagne-diamond-headboard-gold-trim.jpeg` (now correct)
+- What was named `bed-grey-mirror-panel-headboard-02-wide.jpeg` was
+  actually a different bed (grey velvet diamond-tufted, feather-pattern
+  wallpaper) → renamed to
+  `bed-grey-velvet-diamond-tufted-feather-wallpaper.jpeg`
+- What was named `bed-grey-velvet-diamond-tufted-oval-nightstands.jpeg`
+  was actually a different bed (black velvet arch-top headboard, white
+  6-drawer dresser) → renamed to
+  `bed-black-velvet-arch-headboard-white-dresser.jpeg`
+- What was named `tv-wall-console-marble-grey-02.jpeg` was actually a bed
+  (the mirror-panel "Mike Rosey" headboard, dresser-box-prominent angle) →
+  moved to `bedroom/bed-grey-mirror-panel-headboard-02-wide.jpeg`
+
+**Data loss: the zebra-hide ottoman photo was deleted by mistake and is
+not recoverable from this repo.** During the original pass, the file
+named `y.jpeg` was misidentified as the zebra ottoman (it's actually a
+duplicate of the Mike Rosey bed shot). A second file, `z.jpeg`, genuinely
+was the zebra ottoman — but because `y.jpeg` was wrongly believed to show
+the same thing, `z.jpeg` was deleted as a "duplicate" during the original
+cleanup. There is no copy of the zebra-hide ottoman photo left anywhere in
+this repo. If you still have it (likely — it probably came from a phone or
+WhatsApp originally), it needs to be re-dropped into
+`categories/custom-furniture/`.
+
+Final count after corrections: **22 real photos** (living-room: 8,
+bedroom: 11, dining: 1, office: 1, custom-furniture: 1 — down from 2 since
+the zebra ottoman is gone).
+
+## Enhancement pass — 7 Aug 2026
+
+Ran a free, local enhancement pass with `sharp` (already a dependency via
+`packages/cms`) on all 22 corrected photos: auto-orient, a slight
+saturation/brightness lift (+5%/+2%), and gentle sharpening (sigma 0.6),
+re-encoded as quality-92 mozjpeg. Output lives in parallel at
+`enhanced/categories/...`, originals untouched in `categories/...`. An
+earlier attempt using CLAHE (adaptive local contrast) produced a badly
+corrupted, blocky result on compressed phone photos — dropped that
+approach entirely in favor of this gentler one.
+
+Not run: AI-based upscale/enhance — the image-generation account has 1
+credit, not enough for a batch of 22.
