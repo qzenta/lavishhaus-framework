@@ -28,3 +28,37 @@ If a photo doesn't clearly belong to any existing slug (a new piece not yet
 in the catalog, an ambiguous angle, etc.), drop it in the folder that's the
 closest match and note the ambiguity — don't force a guess into a
 different folder.
+
+## Session log — 7 Aug 2026: first real photo batch
+
+27 files dropped unnamed into the inbox root (a mix of WhatsApp exports and
+short random names). None matched any existing `content/*.ts` collection —
+these are real showroom pieces (specific headboards, a chesterfield sofa, a
+kitchen island, a rose-gold dining table, etc.), not the invented
+placeholder products (Aurelia, Marchetti, Hollis, ...). Renamed
+descriptively and sorted into `categories/<room-type>/` only — did **not**
+force them into `collections/<slug>/`, since those slugs describe
+fictional products that don't correspond to anything here.
+
+- **23 photos** organized into `categories/` (living-room: 7, bedroom: 12,
+  dining: 1, office: 1, custom-furniture: 2)
+- **3 duplicates removed**: one exact byte-for-byte duplicate (TV console
+  shot), one near-identical re-save (zebra-hide ottoman), one near-duplicate
+  with a decorative frame overlay (kitchen island — kept the clean version)
+- **1 file quarantined**, not real photography: a CGI-rendered bedroom
+  (`_excluded-not-real-photos/`) — looks like a Pinterest/inspiration
+  reference, not an actual Lavish Haus piece. Review and delete or repurpose
+  as inspiration, but it's not product photography.
+- **1 video left untouched** in the inbox root
+  (`WhatsApp Video 2026-08-07 at 10.00.37.mp4`) — out of scope for this pass.
+
+Some groups are multiple angles of the same physical piece (e.g. three
+"tv-wall-console-marble-grey-0N" shots, three "bed-grey-mirror-panel-
+headboard-0N" shots) — kept as a small gallery per piece rather than
+picking one, since the angles genuinely differ. Worth a second look if you
+want to trim further.
+
+**Not yet done:** wiring these into the actual site (`content/*.ts`,
+`lib/placeholder-image.ts`) — that requires deciding what these real pieces
+are actually called/priced, since the current catalog is entirely
+placeholder fiction. Also not yet done: photo enhancement (see chat).
