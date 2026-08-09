@@ -83,9 +83,9 @@ export const collections: Collection[] = [
     },
     gallery: [
       { src: "/images/rooms/living-room/chesterfield-sofa-brown-leather.jpeg", alt: "Chesterfield sofa leather detail", width: 1200, height: 900 },
-      { src: "/images/rooms/living-room/tv-wall-console-dark-panel-01.jpeg", alt: "TV wall console with dark panelling — living room context", width: 1200, height: 900 },
-      { src: "/images/rooms/living-room/tv-wall-console-dark-panel-02.jpeg", alt: "Living room wall console detail", width: 1200, height: 900 },
-      { src: "/images/rooms/living-room/tv-wall-console-dark-panel-03.jpeg", alt: "Wall console styled in a contemporary living space", width: 1200, height: 900 },
+      { src: "/images/rooms/living-room/tv-wall-console-marble-grey-01.jpeg", alt: "TV wall console with marble grey finish — living room context", width: 1200, height: 900 },
+      { src: "/images/rooms/living-room/tv-wall-console-marble-grey-03.jpeg", alt: "Living room wall console detail", width: 1200, height: 900 },
+      { src: "/images/rooms/living-room/tv-wall-console-marble-grey-04.jpeg", alt: "Wall console styled in a contemporary living space", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.performanceFabric, materialLibrary.fullGrainLeather],
     finishes: finishOptions.upholstery,
@@ -144,8 +144,8 @@ export const collections: Collection[] = [
     },
     gallery: [
       { src: "/images/rooms/living-room/console-table-elephant-sculptures.jpeg", alt: "Console table detail with decorative sculptures", width: 1200, height: 900 },
-      { src: "/images/rooms/living-room/console-table-round-mirror-01.jpeg", alt: "Console table styled with a round mirror", width: 1200, height: 900 },
-      { src: "/images/rooms/living-room/console-table-round-mirror-02.jpeg", alt: "Console table and mirror — alternate angle", width: 1200, height: 900 },
+      { src: "/images/rooms/living-room/console-table-round-mirror-brass-legs.jpeg", alt: "Console table styled with a round mirror and brass legs", width: 1200, height: 900 },
+      { src: "/images/rooms/living-room/tv-wall-console-wood-marshall-speaker.jpeg", alt: "Wall console in wood finish with styling detail", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.fsc],
     finishes: finishOptions.timber,
@@ -191,9 +191,9 @@ export const collections: Collection[] = [
       height: 1000,
     },
     gallery: [
-      { src: "/images/rooms/bedroom/bed-beige-facet-headboard-02.jpeg", alt: "Faceted headboard detail — alternate angle", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-beige-tufted-headboard-white-frame.jpeg", alt: "Tufted headboard with white frame finish", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-ivory-channel-tufted-headboard.jpeg", alt: "Ivory channel-tufted headboard", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-beige-facet-headboard-02-wide.jpeg", alt: "Faceted headboard detail — wide angle", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-beige-facet-headboard-03.jpeg", alt: "Faceted headboard alternate view", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-black-velvet-arch-headboard-white-dresser.jpeg", alt: "Black velvet arch headboard with white dresser", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.performanceFabric],
     finishes: finishOptions.upholstery,
@@ -234,14 +234,14 @@ export const collections: Collection[] = [
     story:
       "Porter takes its name from the discipline of building small case pieces exactly as carefully as large ones — no shortcuts because a nightstand is 'just' a nightstand.",
     heroImage: {
-      src: "/images/rooms/bedroom/bed-blush-velvet-scalloped-headboard.jpeg",
-      alt: "Scalloped headboard bed styled with a bedside nightstand",
+      src: "/images/rooms/bedroom/bed-grey-square-tufted-panel-headboard.jpeg",
+      alt: "Square-tufted panel headboard styled with a bedside nightstand",
       width: 1600,
       height: 1000,
     },
     gallery: [
-      { src: "/images/rooms/bedroom/bed-fluted-headboard-dark-frame.jpeg", alt: "Fluted headboard with dark timber frame", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-diamond-tufted-tall-headboard-01.jpeg", alt: "Diamond-tufted tall headboard — bedroom context", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-grey-mirror-panel-headboard-02-wide.jpeg", alt: "Mirror panel headboard — wide angle", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-grey-mirror-panel-headboard-03.jpeg", alt: "Mirror panel headboard detail", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.brass],
     finishes: finishOptions.timber,
@@ -398,13 +398,13 @@ export const collections: Collection[] = [
     story:
       "Solano was tested through a full South African summer on an exposed Cape Town balcony before it was approved for the Lavish Haus range.",
     heroImage: {
-      src: "/images/rooms/bedroom/bed-diamond-tufted-tall-headboard-02.jpeg",
+      src: "/images/rooms/bedroom/bed-grey-velvet-diamond-tufted-feather-wallpaper.jpeg",
       alt: "Outdoor lounge collection — showroom photo coming soon",
       width: 1600,
       height: 1000,
     },
     gallery: [
-      { src: "/images/rooms/bedroom/bed-diamond-tufted-tall-headboard-02.jpeg", alt: "Outdoor collection — photo coming soon", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-grey-velvet-diamond-tufted-feather-wallpaper.jpeg", alt: "Outdoor collection — photo coming soon", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.teak, materialLibrary.performanceFabric],
     finishes: finishOptions.timber,
@@ -451,8 +451,8 @@ export const collections: Collection[] = [
     },
     gallery: [
       { src: "/images/rooms/bedroom/bed-cognac-leather-diamond-headboard.jpeg", alt: "Cognac leather diamond-tufted headboard — bespoke bedroom commission", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-grey-button-tufted-01.jpeg", alt: "Grey button-tufted bed — custom upholstery finish", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-grey-button-tufted-02.jpeg", alt: "Button-tufted detail — alternate angle", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-grey-square-tufted-panel-headboard.jpeg", alt: "Grey square-tufted panel headboard — custom upholstery", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-green-velvet-chevron-headboard.jpeg", alt: "Green velvet chevron headboard — alternate finish", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.fsc, materialLibrary.fullGrainLeather],
     finishes: [...finishOptions.timber, ...finishOptions.upholstery],
