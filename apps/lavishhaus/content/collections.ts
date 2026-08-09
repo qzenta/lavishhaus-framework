@@ -86,6 +86,9 @@ export const collections: Collection[] = [
       { src: "/images/rooms/living-room/tv-wall-console-marble-grey-01.jpeg", alt: "TV wall console with marble grey finish — living room context", width: 1200, height: 900 },
       { src: "/images/rooms/living-room/tv-wall-console-marble-grey-03.jpeg", alt: "Living room wall console detail", width: 1200, height: 900 },
       { src: "/images/rooms/living-room/tv-wall-console-marble-grey-04.jpeg", alt: "Wall console styled in a contemporary living space", width: 1200, height: 900 },
+      { src: "/images/rooms/living-room/tv-wall-console-marble-grey-02.jpeg", alt: "TV wall console — left angle with glass display cabinet", width: 1200, height: 900 },
+      { src: "/images/rooms/living-room/tv-wall-console-marble-grey-05.jpeg", alt: "TV wall console with sofa in foreground", width: 1200, height: 900 },
+      { src: "/images/rooms/living-room/tv-wall-console-marble-grey-06.jpeg", alt: "TV wall console — right angle detail", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.performanceFabric, materialLibrary.fullGrainLeather],
     finishes: finishOptions.upholstery,
@@ -194,6 +197,10 @@ export const collections: Collection[] = [
       { src: "/images/rooms/bedroom/bed-beige-facet-headboard-02-wide.jpeg", alt: "Faceted headboard detail — wide angle", width: 1200, height: 900 },
       { src: "/images/rooms/bedroom/bed-beige-facet-headboard-03.jpeg", alt: "Faceted headboard alternate view", width: 1200, height: 900 },
       { src: "/images/rooms/bedroom/bed-black-velvet-arch-headboard-white-dresser.jpeg", alt: "Black velvet arch headboard with white dresser", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-beige-facet-headboard-04.jpeg", alt: "Faceted headboard close-up with pendant lights", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-beige-facet-headboard-05-wide.jpeg", alt: "Faceted headboard — full room view with matching pedestals", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-beige-facet-headboard-06-wide.jpeg", alt: "Faceted headboard — showroom setting with complementary pieces", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-black-velvet-arch-headboard-white-dresser-02.jpeg", alt: "White six-drawer dresser with gold knobs and arch headboard", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.performanceFabric],
     finishes: finishOptions.upholstery,
@@ -453,12 +460,62 @@ export const collections: Collection[] = [
       { src: "/images/rooms/bedroom/bed-cognac-leather-diamond-headboard.jpeg", alt: "Cognac leather diamond-tufted headboard — bespoke bedroom commission", width: 1200, height: 900 },
       { src: "/images/rooms/bedroom/bed-grey-square-tufted-panel-headboard.jpeg", alt: "Grey square-tufted panel headboard — custom upholstery", width: 1200, height: 900 },
       { src: "/images/rooms/bedroom/bed-green-velvet-chevron-headboard.jpeg", alt: "Green velvet chevron headboard — alternate finish", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-green-velvet-chevron-headboard-02.jpeg", alt: "Green chevron headboard with walnut nightstands — full view", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-honeycomb-tufted-headboard-wood-frame-02.jpeg", alt: "Honeycomb headboard with gold frame and round pedestal", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.fsc, materialLibrary.fullGrainLeather],
     finishes: [...finishOptions.timber, ...finishOptions.upholstery],
     products: [],
     relatedCollectionSlugs: ["hollis-dining-table", "linden-bed-frame"],
     featured: true,
+  },
+  {
+    slug: "palazzo-bedroom-suite",
+    categorySlug: "bedroom",
+    name: "Palazzo Bedroom Suite",
+    tagline: "Gloss lacquer meets polished brass — a suite that commands attention.",
+    description:
+      "A coordinated bedroom suite in high-gloss grey lacquer with vertical gold mirror-stripe accents. Includes a padded channel-tufted headboard, six-drawer dresser and matching nightstands — all finished with polished brass hardware.",
+    story:
+      "Palazzo was conceived as a full-room statement: every surface is finished to the same standard, so the bed, dresser and nightstands read as a single composition rather than separate pieces.",
+    heroImage: {
+      src: "/images/rooms/bedroom/bed-grey-lacquer-gold-mirror-stripe-01.jpeg",
+      alt: "Grey lacquer bed with gold mirror-stripe headboard, matching dresser and nightstand",
+      width: 1600,
+      height: 1000,
+    },
+    gallery: [
+      { src: "/images/rooms/bedroom/bed-grey-lacquer-gold-mirror-stripe-02-wide.jpeg", alt: "Palazzo suite — wide angle with dresser in foreground", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-grey-lacquer-gold-mirror-stripe-03.jpeg", alt: "Palazzo headboard detail — channel tufting and mirror accents", width: 1200, height: 900 },
+    ],
+    materials: [materialLibrary.brass, materialLibrary.performanceFabric],
+    finishes: finishOptions.metal,
+    products: [
+      makeProduct(
+        "palazzo-bed-king",
+        "Palazzo Bed Frame — King",
+        "Grey gloss lacquer frame with gold mirror-stripe headboard, SA king size.",
+        "lh-palazzo-k",
+        [
+          { label: "Width", value: "199 cm" },
+          { label: "Length", value: "212 cm" },
+          { label: "Headboard Height", value: "140 cm" },
+        ]
+      ),
+      makeProduct(
+        "palazzo-dresser",
+        "Palazzo 6-Drawer Dresser",
+        "Matching gloss lacquer dresser with polished brass stripe accents.",
+        "lh-palazzo-d",
+        [
+          { label: "Width", value: "160 cm" },
+          { label: "Depth", value: "48 cm" },
+          { label: "Height", value: "82 cm" },
+        ]
+      ),
+    ],
+    relatedCollectionSlugs: ["linden-bed-frame", "porter-nightstand"],
+    featured: false,
   },
   {
     slug: "micwood-kitchen-island",

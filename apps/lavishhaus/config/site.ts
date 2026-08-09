@@ -15,16 +15,17 @@ export const siteConfig = {
   ogImage: "/og-image.jpg",
   manufacturer: "MicWood Furnitures",
   contact: {
-    email: "hello@lavishhaus.co.za",
-    phone: "+27 11 000 0000",
-    whatsapp: "27110000000",
+    email: "info@lavishhaus.co.za",
+    salesEmail: "sales@lavishhaus.co.za",
+    phone: "+27 78 355 6579",
+    whatsapp: "27783556579",
   },
   showroom: {
     name: "Lavish Haus Showroom — Johannesburg",
-    streetAddress: "1 Design District Avenue",
-    addressLocality: "Johannesburg",
+    streetAddress: "635 Ontdekkers Road",
+    addressLocality: "Delarey, Randburg",
     addressRegion: "Gauteng",
-    postalCode: "2000",
+    postalCode: "2114",
     addressCountry: "ZA",
     hours: [
       "Monday–Friday 09:00–17:00",

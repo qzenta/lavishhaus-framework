@@ -3,7 +3,7 @@ import type { ContactRequestValues } from "@/types/forms";
 
 export async function submitContactRequest(values: ContactRequestValues) {
   const apiKey = process.env.BREVO_API_KEY;
-  const notifyEmail = process.env.CONTACT_NOTIFY_EMAIL ?? "hello@lavishhaus.co.za";
+  const notifyEmail = process.env.CONTACT_NOTIFY_EMAIL ?? "info@lavishhaus.co.za";
 
   if (!apiKey) {
     console.warn(

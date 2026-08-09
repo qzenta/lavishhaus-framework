@@ -12,7 +12,7 @@ import type { QuoteRequestValues } from "@/types/forms";
  */
 export async function submitQuoteRequest(values: QuoteRequestValues) {
   const apiKey = process.env.BREVO_API_KEY;
-  const notifyEmail = process.env.QUOTE_NOTIFY_EMAIL ?? "hello@lavishhaus.co.za";
+  const notifyEmail = process.env.QUOTE_NOTIFY_EMAIL ?? "sales@lavishhaus.co.za";
 
   if (!apiKey) {
     console.warn(
