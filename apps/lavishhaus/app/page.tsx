@@ -59,8 +59,8 @@ export default function HomePage() {
         title="Luxury Crafted. Timeless Living."
         description="Premium furniture crafted for homes, offices and commercial spaces — designed with restraint, built to last."
         image={{
-          src: "/images/rooms/living-room/chesterfield-sofa-brown-leather.jpeg",
-          alt: "A brown leather Chesterfield sofa in the Lavish Haus showroom",
+          src: "/images/hero-living-room.png",
+          alt: "A styled living room with cognac leather Chesterfield sofa, walnut side tables and charcoal paneled walls",
           width: 1920,
           height: 1200,
         }}
