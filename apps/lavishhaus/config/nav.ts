@@ -16,9 +16,14 @@ export const collectionCategories: NavCategory[] = [
     description: "Beds, headboards and nightstands for restful spaces.",
   },
   {
-    label: "Dining",
+    label: "Dining Room",
     slug: "dining",
     description: "Tables and chairs crafted for long, unhurried evenings.",
+  },
+  {
+    label: "Kitchen",
+    slug: "kitchen",
+    description: "Islands, cabinetry and surfaces built for the heart of the home.",
   },
   {
     label: "Office",
@@ -43,8 +48,8 @@ export interface NavLink {
 }
 
 export const primaryNav: NavLink[] = [
-  { label: "Collections", href: "/collections" },
-  { label: "Custom Furniture", href: "/collections/custom-furniture" },
+  { label: "Shop by Room", href: "/collections" },
+  { label: "Craftsmanship", href: "/craftsmanship" },
   { label: "Projects", href: "/projects" },
   { label: "Showroom", href: "/showroom" },
   { label: "About", href: "/about" },
@@ -58,6 +63,7 @@ export const footerNav = {
   })),
   company: [
     { label: "Our Story", href: "/about" },
+    { label: "Craftsmanship", href: "/craftsmanship" },
     { label: "Projects", href: "/projects" },
     { label: "Showroom", href: "/showroom" },
     { label: "FAQs", href: "/faqs" },

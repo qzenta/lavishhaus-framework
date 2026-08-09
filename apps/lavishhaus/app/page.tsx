@@ -8,12 +8,12 @@ import { FeatureCard } from "@/components/shared/feature-card";
 import { ProjectCard } from "@/components/shared/project-card";
 import { Testimonials } from "@/components/shared/testimonials";
 import { ProcessTimeline } from "@/components/shared/process-timeline";
+import { BrandPillars } from "@/components/shared/brand-pillars";
 import { InstagramFeedPlaceholder } from "@/components/shared/instagram-feed-placeholder";
 import { CtaSection } from "@/components/shared/cta-section";
 import { getFeaturedCollections } from "@/content/collections";
 import { projects } from "@/content/projects";
 import { testimonials, processSteps } from "@/content/testimonials";
-import { placeholderImage } from "@/lib/placeholder-image";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -58,10 +58,17 @@ export default function HomePage() {
         eyebrow="Johannesburg Showroom Opening Soon"
         title="Luxury Crafted. Timeless Living."
         description="Premium furniture crafted for homes, offices and commercial spaces — designed with restraint, built to last."
-        image={placeholderImage("lh-home-hero", "A cinematic view of a Lavish Haus furnished living room", 1920, 1200)}
-        primaryCta={{ label: "Explore Collections", href: "/collections" }}
+        image={{
+          src: "/images/rooms/living-room/chesterfield-sofa-brown-leather.jpeg",
+          alt: "A brown leather Chesterfield sofa in the Lavish Haus showroom",
+          width: 1920,
+          height: 1200,
+        }}
+        primaryCta={{ label: "Shop by Room", href: "/collections" }}
         secondaryCta={{ label: "Request a Quote", href: "/quote" }}
       />
+
+      <BrandPillars />
 
       <section className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
         <SectionHeading

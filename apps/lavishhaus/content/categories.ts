@@ -1,4 +1,3 @@
-import { placeholderImage } from "@/lib/placeholder-image";
 import type { Category } from "@/types/catalog";
 
 export const categories: Category[] = [
@@ -8,12 +7,12 @@ export const categories: Category[] = [
     tagline: "Sofas, sectionals and coffee tables built for gathering.",
     description:
       "Anchor pieces upholstered in performance fabrics and full-grain leather, designed to hold their shape and their welcome for decades.",
-    heroImage: placeholderImage(
-      "lh-living-room-hero",
-      "A sunlit Lavish Haus living room with a tailored linen sofa",
-      1600,
-      1000
-    ),
+    heroImage: {
+      src: "/images/rooms/living-room/chesterfield-sofa-brown-leather.jpeg",
+      alt: "A brown leather Chesterfield sofa in the Lavish Haus showroom",
+      width: 1600,
+      height: 1000,
+    },
   },
   {
     slug: "bedroom",
@@ -21,25 +20,38 @@ export const categories: Category[] = [
     tagline: "Beds, headboards and nightstands for restful spaces.",
     description:
       "Upholstered frames and solid walnut casegoods, built quietly so the room can stay calm.",
-    heroImage: placeholderImage(
-      "lh-bedroom-hero",
-      "A serene Lavish Haus bedroom with an upholstered walnut bed frame",
-      1600,
-      1000
-    ),
+    heroImage: {
+      src: "/images/rooms/bedroom/bed-champagne-diamond-headboard-gold-trim.jpeg",
+      alt: "A champagne diamond-tufted headboard with gold trim in the Lavish Haus showroom",
+      width: 1600,
+      height: 1000,
+    },
   },
   {
     slug: "dining",
-    name: "Dining",
+    name: "Dining Room",
     tagline: "Tables and chairs crafted for long, unhurried evenings.",
     description:
       "Solid timber dining tables and hand-finished chairs, sized for everyday meals and the evenings that run late.",
-    heroImage: placeholderImage(
-      "lh-dining-hero",
-      "A walnut dining table set for guests in a Lavish Haus showroom vignette",
-      1600,
-      1000
-    ),
+    heroImage: {
+      src: "/images/rooms/dining-room/dining-table-rose-gold-legs-8-chairs.jpeg",
+      alt: "A rose-gold legged dining table with eight chairs in the Lavish Haus showroom",
+      width: 1600,
+      height: 1000,
+    },
+  },
+  {
+    slug: "kitchen",
+    name: "Kitchen",
+    tagline: "Islands, cabinetry and surfaces built for the heart of the home.",
+    description:
+      "Custom kitchen islands and storage solutions in timber and stone — designed to anchor the room you use most.",
+    heroImage: {
+      src: "/images/rooms/kitchen/kitchen-island-fluted-taupe-cabinetry.jpeg",
+      alt: "A fluted taupe kitchen island with custom cabinetry by MicWood Furnitures",
+      width: 1600,
+      height: 1000,
+    },
   },
   {
     slug: "office",
@@ -47,12 +59,12 @@ export const categories: Category[] = [
     tagline: "Desks and seating for considered, focused work.",
     description:
       "Home and executive office pieces that hold their composure — quiet hardware, real timber, no shortcuts.",
-    heroImage: placeholderImage(
-      "lh-office-hero",
-      "A minimalist walnut writing desk in a Lavish Haus office setting",
-      1600,
-      1000
-    ),
+    heroImage: {
+      src: "/images/rooms/office/desk-white-lacquer-leather-trim.jpeg",
+      alt: "A white lacquer desk with leather trim in the Lavish Haus office collection",
+      width: 1600,
+      height: 1000,
+    },
   },
   {
     slug: "outdoor",
@@ -60,12 +72,12 @@ export const categories: Category[] = [
     tagline: "Weather-ready pieces without compromising on craft.",
     description:
       "Teak frames and outdoor-grade weaves, engineered for the South African climate and built to age well.",
-    heroImage: placeholderImage(
-      "lh-outdoor-hero",
-      "A teak outdoor lounge setting on a covered patio",
-      1600,
-      1000
-    ),
+    heroImage: {
+      src: "/images/rooms/living-room/console-table-round-mirror-brass-legs.jpeg",
+      alt: "A console table with brass legs and round mirror",
+      width: 1600,
+      height: 1000,
+    },
   },
   {
     slug: "custom-furniture",
@@ -73,12 +85,12 @@ export const categories: Category[] = [
     tagline: "Bespoke pieces designed and built to your specification.",
     description:
       "Work directly with the MicWood Furnitures workshop on one-of-a-kind pieces — from dimensions to timber selection to finish.",
-    heroImage: placeholderImage(
-      "lh-custom-hero",
-      "A craftsman finishing a custom timber furniture piece in the MicWood workshop",
-      1600,
-      1000
-    ),
+    heroImage: {
+      src: "/images/rooms/bedroom/bed-green-velvet-chevron-headboard.jpeg",
+      alt: "A custom green velvet chevron headboard by MicWood Furnitures",
+      width: 1600,
+      height: 1000,
+    },
   },
 ];
 

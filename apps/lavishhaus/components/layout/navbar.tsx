@@ -42,7 +42,7 @@ export function Navbar() {
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuTrigger className="font-medium text-charcoal">
-                Collections
+                Shop by Room
               </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[560px] grid-cols-2 gap-1 p-2">
@@ -66,7 +66,7 @@ export function Navbar() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             {primaryNav
-              .filter((link) => link.label !== "Collections")
+              .filter((link) => link.label !== "Shop by Room")
               .map((link) => (
                 <NavigationMenuItem key={link.href}>
                   <NavigationMenuLink asChild>
@@ -113,7 +113,7 @@ export function Navbar() {
             </SheetHeader>
             <nav className="flex flex-col gap-1 px-4">
               <p className="mt-2 mb-1 text-xs tracking-wide text-muted-foreground uppercase">
-                Collections
+                Shop by Room
               </p>
               {collectionCategories.map((category) => (
                 <SheetClose asChild key={category.slug}>
@@ -127,7 +127,7 @@ export function Navbar() {
               ))}
               <div className="my-3 h-px bg-border" />
               {primaryNav
-                .filter((link) => link.label !== "Collections")
+                .filter((link) => link.label !== "Shop by Room")
                 .map((link) => (
                   <SheetClose asChild key={link.href}>
                     <Link

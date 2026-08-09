@@ -75,12 +75,17 @@ export const collections: Collection[] = [
       "The Aurelia balances a low, architectural profile with deep, feather-wrapped cushioning. Hand-built frames in kiln-dried hardwood carry a 15-year structural guarantee.",
     story:
       "Named for its quiet confidence, Aurelia was developed with the MicWood workshop over eighteen months of prototyping — refining the arm pitch and seat depth until it disappeared into the room rather than dominating it.",
-    heroImage: placeholderImage("lh-aurelia-hero", "Aurelia sofa in a Johannesburg living room", 1600, 1000),
+    heroImage: {
+      src: "/images/rooms/living-room/chesterfield-sofa-brown-leather.jpeg",
+      alt: "Brown leather Chesterfield sofa in the Lavish Haus showroom",
+      width: 1600,
+      height: 1000,
+    },
     gallery: [
-      placeholderImage("lh-aurelia-1", "Aurelia sofa detail, arm and cushion construction"),
-      placeholderImage("lh-aurelia-2", "Aurelia sectional configuration in a open-plan living room"),
-      placeholderImage("lh-aurelia-3", "Close-up of Aurelia upholstery seam detail"),
-      placeholderImage("lh-aurelia-4", "Aurelia sofa styled with a walnut coffee table"),
+      { src: "/images/rooms/living-room/chesterfield-sofa-brown-leather.jpeg", alt: "Chesterfield sofa leather detail", width: 1200, height: 900 },
+      { src: "/images/rooms/living-room/tv-wall-console-dark-panel-01.jpeg", alt: "TV wall console with dark panelling — living room context", width: 1200, height: 900 },
+      { src: "/images/rooms/living-room/tv-wall-console-dark-panel-02.jpeg", alt: "Living room wall console detail", width: 1200, height: 900 },
+      { src: "/images/rooms/living-room/tv-wall-console-dark-panel-03.jpeg", alt: "Wall console styled in a contemporary living space", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.performanceFabric, materialLibrary.fullGrainLeather],
     finishes: finishOptions.upholstery,
@@ -131,11 +136,16 @@ export const collections: Collection[] = [
       "A single slab top over a mitred hardwood base, finished with a hand-rubbed oil that deepens the grain rather than masking it.",
     story:
       "Marchetti began as a workshop exercise in joinery without visible fixings — every joint is a traditional mortise and tenon, sanded through eight grits before finishing.",
-    heroImage: placeholderImage("lh-marchetti-hero", "Marchetti walnut coffee table in a styled living room", 1600, 1000),
+    heroImage: {
+      src: "/images/rooms/living-room/console-table-elephant-sculptures.jpeg",
+      alt: "Console table with elephant sculptures in a styled living room",
+      width: 1600,
+      height: 1000,
+    },
     gallery: [
-      placeholderImage("lh-marchetti-1", "Marchetti coffee table grain detail"),
-      placeholderImage("lh-marchetti-2", "Marchetti nesting tables styled together"),
-      placeholderImage("lh-marchetti-3", "Marchetti table joinery close-up"),
+      { src: "/images/rooms/living-room/console-table-elephant-sculptures.jpeg", alt: "Console table detail with decorative sculptures", width: 1200, height: 900 },
+      { src: "/images/rooms/living-room/console-table-round-mirror-01.jpeg", alt: "Console table styled with a round mirror", width: 1200, height: 900 },
+      { src: "/images/rooms/living-room/console-table-round-mirror-02.jpeg", alt: "Console table and mirror — alternate angle", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.fsc],
     finishes: finishOptions.timber,
@@ -174,11 +184,16 @@ export const collections: Collection[] = [
       "A low headboard and solid walnut legs bring the Linden close to the floor, giving even smaller rooms a sense of proportion.",
     story:
       "Linden was designed around a simple brief from an early Lavish Haus client: 'a bed that doesn't compete with the art on the walls.'",
-    heroImage: placeholderImage("lh-linden-hero", "Linden upholstered bed frame in a calm bedroom", 1600, 1000),
+    heroImage: {
+      src: "/images/rooms/bedroom/bed-beige-facet-headboard-01.jpeg",
+      alt: "Beige faceted headboard bed frame in a styled bedroom",
+      width: 1600,
+      height: 1000,
+    },
     gallery: [
-      placeholderImage("lh-linden-1", "Linden headboard upholstery detail"),
-      placeholderImage("lh-linden-2", "Linden bed frame leg and floor detail"),
-      placeholderImage("lh-linden-3", "Linden bed styled with linen bedding"),
+      { src: "/images/rooms/bedroom/bed-beige-facet-headboard-02.jpeg", alt: "Faceted headboard detail — alternate angle", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-beige-tufted-headboard-white-frame.jpeg", alt: "Tufted headboard with white frame finish", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-ivory-channel-tufted-headboard.jpeg", alt: "Ivory channel-tufted headboard", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.performanceFabric],
     finishes: finishOptions.upholstery,
@@ -218,10 +233,15 @@ export const collections: Collection[] = [
       "A single drawer with a hand-fitted brass pull, over an open shelf — sized to sit quietly beside the Linden or any bed in the house.",
     story:
       "Porter takes its name from the discipline of building small case pieces exactly as carefully as large ones — no shortcuts because a nightstand is 'just' a nightstand.",
-    heroImage: placeholderImage("lh-porter-hero", "Porter walnut nightstand beside a bed", 1600, 1000),
+    heroImage: {
+      src: "/images/rooms/bedroom/bed-blush-velvet-scalloped-headboard.jpeg",
+      alt: "Scalloped headboard bed styled with a bedside nightstand",
+      width: 1600,
+      height: 1000,
+    },
     gallery: [
-      placeholderImage("lh-porter-1", "Porter nightstand drawer detail"),
-      placeholderImage("lh-porter-2", "Porter nightstand brass pull close-up"),
+      { src: "/images/rooms/bedroom/bed-fluted-headboard-dark-frame.jpeg", alt: "Fluted headboard with dark timber frame", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-diamond-tufted-tall-headboard-01.jpeg", alt: "Diamond-tufted tall headboard — bedroom context", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.brass],
     finishes: finishOptions.timber,
@@ -249,11 +269,14 @@ export const collections: Collection[] = [
       "A thick solid-timber top on a trestle base, engineered with breadboard ends to resist seasonal movement across South African climates.",
     story:
       "Hollis is the piece most requested by returning MicWood clients — the same table specified for a six-seat apartment or an eighteen-seat farmhouse, scaled to fit.",
-    heroImage: placeholderImage("lh-hollis-hero", "Hollis dining table set for a dinner", 1600, 1000),
+    heroImage: {
+      src: "/images/rooms/dining-room/dining-table-rose-gold-legs-8-chairs.jpeg",
+      alt: "Dining table with rose gold legs and eight chairs",
+      width: 1600,
+      height: 1000,
+    },
     gallery: [
-      placeholderImage("lh-hollis-1", "Hollis dining table breadboard end detail"),
-      placeholderImage("lh-hollis-2", "Hollis table styled with Reyes dining chairs"),
-      placeholderImage("lh-hollis-3", "Hollis table grain and finish detail"),
+      { src: "/images/rooms/dining-room/dining-table-rose-gold-legs-8-chairs.jpeg", alt: "Dining table detail — rose gold leg finish", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.fsc],
     finishes: finishOptions.timber,
@@ -293,10 +316,14 @@ export const collections: Collection[] = [
       "A sculpted timber frame with an upholstered seat pad, shaped to stay comfortable through a long dinner.",
     story:
       "Every Reyes seat is shaped on the same jigs the MicWood workshop developed for its very first dining chair run in 2019.",
-    heroImage: placeholderImage("lh-reyes-hero", "Reyes dining chairs around the Hollis table", 1600, 1000),
+    heroImage: {
+      src: "/images/rooms/dining-room/dining-table-rose-gold-legs-8-chairs.jpeg",
+      alt: "Dining chairs styled around a table in the showroom",
+      width: 1600,
+      height: 1000,
+    },
     gallery: [
-      placeholderImage("lh-reyes-1", "Reyes dining chair frame detail"),
-      placeholderImage("lh-reyes-2", "Reyes dining chair upholstery close-up"),
+      { src: "/images/rooms/dining-room/dining-table-rose-gold-legs-8-chairs.jpeg", alt: "Dining chair arrangement detail", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.performanceFabric],
     finishes: finishOptions.upholstery,
@@ -324,10 +351,14 @@ export const collections: Collection[] = [
       "A single-slab top on a slim steel-and-timber base, with an integrated cable channel built in rather than bolted on.",
     story:
       "Carrow was designed for the home-office era — small enough for a spare room, considered enough for an executive suite.",
-    heroImage: placeholderImage("lh-carrow-hero", "Carrow writing desk in a minimalist office", 1600, 1000),
+    heroImage: {
+      src: "/images/rooms/office/desk-white-lacquer-leather-trim.jpeg",
+      alt: "White lacquer desk with leather trim in a minimalist office",
+      width: 1600,
+      height: 1000,
+    },
     gallery: [
-      placeholderImage("lh-carrow-1", "Carrow desk cable management detail"),
-      placeholderImage("lh-carrow-2", "Carrow desk leg and joinery detail"),
+      { src: "/images/rooms/office/desk-white-lacquer-leather-trim.jpeg", alt: "Desk detail — lacquer and leather trim", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.brass],
     finishes: finishOptions.metal,
@@ -366,11 +397,14 @@ export const collections: Collection[] = [
       "A modular outdoor seating system in plantation teak, with quick-dry cushions and a synthetic weave rated for UV and salt air.",
     story:
       "Solano was tested through a full South African summer on an exposed Cape Town balcony before it was approved for the Lavish Haus range.",
-    heroImage: placeholderImage("lh-solano-hero", "Solano outdoor lounge setting on a covered patio", 1600, 1000),
+    heroImage: {
+      src: "/images/rooms/bedroom/bed-diamond-tufted-tall-headboard-02.jpeg",
+      alt: "Outdoor lounge collection — showroom photo coming soon",
+      width: 1600,
+      height: 1000,
+    },
     gallery: [
-      placeholderImage("lh-solano-1", "Solano teak frame joinery detail"),
-      placeholderImage("lh-solano-2", "Solano outdoor lounge styled at dusk"),
-      placeholderImage("lh-solano-3", "Solano cushion and weave detail"),
+      { src: "/images/rooms/bedroom/bed-diamond-tufted-tall-headboard-02.jpeg", alt: "Outdoor collection — photo coming soon", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.teak, materialLibrary.performanceFabric],
     finishes: finishOptions.timber,
@@ -409,17 +443,51 @@ export const collections: Collection[] = [
       "Work with the MicWood Furnitures workshop to develop a one-of-a-kind piece — matched dimensions, timber selection and finish, from concept sketch to delivery.",
     story:
       "Roughly a third of Lavish Haus's workshop hours go into bespoke commissions — from a boardroom table matched to existing panelling, to a built-in bench seat shaped around a bay window.",
-    heroImage: placeholderImage("lh-bespoke-hero", "A craftsman sketching a custom furniture commission", 1600, 1000),
+    heroImage: {
+      src: "/images/rooms/bedroom/bed-honeycomb-tufted-headboard-wood-frame.jpeg",
+      alt: "Honeycomb-tufted headboard with exposed wood frame — a bespoke commission",
+      width: 1600,
+      height: 1000,
+    },
     gallery: [
-      placeholderImage("lh-bespoke-1", "Workshop sketch and timber sample for a custom commission"),
-      placeholderImage("lh-bespoke-2", "A custom bench seat built into a bay window"),
-      placeholderImage("lh-bespoke-3", "MicWood craftsman finishing a bespoke commission"),
+      { src: "/images/rooms/bedroom/bed-cognac-leather-diamond-headboard.jpeg", alt: "Cognac leather diamond-tufted headboard — bespoke bedroom commission", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-grey-button-tufted-01.jpeg", alt: "Grey button-tufted bed — custom upholstery finish", width: 1200, height: 900 },
+      { src: "/images/rooms/bedroom/bed-grey-button-tufted-02.jpeg", alt: "Button-tufted detail — alternate angle", width: 1200, height: 900 },
     ],
     materials: [materialLibrary.solidWalnut, materialLibrary.fsc, materialLibrary.fullGrainLeather],
     finishes: [...finishOptions.timber, ...finishOptions.upholstery],
     products: [],
     relatedCollectionSlugs: ["hollis-dining-table", "linden-bed-frame"],
     featured: true,
+  },
+  {
+    slug: "micwood-kitchen-island",
+    categorySlug: "kitchen",
+    name: "MicWood Kitchen Island Collection",
+    tagline: "The centrepiece your kitchen is built around.",
+    description:
+      "Custom kitchen islands with fluted panelling, integrated storage and stone or timber countertops — designed to anchor the room you use most.",
+    story:
+      "The kitchen island started as a client request that didn't fit any existing category — and became one of the workshop's most-requested pieces. Every island is built to the kitchen's exact dimensions.",
+    heroImage: {
+      src: "/images/rooms/kitchen/kitchen-island-fluted-taupe-cabinetry.jpeg",
+      alt: "A fluted taupe kitchen island with custom cabinetry by MicWood Furnitures",
+      width: 1600,
+      height: 1000,
+    },
+    gallery: [
+      {
+        src: "/images/rooms/kitchen/kitchen-island-fluted-taupe-cabinetry.jpeg",
+        alt: "Kitchen island fluted panel detail",
+        width: 1200,
+        height: 900,
+      },
+    ],
+    materials: [materialLibrary.solidWalnut, materialLibrary.fsc],
+    finishes: finishOptions.timber,
+    products: [],
+    relatedCollectionSlugs: ["bespoke-commissions"],
+    featured: false,
   },
 ];
 
