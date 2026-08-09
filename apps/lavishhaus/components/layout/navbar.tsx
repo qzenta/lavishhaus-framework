@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, MessageCircle } from "lucide-react";
@@ -32,10 +33,17 @@ export function Navbar() {
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-6 py-3 lg:px-8">
         <Link
           href="/"
-          className="font-heading text-2xl tracking-wide text-charcoal"
+          className="flex items-center"
           aria-label={`${siteConfig.name} home`}
         >
-          Lavish <span className="text-gold">Haus</span>
+          <Image
+            src="/images/logo.png"
+            alt={siteConfig.name}
+            width={120}
+            height={147}
+            className="h-12 w-auto"
+            priority
+          />
         </Link>
 
         <NavigationMenu viewport={false} className="hidden lg:flex">
@@ -107,8 +115,14 @@ export function Navbar() {
           </SheetTrigger>
           <SheetContent side="right" className="w-full max-w-sm bg-ivory">
             <SheetHeader>
-              <SheetTitle className="font-heading text-xl">
-                Lavish <span className="text-gold">Haus</span>
+              <SheetTitle>
+                <Image
+                  src="/images/logo.png"
+                  alt={siteConfig.name}
+                  width={120}
+                  height={147}
+                  className="h-10 w-auto"
+                />
               </SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-1 px-4">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 
@@ -11,8 +12,14 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <Link href="/" className="font-heading text-2xl text-ivory">
-              Lavish <span className="text-gold">Haus</span>
+            <Link href="/" className="inline-block">
+              <Image
+                src="/images/logo.png"
+                alt={siteConfig.name}
+                width={120}
+                height={147}
+                className="h-14 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-ivory/60">
               {siteConfig.description}
