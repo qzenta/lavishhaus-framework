@@ -28,6 +28,12 @@ import {
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  const shopByRoomIndex = primaryNav.findIndex(
+    (link) => link.label === "Shop by Room"
+  );
+  const beforeShopByRoom = primaryNav.slice(0, shopByRoomIndex);
+  const afterShopByRoom = primaryNav.slice(shopByRoomIndex + 1);
+
   return (
     <header className="sticky top-0 z-50 border-b border-border/80 bg-ivory/95 backdrop-blur supports-[backdrop-filter]:bg-ivory/80">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2.5 lg:px-8">
@@ -48,6 +54,15 @@ export function Navbar() {
 
         <NavigationMenu viewport={false} className="hidden lg:flex">
           <NavigationMenuList>
+            {beforeShopByRoom.map((link) => (
+              <NavigationMenuItem key={link.href}>
+                <NavigationMenuLink asChild>
+                  <Link href={link.href} className="font-medium text-charcoal">
+                    {link.label}
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            ))}
             <NavigationMenuItem>
               <NavigationMenuTrigger className="font-medium text-charcoal">
                 Shop by Room
@@ -73,17 +88,15 @@ export function Navbar() {
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
-            {primaryNav
-              .filter((link) => link.label !== "Shop by Room")
-              .map((link) => (
-                <NavigationMenuItem key={link.href}>
-                  <NavigationMenuLink asChild>
-                    <Link href={link.href} className="font-medium text-charcoal">
-                      {link.label}
-                    </Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              ))}
+            {afterShopByRoom.map((link) => (
+              <NavigationMenuItem key={link.href}>
+                <NavigationMenuLink asChild>
+                  <Link href={link.href} className="font-medium text-charcoal">
+                    {link.label}
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            ))}
           </NavigationMenuList>
         </NavigationMenu>
 
@@ -126,6 +139,16 @@ export function Navbar() {
               </SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-1 px-4">
+              {beforeShopByRoom.map((link) => (
+                <SheetClose asChild key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="rounded-md px-2 py-2 font-medium text-charcoal hover:bg-sand"
+                  >
+                    {link.label}
+                  </Link>
+                </SheetClose>
+              ))}
               <p className="mt-2 mb-1 text-xs tracking-wide text-muted-foreground uppercase">
                 Shop by Room
               </p>
@@ -140,18 +163,16 @@ export function Navbar() {
                 </SheetClose>
               ))}
               <div className="my-3 h-px bg-border" />
-              {primaryNav
-                .filter((link) => link.label !== "Shop by Room")
-                .map((link) => (
-                  <SheetClose asChild key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="rounded-md px-2 py-2 font-medium text-charcoal hover:bg-sand"
-                    >
-                      {link.label}
-                    </Link>
-                  </SheetClose>
-                ))}
+              {afterShopByRoom.map((link) => (
+                <SheetClose asChild key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="rounded-md px-2 py-2 font-medium text-charcoal hover:bg-sand"
+                  >
+                    {link.label}
+                  </Link>
+                </SheetClose>
+              ))}
               <div className="my-3 h-px bg-border" />
               <SheetClose asChild>
                 <Button

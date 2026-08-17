@@ -116,6 +116,14 @@ export function Footer() {
                 {item.label}
               </Link>
             ))}
+            <a
+              href="https://qzenta.co.za"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold"
+            >
+              Powered by Qzenta
+            </a>
           </div>
         </div>
       </div>

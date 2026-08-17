@@ -26,7 +26,7 @@ export function Hero({
     <section
       className={`relative flex items-end overflow-hidden bg-warm-black ${
         size === "large"
-          ? "h-[calc(100svh-5.5rem)] max-h-[700px] min-h-[440px]"
+          ? "h-[70vh] max-h-[560px] min-h-[420px]"
           : "h-[48vh] min-h-[360px]"
       }`}
     >
