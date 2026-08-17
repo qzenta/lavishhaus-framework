@@ -48,6 +48,7 @@ export interface NavLink {
 }
 
 export const primaryNav: NavLink[] = [
+  { label: "Home", href: "/" },
   { label: "Shop by Room", href: "/collections" },
   { label: "Craftsmanship", href: "/craftsmanship" },
   { label: "Projects", href: "/projects" },

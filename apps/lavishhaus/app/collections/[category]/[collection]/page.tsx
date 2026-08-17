@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MessageCircle } from "lucide-react";
 
+import { Hero } from "@/components/shared/hero";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { GalleryLightbox } from "@/components/shared/gallery-lightbox";
@@ -79,26 +80,13 @@ export default async function CollectionDetailPage({
         }}
       />
 
-      <div className="relative h-[52vh] min-h-[380px] overflow-hidden bg-warm-black">
-        <Image
-          src={collection.heroImage.src}
-          alt={collection.heroImage.alt}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-85"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-warm-black via-warm-black/30 to-transparent" />
-        <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-end px-6 pb-12 lg:px-8">
-          <span className="text-xs font-medium tracking-[0.2em] text-gold uppercase">
-            {category.name}
-          </span>
-          <h1 className="mt-2 font-heading text-4xl text-ivory sm:text-5xl">
-            {collection.name}
-          </h1>
-          <p className="mt-3 max-w-xl text-ivory/75">{collection.tagline}</p>
-        </div>
-      </div>
+      <Hero
+        size="compact"
+        eyebrow={category.name}
+        title={collection.name}
+        description={collection.tagline}
+        image={collection.heroImage}
+      />
 
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <Breadcrumbs

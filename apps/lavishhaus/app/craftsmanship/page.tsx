@@ -71,6 +71,7 @@ export default function CraftsmanshipPage() {
   return (
     <>
       <Hero
+        size="compact"
         eyebrow="Our Process"
         title="Built by Hand. Finished with Care."
         description="From timber selection to final placement — every Lavish Haus piece is built to order by MicWood Furnitures in Johannesburg."

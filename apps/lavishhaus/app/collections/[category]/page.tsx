@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 
+import { Hero } from "@/components/shared/hero";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs";
 import { CollectionGrid } from "@/components/shared/collection-grid";
 import { CtaSection } from "@/components/shared/cta-section";
@@ -49,21 +49,12 @@ export default async function CategoryPage({
 
   return (
     <div>
-      <div className="relative h-[42vh] min-h-[320px] overflow-hidden bg-warm-black">
-        <Image
-          src={category.heroImage.src}
-          alt={category.heroImage.alt}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-80"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-warm-black via-warm-black/30 to-transparent" />
-        <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-end px-6 pb-12 lg:px-8">
-          <h1 className="font-heading text-4xl text-ivory sm:text-5xl">{category.name}</h1>
-          <p className="mt-3 max-w-xl text-ivory/75">{category.description}</p>
-        </div>
-      </div>
+      <Hero
+        size="compact"
+        title={category.name}
+        description={category.description}
+        image={category.heroImage}
+      />
 
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <Breadcrumbs
