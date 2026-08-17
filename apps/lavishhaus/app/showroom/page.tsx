@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 
+import { Hero } from "@/components/shared/hero";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs";
-import { SectionHeading } from "@/components/shared/section-heading";
 import { Button } from "@/components/ui/button";
 import { placeholderImage } from "@/lib/placeholder-image";
 import { siteConfig } from "@/config/site";
@@ -22,17 +22,24 @@ export default function ShowroomPage() {
   );
 
   return (
-    <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-      <Breadcrumbs items={[{ name: "Showroom", href: "/showroom" }]} />
-      <div className="mt-6">
-        <SectionHeading
-          eyebrow="Visit Us"
-          title="The Lavish Haus Showroom"
-          description="See materials, finishes and full-scale pieces in person before you commit."
-        />
-      </div>
+    <div>
+      <Hero
+        size="compact"
+        eyebrow="Visit Us"
+        title="The Lavish Haus Showroom"
+        description="See materials, finishes and full-scale pieces in person before you commit."
+        image={{
+          src: "/images/rooms/living-room/tv-wall-console-marble-grey-01.jpeg",
+          alt: "Marble grey fluted TV wall console styled in a showroom-style living space",
+          width: 1500,
+          height: 2000,
+        }}
+      />
 
-      <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
+      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <Breadcrumbs items={[{ name: "Showroom", href: "/showroom" }]} />
+
+      <div className="mt-6 grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="relative aspect-4/3 overflow-hidden bg-sand">
           <Image
             src={image.src}
@@ -101,6 +108,7 @@ export default function ShowroomPage() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
+      </div>
       </div>
     </div>
   );

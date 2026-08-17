@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 
+import { Hero } from "@/components/shared/hero";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs";
-import { SectionHeading } from "@/components/shared/section-heading";
 import { ContactForm } from "@/components/shared/contact-form";
 import { siteConfig } from "@/config/site";
 
@@ -14,13 +14,24 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
-      <Breadcrumbs items={[{ name: "Contact", href: "/contact" }]} />
-      <div className="mt-6">
-        <SectionHeading eyebrow="Get in Touch" title="Contact Lavish Haus" />
-      </div>
+    <div>
+      <Hero
+        size="compact"
+        eyebrow="Get in Touch"
+        title="Contact Lavish Haus"
+        description="Questions about a piece, a custom commission, or the showroom — we usually reply within one business day."
+        image={{
+          src: "/images/rooms/living-room/console-table-elephant-sculptures.jpeg",
+          alt: "Styled console table with elephant sculptures in a Lavish Haus living space",
+          width: 738,
+          height: 1600,
+        }}
+      />
 
-      <div className="mt-12 grid grid-cols-1 gap-16 lg:grid-cols-3">
+      <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
+      <Breadcrumbs items={[{ name: "Contact", href: "/contact" }]} />
+
+      <div className="mt-6 grid grid-cols-1 gap-16 lg:grid-cols-3">
         <div className="space-y-6 lg:col-span-1">
           <div className="flex items-start gap-3">
             <MapPin className="mt-1 size-5 shrink-0 text-gold" aria-hidden="true" />
@@ -57,6 +68,7 @@ export default function ContactPage() {
         <div className="lg:col-span-2">
           <ContactForm />
         </div>
+      </div>
       </div>
     </div>
   );

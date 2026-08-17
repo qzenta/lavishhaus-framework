@@ -5,7 +5,6 @@ import { Breadcrumbs } from "@/components/shared/breadcrumbs";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { Stats } from "@/components/shared/stats";
 import { CtaSection } from "@/components/shared/cta-section";
-import { placeholderImage } from "@/lib/placeholder-image";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -23,12 +22,12 @@ const stats = [
 ];
 
 export default function AboutPage() {
-  const heroImage = placeholderImage(
-    "lh-about-hero",
-    "Craftspeople working in the MicWood Furnitures workshop",
-    1600,
-    900
-  );
+  const heroImage = {
+    src: "/images/rooms/bedroom/bed-black-velvet-arch-headboard-white-dresser.jpeg",
+    alt: "A black velvet arch headboard bed styled with a white dresser — Lavish Haus craftsmanship",
+    width: 1500,
+    height: 2000,
+  };
 
   return (
     <div>
@@ -81,12 +80,21 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <section className="bg-sand/60">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+      <section className="relative overflow-hidden bg-warm-black">
+        <Image
+          src="/images/rooms/bedroom/bed-grey-lacquer-gold-mirror-stripe-01.jpeg"
+          alt="Detail of hand-finished joinery on a Lavish Haus bed frame"
+          fill
+          sizes="100vw"
+          className="object-cover opacity-35"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-warm-black via-warm-black/85 to-warm-black/50" />
+        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <SectionHeading
             eyebrow="The Workshop"
             title={`Every piece is built by ${siteConfig.manufacturer}`}
             description="Manufacturing is handled entirely in-house by our workshop partner — no outsourcing, no drop-shipped components."
+            className="[&_h2]:text-ivory [&_p]:text-ivory/70"
           />
         </div>
       </section>

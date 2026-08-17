@@ -30,7 +30,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/80 bg-ivory/95 backdrop-blur supports-[backdrop-filter]:bg-ivory/80">
-      <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-6 py-3 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2.5 lg:px-8">
         <Link
           href="/"
           className="flex items-center"
@@ -39,9 +39,9 @@ export function Navbar() {
           <Image
             src="/images/logo.png"
             alt={siteConfig.name}
-            width={120}
-            height={147}
-            className="h-12 w-auto"
+            width={864}
+            height={368}
+            className="h-14 w-auto lg:h-16"
             priority
           />
         </Link>
@@ -119,9 +119,9 @@ export function Navbar() {
                 <Image
                   src="/images/logo.png"
                   alt={siteConfig.name}
-                  width={120}
-                  height={147}
-                  className="h-10 w-auto"
+                  width={864}
+                  height={368}
+                  className="h-11 w-auto"
                 />
               </SheetTitle>
             </SheetHeader>
