@@ -1,0 +1,78 @@
+== lint
+
+C:\Users\pc\lavishhaus-framework\apps\lavishhaus\photography-inbox\_scripts\build-gallery.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\pc\lavishhaus-framework\apps\lavishhaus\photography-inbox\_scripts\enhance.js
+  1:15  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  3:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\pc\lavishhaus-framework\apps\lavishhaus\photography-inbox\_scripts\make-thumbs.js
+  1:15  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  3:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+✖ 8 problems (8 errors, 0 warnings)
+
+exit=0
+== tsc
+== build
+▲ Next.js 16.3.0 (Turbopack)
+- Environments: .env
+✓ Running next.config.ts took 228ms
+- Experiments (use with caution):
+  ⨯ turbopackServerFastRefresh
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 28.1s
+  Running TypeScript ...
+  Finished TypeScript in 7.4s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/39) ...
+  Generating static pages using 7 workers (9/39) 
+  Generating static pages using 7 workers (19/39) 
+  Generating static pages using 7 workers (29/39) 
+✓ Generating static pages using 7 workers (39/39) in 950ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ƒ /admin/[[...segments]]
+├ ƒ /api/[...slug]
+├ ○ /apple-icon.png
+├ ○ /collections
+├   /collections/[category]
+│ ├ ● /collections/living-room
+│ ├ ● /collections/bedroom
+│ ├ ● /collections/dining
+│ └ ● [+4 more paths]
+├   /collections/[category]/[collection]
+│ ├ ● /collections/living-room/aurelia-sofa-collection
+│ ├ ● /collections/living-room/marchetti-coffee-table
+│ ├ ● /collections/bedroom/linden-bed-frame
+│ └ ● [+8 more paths]
+├ ○ /contact
+├ ○ /craftsmanship
+├ ○ /faqs
+├ ○ /icon.png
+├ ○ /privacy
+├ ○ /projects
+├   /projects/[project]
+│ ├ ● /projects/houghton-family-residence
+│ ├ ● /projects/sandton-executive-office
+│ └ ● /projects/camps-bay-outdoor-terrace
+├ ƒ /quote
+├ ○ /robots.txt
+├ ○ /showroom
+├ ○ /sitemap.xml
+└ ○ /terms
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

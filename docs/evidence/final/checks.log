@@ -1,0 +1,46 @@
+# Final checks 2026-10-29T14:55Z on 69a116e
+## tsc
+tsc: 0 errors
+## eslint
+eslint: 0 problems
+## npm test
+✔ escapeHtml escapes markup characters (1.6785ms)
+✔ quote email contains no raw submitted markup (0.7902ms)
+✔ contact email escapes values (0.3696ms)
+✔ singleLine strips header line breaks (0.3868ms)
+✔ isLikelySpam: honeypot, timing, missing timestamp (0.4548ms)
+✔ sendBrevoEmail without a key sends nothing and reports not-configured (1.2346ms)
+✔ sendBrevoEmail posts a sanitised payload and reports delivery (44.0458ms)
+✔ sendBrevoEmail throws a status-only error on failure (1.3069ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 218.2856
+## redirects (every source in next.config.ts)
+/collections/living-room/aurelia-sofa-collection -> 308 /collections/living-room/sofas-and-seating
+/collections/living-room/marchetti-coffee-table -> 308 /collections/living-room/consoles-and-tables
+/collections/bedroom/linden-bed-frame -> 308 /collections/bedroom/upholstered-beds
+/collections/bedroom/porter-nightstand -> 308 /collections/bedroom/bedroom-suites
+/collections/bedroom/palazzo-bedroom-suite -> 308 /collections/bedroom/bedroom-suites
+/collections/dining/hollis-dining-table -> 308 /collections/dining/dining-sets
+/collections/dining/reyes-dining-chair -> 308 /collections/dining/dining-sets
+/collections/office/carrow-writing-desk -> 308 /collections/office/desks
+/collections/outdoor/solano-outdoor-lounge -> 308 /collections/outdoor
+/collections/kitchen/micwood-kitchen-island -> 308 /collections/kitchen/kitchen-islands
+/projects -> 307 /collections/custom-furniture/bespoke-commissions
+/projects/anything -> 307 /collections/custom-furniture/bespoke-commissions
+## status
+/ 200
+/collections 200
+/collections/outdoor 200
+/quote 200
+/contact 200
+/privacy 200
+/sitemap.xml 200
+/robots.txt 200
+/og-image.jpg 200
+/nope 404

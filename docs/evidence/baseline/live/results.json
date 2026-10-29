@@ -1,0 +1,2215 @@
+{
+  "baseUrl": "https://www.lavishhaus.co.za",
+  "results": [
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Lavish Haus — Luxury Crafted. Timeless Living.",
+      "description": "Lavish Haus is a premium furniture showroom crafted by MicWood Furnitures, bringing bespoke living, dining, bedroom and office pieces to homes and businesses across South Africa.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za",
+      "h1": [
+        "Luxury Crafted. Timeless Living."
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 9,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "home--mobile.png"
+    },
+    {
+      "route": "/",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Lavish Haus — Luxury Crafted. Timeless Living.",
+      "description": "Lavish Haus is a premium furniture showroom crafted by MicWood Furnitures, bringing bespoke living, dining, bedroom and office pieces to homes and businesses across South Africa.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za",
+      "h1": [
+        "Luxury Crafted. Timeless Living."
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 9,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "home--tablet.png"
+    },
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Lavish Haus — Luxury Crafted. Timeless Living.",
+      "description": "Lavish Haus is a premium furniture showroom crafted by MicWood Furnitures, bringing bespoke living, dining, bedroom and office pieces to homes and businesses across South Africa.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za",
+      "h1": [
+        "Luxury Crafted. Timeless Living."
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 9,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "home--desktop.png"
+    },
+    {
+      "route": "/about",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "About Us — Our Story | Lavish Haus",
+      "description": "Lavish Haus is the retail showroom brand of MicWood Furnitures, bringing hand-built, premium furniture to homes and businesses across South Africa.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/about",
+      "h1": [
+        "About Lavish Haus"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+      ],
+      "failedRequests": [
+        "net::ERR_NAME_NOT_RESOLVED https://c.clarity.ms/c.gif"
+      ],
+      "screenshot": "about--mobile.png"
+    },
+    {
+      "route": "/about",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "About Us — Our Story | Lavish Haus",
+      "description": "Lavish Haus is the retail showroom brand of MicWood Furnitures, bringing hand-built, premium furniture to homes and businesses across South Africa.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/about",
+      "h1": [
+        "About Lavish Haus"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "about--tablet.png"
+    },
+    {
+      "route": "/about",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "About Us — Our Story | Lavish Haus",
+      "description": "Lavish Haus is the retail showroom brand of MicWood Furnitures, bringing hand-built, premium furniture to homes and businesses across South Africa.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/about",
+      "h1": [
+        "About Lavish Haus"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED https://www.lavishhaus.co.za/quote?_rsc=yMFZbW3py_RmPDJX"
+      ],
+      "screenshot": "about--desktop.png"
+    },
+    {
+      "route": "/collections",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Furniture Collections | Lavish Haus",
+      "description": "Browse Lavish Haus furniture collections — living room, bedroom, dining, office, outdoor and custom furniture, hand-built by MicWood Furnitures.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections",
+      "h1": [],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections--mobile.png"
+    },
+    {
+      "route": "/collections",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Furniture Collections | Lavish Haus",
+      "description": "Browse Lavish Haus furniture collections — living room, bedroom, dining, office, outdoor and custom furniture, hand-built by MicWood Furnitures.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections",
+      "h1": [],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections--tablet.png"
+    },
+    {
+      "route": "/collections",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Furniture Collections | Lavish Haus",
+      "description": "Browse Lavish Haus furniture collections — living room, bedroom, dining, office, outdoor and custom furniture, hand-built by MicWood Furnitures.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections",
+      "h1": [],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections--desktop.png"
+    },
+    {
+      "route": "/collections/bedroom",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Bedroom | Lavish Haus",
+      "description": "Upholstered frames and solid walnut casegoods, built quietly so the room can stay calm.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom",
+      "h1": [
+        "Bedroom"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom--mobile.png"
+    },
+    {
+      "route": "/collections/bedroom",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Bedroom | Lavish Haus",
+      "description": "Upholstered frames and solid walnut casegoods, built quietly so the room can stay calm.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom",
+      "h1": [
+        "Bedroom"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom--tablet.png"
+    },
+    {
+      "route": "/collections/bedroom",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Bedroom | Lavish Haus",
+      "description": "Upholstered frames and solid walnut casegoods, built quietly so the room can stay calm.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom",
+      "h1": [
+        "Bedroom"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom--desktop.png"
+    },
+    {
+      "route": "/collections/bedroom/linden-bed-frame",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Linden Bed Frame Collection | Lavish Haus",
+      "description": "A low headboard and solid walnut legs bring the Linden close to the floor, giving even smaller rooms a sense of proportion.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/linden-bed-frame",
+      "h1": [
+        "Linden Bed Frame Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom__linden-bed-frame--mobile.png"
+    },
+    {
+      "route": "/collections/bedroom/linden-bed-frame",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Linden Bed Frame Collection | Lavish Haus",
+      "description": "A low headboard and solid walnut legs bring the Linden close to the floor, giving even smaller rooms a sense of proportion.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/linden-bed-frame",
+      "h1": [
+        "Linden Bed Frame Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom__linden-bed-frame--tablet.png"
+    },
+    {
+      "route": "/collections/bedroom/linden-bed-frame",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Linden Bed Frame Collection | Lavish Haus",
+      "description": "A low headboard and solid walnut legs bring the Linden close to the floor, giving even smaller rooms a sense of proportion.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/linden-bed-frame",
+      "h1": [
+        "Linden Bed Frame Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom__linden-bed-frame--desktop.png"
+    },
+    {
+      "route": "/collections/bedroom/palazzo-bedroom-suite",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Palazzo Bedroom Suite | Lavish Haus",
+      "description": "A coordinated bedroom suite in high-gloss grey lacquer with vertical gold mirror-stripe accents. Includes a padded channel-tufted headboard, six-drawer dresser and matching nightstands — all finished with polished brass hardware.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/palazzo-bedroom-suite",
+      "h1": [
+        "Palazzo Bedroom Suite"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom__palazzo-bedroom-suite--mobile.png"
+    },
+    {
+      "route": "/collections/bedroom/palazzo-bedroom-suite",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Palazzo Bedroom Suite | Lavish Haus",
+      "description": "A coordinated bedroom suite in high-gloss grey lacquer with vertical gold mirror-stripe accents. Includes a padded channel-tufted headboard, six-drawer dresser and matching nightstands — all finished with polished brass hardware.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/palazzo-bedroom-suite",
+      "h1": [
+        "Palazzo Bedroom Suite"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom__palazzo-bedroom-suite--tablet.png"
+    },
+    {
+      "route": "/collections/bedroom/palazzo-bedroom-suite",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Palazzo Bedroom Suite | Lavish Haus",
+      "description": "A coordinated bedroom suite in high-gloss grey lacquer with vertical gold mirror-stripe accents. Includes a padded channel-tufted headboard, six-drawer dresser and matching nightstands — all finished with polished brass hardware.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/palazzo-bedroom-suite",
+      "h1": [
+        "Palazzo Bedroom Suite"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom__palazzo-bedroom-suite--desktop.png"
+    },
+    {
+      "route": "/collections/bedroom/porter-nightstand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Porter Nightstand Collection | Lavish Haus",
+      "description": "A single drawer with a hand-fitted brass pull, over an open shelf — sized to sit quietly beside the Linden or any bed in the house.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/porter-nightstand",
+      "h1": [
+        "Porter Nightstand Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 1,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom__porter-nightstand--mobile.png"
+    },
+    {
+      "route": "/collections/bedroom/porter-nightstand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Porter Nightstand Collection | Lavish Haus",
+      "description": "A single drawer with a hand-fitted brass pull, over an open shelf — sized to sit quietly beside the Linden or any bed in the house.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/porter-nightstand",
+      "h1": [
+        "Porter Nightstand Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 1,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom__porter-nightstand--tablet.png"
+    },
+    {
+      "route": "/collections/bedroom/porter-nightstand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Porter Nightstand Collection | Lavish Haus",
+      "description": "A single drawer with a hand-fitted brass pull, over an open shelf — sized to sit quietly beside the Linden or any bed in the house.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/porter-nightstand",
+      "h1": [
+        "Porter Nightstand Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 1,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom__porter-nightstand--desktop.png"
+    },
+    {
+      "route": "/collections/custom-furniture",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Custom Furniture | Lavish Haus",
+      "description": "Work directly with the MicWood Furnitures workshop on one-of-a-kind pieces — from dimensions to timber selection to finish.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/custom-furniture",
+      "h1": [
+        "Custom Furniture"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__custom-furniture--mobile.png"
+    },
+    {
+      "route": "/collections/custom-furniture",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Custom Furniture | Lavish Haus",
+      "description": "Work directly with the MicWood Furnitures workshop on one-of-a-kind pieces — from dimensions to timber selection to finish.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/custom-furniture",
+      "h1": [
+        "Custom Furniture"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__custom-furniture--tablet.png"
+    },
+    {
+      "route": "/collections/custom-furniture",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Custom Furniture | Lavish Haus",
+      "description": "Work directly with the MicWood Furnitures workshop on one-of-a-kind pieces — from dimensions to timber selection to finish.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/custom-furniture",
+      "h1": [
+        "Custom Furniture"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__custom-furniture--desktop.png"
+    },
+    {
+      "route": "/collections/custom-furniture/bespoke-commissions",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Bespoke Commissions | Lavish Haus",
+      "description": "Work with the MicWood Furnitures workshop to develop a one-of-a-kind piece — matched dimensions, timber selection and finish, from concept sketch to delivery.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/custom-furniture/bespoke-commissions",
+      "h1": [
+        "Bespoke Commissions"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__custom-furniture__bespoke-commissions--mobile.png"
+    },
+    {
+      "route": "/collections/custom-furniture/bespoke-commissions",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Bespoke Commissions | Lavish Haus",
+      "description": "Work with the MicWood Furnitures workshop to develop a one-of-a-kind piece — matched dimensions, timber selection and finish, from concept sketch to delivery.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/custom-furniture/bespoke-commissions",
+      "h1": [
+        "Bespoke Commissions"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__custom-furniture__bespoke-commissions--tablet.png"
+    },
+    {
+      "route": "/collections/custom-furniture/bespoke-commissions",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Bespoke Commissions | Lavish Haus",
+      "description": "Work with the MicWood Furnitures workshop to develop a one-of-a-kind piece — matched dimensions, timber selection and finish, from concept sketch to delivery.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/custom-furniture/bespoke-commissions",
+      "h1": [
+        "Bespoke Commissions"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__custom-furniture__bespoke-commissions--desktop.png"
+    },
+    {
+      "route": "/collections/dining",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Dining Room | Lavish Haus",
+      "description": "Solid timber dining tables and hand-finished chairs, sized for everyday meals and the evenings that run late.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/dining",
+      "h1": [
+        "Dining Room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__dining--mobile.png"
+    },
+    {
+      "route": "/collections/dining",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Dining Room | Lavish Haus",
+      "description": "Solid timber dining tables and hand-finished chairs, sized for everyday meals and the evenings that run late.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/dining",
+      "h1": [
+        "Dining Room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__dining--tablet.png"
+    },
+    {
+      "route": "/collections/dining",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Dining Room | Lavish Haus",
+      "description": "Solid timber dining tables and hand-finished chairs, sized for everyday meals and the evenings that run late.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/dining",
+      "h1": [
+        "Dining Room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED https://www.lavishhaus.co.za/quote?_rsc=vabpfscVjTGlTHqV"
+      ],
+      "screenshot": "collections__dining--desktop.png"
+    },
+    {
+      "route": "/collections/dining/hollis-dining-table",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Hollis Dining Table Collection | Lavish Haus",
+      "description": "A thick solid-timber top on a trestle base, engineered with breadboard ends to resist seasonal movement across South African climates.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/dining/hollis-dining-table",
+      "h1": [
+        "Hollis Dining Table Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__dining__hollis-dining-table--mobile.png"
+    },
+    {
+      "route": "/collections/dining/hollis-dining-table",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Hollis Dining Table Collection | Lavish Haus",
+      "description": "A thick solid-timber top on a trestle base, engineered with breadboard ends to resist seasonal movement across South African climates.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/dining/hollis-dining-table",
+      "h1": [
+        "Hollis Dining Table Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__dining__hollis-dining-table--tablet.png"
+    },
+    {
+      "route": "/collections/dining/hollis-dining-table",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Hollis Dining Table Collection | Lavish Haus",
+      "description": "A thick solid-timber top on a trestle base, engineered with breadboard ends to resist seasonal movement across South African climates.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/dining/hollis-dining-table",
+      "h1": [
+        "Hollis Dining Table Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__dining__hollis-dining-table--desktop.png"
+    },
+    {
+      "route": "/collections/dining/reyes-dining-chair",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Reyes Dining Chair Collection | Lavish Haus",
+      "description": "A sculpted timber frame with an upholstered seat pad, shaped to stay comfortable through a long dinner.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/dining/reyes-dining-chair",
+      "h1": [
+        "Reyes Dining Chair Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 1,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__dining__reyes-dining-chair--mobile.png"
+    },
+    {
+      "route": "/collections/dining/reyes-dining-chair",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Reyes Dining Chair Collection | Lavish Haus",
+      "description": "A sculpted timber frame with an upholstered seat pad, shaped to stay comfortable through a long dinner.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/dining/reyes-dining-chair",
+      "h1": [
+        "Reyes Dining Chair Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 1,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__dining__reyes-dining-chair--tablet.png"
+    },
+    {
+      "route": "/collections/dining/reyes-dining-chair",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Reyes Dining Chair Collection | Lavish Haus",
+      "description": "A sculpted timber frame with an upholstered seat pad, shaped to stay comfortable through a long dinner.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/dining/reyes-dining-chair",
+      "h1": [
+        "Reyes Dining Chair Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 1,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED https://www.lavishhaus.co.za/quote?collection=reyes-dining-chair&_rsc=QQh73bO009y5-Qik"
+      ],
+      "screenshot": "collections__dining__reyes-dining-chair--desktop.png"
+    },
+    {
+      "route": "/collections/kitchen",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Kitchen | Lavish Haus",
+      "description": "Custom kitchen islands and storage solutions in timber and stone — designed to anchor the room you use most.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/kitchen",
+      "h1": [
+        "Kitchen"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__kitchen--mobile.png"
+    },
+    {
+      "route": "/collections/kitchen",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Kitchen | Lavish Haus",
+      "description": "Custom kitchen islands and storage solutions in timber and stone — designed to anchor the room you use most.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/kitchen",
+      "h1": [
+        "Kitchen"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__kitchen--tablet.png"
+    },
+    {
+      "route": "/collections/kitchen",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Kitchen | Lavish Haus",
+      "description": "Custom kitchen islands and storage solutions in timber and stone — designed to anchor the room you use most.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/kitchen",
+      "h1": [
+        "Kitchen"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__kitchen--desktop.png"
+    },
+    {
+      "route": "/collections/kitchen/micwood-kitchen-island",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "MicWood Kitchen Island Collection | Lavish Haus",
+      "description": "Custom kitchen islands with fluted panelling, integrated storage and stone or timber countertops — designed to anchor the room you use most.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/kitchen/micwood-kitchen-island",
+      "h1": [
+        "MicWood Kitchen Island Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__kitchen__micwood-kitchen-island--mobile.png"
+    },
+    {
+      "route": "/collections/kitchen/micwood-kitchen-island",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "MicWood Kitchen Island Collection | Lavish Haus",
+      "description": "Custom kitchen islands with fluted panelling, integrated storage and stone or timber countertops — designed to anchor the room you use most.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/kitchen/micwood-kitchen-island",
+      "h1": [
+        "MicWood Kitchen Island Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__kitchen__micwood-kitchen-island--tablet.png"
+    },
+    {
+      "route": "/collections/kitchen/micwood-kitchen-island",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "MicWood Kitchen Island Collection | Lavish Haus",
+      "description": "Custom kitchen islands with fluted panelling, integrated storage and stone or timber countertops — designed to anchor the room you use most.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/kitchen/micwood-kitchen-island",
+      "h1": [
+        "MicWood Kitchen Island Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__kitchen__micwood-kitchen-island--desktop.png"
+    },
+    {
+      "route": "/collections/living-room",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Living Room | Lavish Haus",
+      "description": "Anchor pieces upholstered in performance fabrics and full-grain leather, designed to hold their shape and their welcome for decades.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room",
+      "h1": [
+        "Living Room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__living-room--mobile.png"
+    },
+    {
+      "route": "/collections/living-room",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Living Room | Lavish Haus",
+      "description": "Anchor pieces upholstered in performance fabrics and full-grain leather, designed to hold their shape and their welcome for decades.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room",
+      "h1": [
+        "Living Room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__living-room--tablet.png"
+    },
+    {
+      "route": "/collections/living-room",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Living Room | Lavish Haus",
+      "description": "Anchor pieces upholstered in performance fabrics and full-grain leather, designed to hold their shape and their welcome for decades.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room",
+      "h1": [
+        "Living Room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__living-room--desktop.png"
+    },
+    {
+      "route": "/collections/living-room/aurelia-sofa-collection",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Aurelia Sofa Collection | Lavish Haus",
+      "description": "The Aurelia balances a low, architectural profile with deep, feather-wrapped cushioning. Hand-built frames in kiln-dried hardwood carry a 15-year structural guarantee.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/aurelia-sofa-collection",
+      "h1": [
+        "Aurelia Sofa Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 3,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__living-room__aurelia-sofa-collection--mobile.png"
+    },
+    {
+      "route": "/collections/living-room/aurelia-sofa-collection",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Aurelia Sofa Collection | Lavish Haus",
+      "description": "The Aurelia balances a low, architectural profile with deep, feather-wrapped cushioning. Hand-built frames in kiln-dried hardwood carry a 15-year structural guarantee.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/aurelia-sofa-collection",
+      "h1": [
+        "Aurelia Sofa Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 3,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__living-room__aurelia-sofa-collection--tablet.png"
+    },
+    {
+      "route": "/collections/living-room/aurelia-sofa-collection",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Aurelia Sofa Collection | Lavish Haus",
+      "description": "The Aurelia balances a low, architectural profile with deep, feather-wrapped cushioning. Hand-built frames in kiln-dried hardwood carry a 15-year structural guarantee.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/aurelia-sofa-collection",
+      "h1": [
+        "Aurelia Sofa Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 3,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__living-room__aurelia-sofa-collection--desktop.png"
+    },
+    {
+      "route": "/collections/living-room/marchetti-coffee-table",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Marchetti Coffee Table Collection | Lavish Haus",
+      "description": "A single slab top over a mitred hardwood base, finished with a hand-rubbed oil that deepens the grain rather than masking it.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/marchetti-coffee-table",
+      "h1": [
+        "Marchetti Coffee Table Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__living-room__marchetti-coffee-table--mobile.png"
+    },
+    {
+      "route": "/collections/living-room/marchetti-coffee-table",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Marchetti Coffee Table Collection | Lavish Haus",
+      "description": "A single slab top over a mitred hardwood base, finished with a hand-rubbed oil that deepens the grain rather than masking it.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/marchetti-coffee-table",
+      "h1": [
+        "Marchetti Coffee Table Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__living-room__marchetti-coffee-table--tablet.png"
+    },
+    {
+      "route": "/collections/living-room/marchetti-coffee-table",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Marchetti Coffee Table Collection | Lavish Haus",
+      "description": "A single slab top over a mitred hardwood base, finished with a hand-rubbed oil that deepens the grain rather than masking it.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/marchetti-coffee-table",
+      "h1": [
+        "Marchetti Coffee Table Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__living-room__marchetti-coffee-table--desktop.png"
+    },
+    {
+      "route": "/collections/office",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Office | Lavish Haus",
+      "description": "Home and executive office pieces that hold their composure — quiet hardware, real timber, no shortcuts.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/office",
+      "h1": [
+        "Office"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__office--mobile.png"
+    },
+    {
+      "route": "/collections/office",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Office | Lavish Haus",
+      "description": "Home and executive office pieces that hold their composure — quiet hardware, real timber, no shortcuts.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/office",
+      "h1": [
+        "Office"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__office--tablet.png"
+    },
+    {
+      "route": "/collections/office",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Office | Lavish Haus",
+      "description": "Home and executive office pieces that hold their composure — quiet hardware, real timber, no shortcuts.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/office",
+      "h1": [
+        "Office"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__office--desktop.png"
+    },
+    {
+      "route": "/collections/office/carrow-writing-desk",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Carrow Writing Desk Collection | Lavish Haus",
+      "description": "A single-slab top on a slim steel-and-timber base, with an integrated cable channel built in rather than bolted on.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/office/carrow-writing-desk",
+      "h1": [
+        "Carrow Writing Desk Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__office__carrow-writing-desk--mobile.png"
+    },
+    {
+      "route": "/collections/office/carrow-writing-desk",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Carrow Writing Desk Collection | Lavish Haus",
+      "description": "A single-slab top on a slim steel-and-timber base, with an integrated cable channel built in rather than bolted on.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/office/carrow-writing-desk",
+      "h1": [
+        "Carrow Writing Desk Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__office__carrow-writing-desk--tablet.png"
+    },
+    {
+      "route": "/collections/office/carrow-writing-desk",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Carrow Writing Desk Collection | Lavish Haus",
+      "description": "A single-slab top on a slim steel-and-timber base, with an integrated cable channel built in rather than bolted on.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/office/carrow-writing-desk",
+      "h1": [
+        "Carrow Writing Desk Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__office__carrow-writing-desk--desktop.png"
+    },
+    {
+      "route": "/collections/outdoor",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Outdoor | Lavish Haus",
+      "description": "Teak frames and outdoor-grade weaves, engineered for the South African climate and built to age well.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/outdoor",
+      "h1": [
+        "Outdoor"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__outdoor--mobile.png"
+    },
+    {
+      "route": "/collections/outdoor",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Outdoor | Lavish Haus",
+      "description": "Teak frames and outdoor-grade weaves, engineered for the South African climate and built to age well.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/outdoor",
+      "h1": [
+        "Outdoor"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__outdoor--tablet.png"
+    },
+    {
+      "route": "/collections/outdoor",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Outdoor | Lavish Haus",
+      "description": "Teak frames and outdoor-grade weaves, engineered for the South African climate and built to age well.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/outdoor",
+      "h1": [
+        "Outdoor"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__outdoor--desktop.png"
+    },
+    {
+      "route": "/collections/outdoor/solano-outdoor-lounge",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Solano Outdoor Lounge Collection | Lavish Haus",
+      "description": "A modular outdoor seating system in plantation teak, with quick-dry cushions and a synthetic weave rated for UV and salt air.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/outdoor/solano-outdoor-lounge",
+      "h1": [
+        "Solano Outdoor Lounge Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__outdoor__solano-outdoor-lounge--mobile.png"
+    },
+    {
+      "route": "/collections/outdoor/solano-outdoor-lounge",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Solano Outdoor Lounge Collection | Lavish Haus",
+      "description": "A modular outdoor seating system in plantation teak, with quick-dry cushions and a synthetic weave rated for UV and salt air.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/outdoor/solano-outdoor-lounge",
+      "h1": [
+        "Solano Outdoor Lounge Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__outdoor__solano-outdoor-lounge--tablet.png"
+    },
+    {
+      "route": "/collections/outdoor/solano-outdoor-lounge",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Solano Outdoor Lounge Collection | Lavish Haus",
+      "description": "A modular outdoor seating system in plantation teak, with quick-dry cushions and a synthetic weave rated for UV and salt air.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/outdoor/solano-outdoor-lounge",
+      "h1": [
+        "Solano Outdoor Lounge Collection"
+      ],
+      "jsonLdTypes": [
+        null,
+        "Product"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 2,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__outdoor__solano-outdoor-lounge--desktop.png"
+    },
+    {
+      "route": "/contact",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Contact Us | Lavish Haus",
+      "description": "Get in touch with Lavish Haus by phone, email, WhatsApp or in person at our Johannesburg showroom.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/contact",
+      "h1": [
+        "Contact Lavish Haus"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "contact--mobile.png"
+    },
+    {
+      "route": "/contact",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Contact Us | Lavish Haus",
+      "description": "Get in touch with Lavish Haus by phone, email, WhatsApp or in person at our Johannesburg showroom.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/contact",
+      "h1": [
+        "Contact Lavish Haus"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "contact--tablet.png"
+    },
+    {
+      "route": "/contact",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Contact Us | Lavish Haus",
+      "description": "Get in touch with Lavish Haus by phone, email, WhatsApp or in person at our Johannesburg showroom.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/contact",
+      "h1": [
+        "Contact Lavish Haus"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED https://www.lavishhaus.co.za/quote?_rsc=mTa8tpfUvA8h8GpF"
+      ],
+      "screenshot": "contact--desktop.png"
+    },
+    {
+      "route": "/craftsmanship",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Craftsmanship — Our Process | Lavish Haus",
+      "description": "See how Lavish Haus furniture is designed, built and finished by MicWood Furnitures in Johannesburg — from timber selection to final placement.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/craftsmanship",
+      "h1": [
+        "Built by Hand. Finished with Care."
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "craftsmanship--mobile.png"
+    },
+    {
+      "route": "/craftsmanship",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Craftsmanship — Our Process | Lavish Haus",
+      "description": "See how Lavish Haus furniture is designed, built and finished by MicWood Furnitures in Johannesburg — from timber selection to final placement.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/craftsmanship",
+      "h1": [
+        "Built by Hand. Finished with Care."
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "craftsmanship--tablet.png"
+    },
+    {
+      "route": "/craftsmanship",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Craftsmanship — Our Process | Lavish Haus",
+      "description": "See how Lavish Haus furniture is designed, built and finished by MicWood Furnitures in Johannesburg — from timber selection to final placement.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/craftsmanship",
+      "h1": [
+        "Built by Hand. Finished with Care."
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "craftsmanship--desktop.png"
+    },
+    {
+      "route": "/faqs",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "FAQs | Lavish Haus",
+      "description": "Answers to common questions about Lavish Haus furniture, quotes, custom commissions and delivery.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/faqs",
+      "h1": [],
+      "jsonLdTypes": [
+        null,
+        "FAQPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "faqs--mobile.png"
+    },
+    {
+      "route": "/faqs",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "FAQs | Lavish Haus",
+      "description": "Answers to common questions about Lavish Haus furniture, quotes, custom commissions and delivery.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/faqs",
+      "h1": [],
+      "jsonLdTypes": [
+        null,
+        "FAQPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "faqs--tablet.png"
+    },
+    {
+      "route": "/faqs",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "FAQs | Lavish Haus",
+      "description": "Answers to common questions about Lavish Haus furniture, quotes, custom commissions and delivery.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/faqs",
+      "h1": [],
+      "jsonLdTypes": [
+        null,
+        "FAQPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "faqs--desktop.png"
+    },
+    {
+      "route": "/privacy",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Privacy Policy | Lavish Haus",
+      "description": "How Lavish Haus collects, uses and protects your personal information.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/privacy",
+      "h1": [
+        "Privacy Policy"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "privacy--mobile.png"
+    },
+    {
+      "route": "/privacy",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Privacy Policy | Lavish Haus",
+      "description": "How Lavish Haus collects, uses and protects your personal information.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/privacy",
+      "h1": [
+        "Privacy Policy"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "privacy--tablet.png"
+    },
+    {
+      "route": "/privacy",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Privacy Policy | Lavish Haus",
+      "description": "How Lavish Haus collects, uses and protects your personal information.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/privacy",
+      "h1": [
+        "Privacy Policy"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "privacy--desktop.png"
+    },
+    {
+      "route": "/projects",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Projects & Gallery | Lavish Haus",
+      "description": "A gallery of residential and commercial spaces furnished by Lavish Haus across South Africa.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/projects",
+      "h1": [
+        "Spaces We've Furnished"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 3,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "projects--mobile.png"
+    },
+    {
+      "route": "/projects",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Projects & Gallery | Lavish Haus",
+      "description": "A gallery of residential and commercial spaces furnished by Lavish Haus across South Africa.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/projects",
+      "h1": [
+        "Spaces We've Furnished"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 3,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "projects--tablet.png"
+    },
+    {
+      "route": "/projects",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Projects & Gallery | Lavish Haus",
+      "description": "A gallery of residential and commercial spaces furnished by Lavish Haus across South Africa.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/projects",
+      "h1": [
+        "Spaces We've Furnished"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 3,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "projects--desktop.png"
+    },
+    {
+      "route": "/projects/camps-bay-outdoor-terrace",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Camps Bay Outdoor Terrace | Lavish Haus",
+      "description": "A Solano modular lounge configuration built for an exposed coastal terrace, tested through a full South African summer.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/projects/camps-bay-outdoor-terrace",
+      "h1": [
+        "Camps Bay Outdoor Terrace"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 3,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "projects__camps-bay-outdoor-terrace--mobile.png"
+    },
+    {
+      "route": "/projects/camps-bay-outdoor-terrace",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Camps Bay Outdoor Terrace | Lavish Haus",
+      "description": "A Solano modular lounge configuration built for an exposed coastal terrace, tested through a full South African summer.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/projects/camps-bay-outdoor-terrace",
+      "h1": [
+        "Camps Bay Outdoor Terrace"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 3,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "projects__camps-bay-outdoor-terrace--tablet.png"
+    },
+    {
+      "route": "/projects/camps-bay-outdoor-terrace",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Camps Bay Outdoor Terrace | Lavish Haus",
+      "description": "A Solano modular lounge configuration built for an exposed coastal terrace, tested through a full South African summer.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/projects/camps-bay-outdoor-terrace",
+      "h1": [
+        "Camps Bay Outdoor Terrace"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 3,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "projects__camps-bay-outdoor-terrace--desktop.png"
+    },
+    {
+      "route": "/projects/houghton-family-residence",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Houghton Family Residence | Lavish Haus",
+      "description": "A full living, dining and bedroom fit-out for a family home, anchored by the Aurelia sectional and a 10-seat Hollis dining table.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/projects/houghton-family-residence",
+      "h1": [
+        "Houghton Family Residence"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 4,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "projects__houghton-family-residence--mobile.png"
+    },
+    {
+      "route": "/projects/houghton-family-residence",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Houghton Family Residence | Lavish Haus",
+      "description": "A full living, dining and bedroom fit-out for a family home, anchored by the Aurelia sectional and a 10-seat Hollis dining table.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/projects/houghton-family-residence",
+      "h1": [
+        "Houghton Family Residence"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 4,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "projects__houghton-family-residence--tablet.png"
+    },
+    {
+      "route": "/projects/houghton-family-residence",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Houghton Family Residence | Lavish Haus",
+      "description": "A full living, dining and bedroom fit-out for a family home, anchored by the Aurelia sectional and a 10-seat Hollis dining table.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/projects/houghton-family-residence",
+      "h1": [
+        "Houghton Family Residence"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 4,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "projects__houghton-family-residence--desktop.png"
+    },
+    {
+      "route": "/projects/sandton-executive-office",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Sandton Executive Office | Lavish Haus",
+      "description": "Custom Carrow desks and boardroom seating for a financial services office, matched to the building's existing timber panelling.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/projects/sandton-executive-office",
+      "h1": [
+        "Sandton Executive Office"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 3,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "projects__sandton-executive-office--mobile.png"
+    },
+    {
+      "route": "/projects/sandton-executive-office",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Sandton Executive Office | Lavish Haus",
+      "description": "Custom Carrow desks and boardroom seating for a financial services office, matched to the building's existing timber panelling.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/projects/sandton-executive-office",
+      "h1": [
+        "Sandton Executive Office"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 3,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "projects__sandton-executive-office--tablet.png"
+    },
+    {
+      "route": "/projects/sandton-executive-office",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Sandton Executive Office | Lavish Haus",
+      "description": "Custom Carrow desks and boardroom seating for a financial services office, matched to the building's existing timber panelling.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/projects/sandton-executive-office",
+      "h1": [
+        "Sandton Executive Office"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 3,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "projects__sandton-executive-office--desktop.png"
+    },
+    {
+      "route": "/quote",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Request a Quote | Lavish Haus",
+      "description": "Request a detailed, no-obligation quote for any Lavish Haus collection or a custom furniture commission.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/quote",
+      "h1": [],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "quote--mobile.png"
+    },
+    {
+      "route": "/quote",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Request a Quote | Lavish Haus",
+      "description": "Request a detailed, no-obligation quote for any Lavish Haus collection or a custom furniture commission.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/quote",
+      "h1": [],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "quote--tablet.png"
+    },
+    {
+      "route": "/quote",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Request a Quote | Lavish Haus",
+      "description": "Request a detailed, no-obligation quote for any Lavish Haus collection or a custom furniture commission.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/quote",
+      "h1": [],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "quote--desktop.png"
+    },
+    {
+      "route": "/showroom",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Showroom | Lavish Haus",
+      "description": "Visit the Lavish Haus showroom in Johannesburg to experience our furniture collections, materials and finishes in person.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/showroom",
+      "h1": [
+        "The Lavish Haus Showroom"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 1,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "showroom--mobile.png"
+    },
+    {
+      "route": "/showroom",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Showroom | Lavish Haus",
+      "description": "Visit the Lavish Haus showroom in Johannesburg to experience our furniture collections, materials and finishes in person.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/showroom",
+      "h1": [
+        "The Lavish Haus Showroom"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 1,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "showroom--tablet.png"
+    },
+    {
+      "route": "/showroom",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Showroom | Lavish Haus",
+      "description": "Visit the Lavish Haus showroom in Johannesburg to experience our furniture collections, materials and finishes in person.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/showroom",
+      "h1": [
+        "The Lavish Haus Showroom"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 1,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED https://www.lavishhaus.co.za/quote?_rsc=ekcdilNtB_zRJRoT"
+      ],
+      "screenshot": "showroom--desktop.png"
+    },
+    {
+      "route": "/terms",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Terms of Service | Lavish Haus",
+      "description": "Terms of service for using the Lavish Haus website and requesting quotes.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/terms",
+      "h1": [
+        "Terms of Service"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "terms--mobile.png"
+    },
+    {
+      "route": "/terms",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Terms of Service | Lavish Haus",
+      "description": "Terms of service for using the Lavish Haus website and requesting quotes.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/terms",
+      "h1": [
+        "Terms of Service"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "terms--tablet.png"
+    },
+    {
+      "route": "/terms",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Terms of Service | Lavish Haus",
+      "description": "Terms of service for using the Lavish Haus website and requesting quotes.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/terms",
+      "h1": [
+        "Terms of Service"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "terms--desktop.png"
+    }
+  ],
+  "linkStatus": {
+    "/": 200,
+    "/craftsmanship": 200,
+    "/projects": 200,
+    "/showroom": 200,
+    "/about": 200,
+    "/contact": 200,
+    "/quote": 200,
+    "/collections": 200,
+    "/collections/living-room/aurelia-sofa-collection": 200,
+    "/collections/bedroom/linden-bed-frame": 200,
+    "/collections/dining/hollis-dining-table": 200,
+    "/collections/custom-furniture/bespoke-commissions": 200,
+    "/projects/houghton-family-residence": 200,
+    "/projects/sandton-executive-office": 200,
+    "/projects/camps-bay-outdoor-terrace": 200,
+    "/collections/living-room": 200,
+    "/collections/bedroom": 200,
+    "/collections/dining": 200,
+    "/collections/kitchen": 200,
+    "/collections/office": 200,
+    "/collections/outdoor": 200,
+    "/collections/custom-furniture": 200,
+    "/faqs": 200,
+    "/privacy": 200,
+    "/terms": 200,
+    "/collections/bedroom/porter-nightstand": 200,
+    "/collections/bedroom/palazzo-bedroom-suite": 200,
+    "/quote?collection=linden-bed-frame": 200,
+    "/quote?collection=palazzo-bedroom-suite": 200,
+    "/quote?collection=porter-nightstand": 200,
+    "/quote?collection=bespoke-commissions": 200,
+    "/collections/dining/reyes-dining-chair": 200,
+    "/quote?collection=hollis-dining-table": 200,
+    "/quote?collection=reyes-dining-chair": 200,
+    "/collections/kitchen/micwood-kitchen-island": 200,
+    "/quote?collection=micwood-kitchen-island": 200,
+    "/collections/living-room/marchetti-coffee-table": 200,
+    "/quote?collection=aurelia-sofa-collection": 200,
+    "/quote?collection=marchetti-coffee-table": 200,
+    "/collections/office/carrow-writing-desk": 200,
+    "/quote?collection=carrow-writing-desk": 200,
+    "/collections/outdoor/solano-outdoor-lounge": 200,
+    "/quote?collection=solano-outdoor-lounge": 200
+  },
+  "externalLinks": [
+    "https://wa.me/27783556579",
+    "https://www.instagram.com/lavishhaus",
+    "tel:+27783556579",
+    "mailto:info@lavishhaus.co.za",
+    "https://www.facebook.com/lavishhaus",
+    "https://qzenta.co.za",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20a%20piece.",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20the%20Linden%20Bed%20Frame%20Collection.",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20the%20Palazzo%20Bedroom%20Suite.",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20the%20Porter%20Nightstand%20Collection.",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20the%20Bespoke%20Commissions.",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20the%20Hollis%20Dining%20Table%20Collection.",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20the%20Reyes%20Dining%20Chair%20Collection.",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20the%20MicWood%20Kitchen%20Island%20Collection.",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20the%20Aurelia%20Sofa%20Collection.",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20the%20Marchetti%20Coffee%20Table%20Collection.",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20the%20Carrow%20Writing%20Desk%20Collection.",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20the%20Solano%20Outdoor%20Lounge%20Collection.",
+    "https://www.google.com/maps/search/?api=1&query=635%20Ontdekkers%20Road%2C%20Delarey%2C%20Randburg%2C%20South%20Africa"
+  ]
+}

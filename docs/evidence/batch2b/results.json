@@ -1,0 +1,155 @@
+{
+  "baseUrl": "http://localhost:3100",
+  "results": [
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Lavish Haus — Statement Furniture, Johannesburg",
+      "description": "Lavish Haus is a Johannesburg furniture showroom for statement beds, TV walls, dining sets and bespoke pieces made by MicWood Furnitures. Request a quote online or on WhatsApp.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za",
+      "h1": [
+        "Statement furniture, made for your home."
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "home--mobile.png"
+    },
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Lavish Haus — Statement Furniture, Johannesburg",
+      "description": "Lavish Haus is a Johannesburg furniture showroom for statement beds, TV walls, dining sets and bespoke pieces made by MicWood Furnitures. Request a quote online or on WhatsApp.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za",
+      "h1": [
+        "Statement furniture, made for your home."
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=5CB68i4pnAekjehf"
+      ],
+      "screenshot": "home--desktop.png"
+    },
+    {
+      "route": "/collections/bedroom/upholstered-beds",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Upholstered Beds | Lavish Haus",
+      "description": "Beds defined by their headboards — faceted, diamond-tufted, channelled and panelled — in a range of colours and coverings.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/upholstered-beds",
+      "h1": [
+        "Upholstered Beds"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom__upholstered-beds--mobile.png"
+    },
+    {
+      "route": "/collections/bedroom/upholstered-beds",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Upholstered Beds | Lavish Haus",
+      "description": "Beds defined by their headboards — faceted, diamond-tufted, channelled and panelled — in a range of colours and coverings.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/upholstered-beds",
+      "h1": [
+        "Upholstered Beds"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=GfHIolLaJAFK5V17",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=upholstered-beds&piece=navy-bed-channel-wall-panel&_rsc=GfHIolLaJAFK5V17",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=upholstered-beds&_rsc=GfHIolLaJAFK5V17",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=kTvjTNN25C4vTfDM",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=upholstered-beds&piece=navy-bed-channel-wall-panel&_rsc=kTvjTNN25C4vTfDM",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=upholstered-beds&_rsc=kTvjTNN25C4vTfDM"
+      ],
+      "screenshot": "collections__bedroom__upholstered-beds--desktop.png"
+    }
+  ],
+  "linkStatus": {
+    "/": 200,
+    "/craftsmanship": 200,
+    "/showroom": 200,
+    "/about": 200,
+    "/contact": 200,
+    "/quote": 200,
+    "/collections": 200,
+    "/collections/living-room": 200,
+    "/collections/bedroom": 200,
+    "/collections/dining": 200,
+    "/collections/kitchen": 200,
+    "/collections/office": 200,
+    "/collections/custom-furniture": 200,
+    "/collections/living-room/tv-wall-units": 200,
+    "/collections/bedroom/upholstered-beds": 200,
+    "/collections/dining/dining-sets": 200,
+    "/quote?collection=bespoke-commissions": 200,
+    "/collections/custom-furniture/bespoke-commissions": 200,
+    "/faqs": 200,
+    "/privacy": 200,
+    "/terms": 200,
+    "/quote?collection=upholstered-beds&piece=navy-bed-channel-wall-panel": 200,
+    "/quote?collection=upholstered-beds&piece=faceted-panel-headboard-bed": 200,
+    "/quote?collection=upholstered-beds&piece=grey-channel-bed-mirror-panels": 200,
+    "/quote?collection=upholstered-beds&piece=champagne-diamond-tufted-bed": 200,
+    "/quote?collection=upholstered-beds&piece=cognac-diamond-panel-bed": 200,
+    "/quote?collection=upholstered-beds&piece=green-chevron-headboard-bed": 200,
+    "/quote?collection=upholstered-beds&piece=honeycomb-headboard-timber-frame": 200,
+    "/quote?collection=upholstered-beds&piece=grey-diamond-tufted-bed": 200,
+    "/quote?collection=upholstered-beds&piece=grey-square-panel-bed": 200,
+    "/quote?collection=upholstered-beds": 200,
+    "/collections/bedroom/bedroom-suites": 200
+  },
+  "externalLinks": [
+    "https://wa.me/27783556579",
+    "tel:+27783556579",
+    "mailto:info@lavishhaus.co.za",
+    "https://qzenta.co.za",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20a%20piece.",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Navy%20Bed%20with%20Channel%20Wall%20Panel%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23navy-bed-channel-wall-panel).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Faceted%20Panel%20Headboard%20Bed%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23faceted-panel-headboard-bed).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Grey%20Channel%20Bed%20with%20Mirror%20Panels%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23grey-channel-bed-mirror-panels).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Champagne%20Diamond-Tufted%20Bed%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23champagne-diamond-tufted-bed).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Cognac%20Diamond-Panel%20Bed%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23cognac-diamond-panel-bed).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Green%20Chevron%20Headboard%20Bed%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23green-chevron-headboard-bed).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Honeycomb%20Headboard%20in%20Timber%20Frame%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23honeycomb-headboard-timber-frame).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Grey%20Diamond-Tufted%20Bed%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23grey-diamond-tufted-bed).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Grey%20Square-Panel%20Bed%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23grey-square-panel-bed).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20Upholstered%20Beds%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds)."
+  ]
+}

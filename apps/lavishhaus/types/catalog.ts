@@ -3,6 +3,7 @@ export interface CatalogImage {
   alt: string;
   width: number;
   height: number;
+  blurDataURL?: string;
 }
 
 export interface Material {
@@ -25,8 +26,8 @@ export interface Product {
   name: string;
   shortDescription: string;
   images: CatalogImage[];
-  dimensions: Dimension[];
-  leadTime?: string;
+  /** Only client-confirmed dimensions; omit rather than estimate. */
+  dimensions?: Dimension[];
 }
 
 export interface Category {
@@ -34,7 +35,10 @@ export interface Category {
   name: string;
   tagline: string;
   description: string;
-  heroImage: CatalogImage;
+  /** Omitted when no real photography exists yet. */
+  heroImage?: CatalogImage;
+  /** Reachable by URL but left out of navigation, listings and the sitemap. */
+  hidden?: boolean;
 }
 
 export interface Collection {
@@ -43,11 +47,11 @@ export interface Collection {
   name: string;
   tagline: string;
   description: string;
-  story: string;
   heroImage: CatalogImage;
   gallery: CatalogImage[];
-  materials: Material[];
-  finishes: Finish[];
+  /** Only client-confirmed materials and finishes; omit rather than estimate. */
+  materials?: Material[];
+  finishes?: Finish[];
   products: Product[];
   relatedCollectionSlugs: string[];
   featured?: boolean;

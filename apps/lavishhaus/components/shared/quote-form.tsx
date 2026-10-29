@@ -16,6 +16,10 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { EnquiryFallback } from "@/components/shared/enquiry-fallback";
+import { HoneypotField } from "@/components/shared/honeypot-field";
+import { siteConfig } from "@/config/site";
+import { HONEYPOT_FIELD } from "@/lib/enquiry";
 import {
   Select,
   SelectContent,
@@ -36,9 +40,19 @@ const budgetRanges = [
   "Not sure yet",
 ];
 
-export function QuoteForm({ defaultCollection }: { defaultCollection?: string }) {
+export function QuoteForm({
+  defaultCollection,
+  piece,
+}: {
+  defaultCollection?: string;
+  piece?: string;
+}) {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [showFallback, setShowFallback] = useState(false);
+  const [honeypot, setHoneypot] = useState("");
+  // Time the form was first shown, for the minimum-fill-time spam check.
+  const [startedAt] = useState(() => Date.now());
 
   const form = useForm<QuoteRequestValues>({
     resolver: zodResolver(quoteRequestSchema),
@@ -47,6 +61,7 @@ export function QuoteForm({ defaultCollection }: { defaultCollection?: string })
       email: "",
       phone: "",
       collection: defaultCollection ?? "",
+      piece: piece ?? "",
       spaceType: "",
       budgetRange: "",
       message: "",
@@ -57,7 +72,12 @@ export function QuoteForm({ defaultCollection }: { defaultCollection?: string })
   async function onSubmit(values: QuoteRequestValues) {
     setStatus("idle");
     setErrorMessage(null);
-    const result = await submitQuoteRequestAction(values);
+    setShowFallback(false);
+    const result = await submitQuoteRequestAction({
+      ...values,
+      [HONEYPOT_FIELD]: honeypot,
+      startedAt,
+    });
 
     if (result.success) {
       setStatus("success");
@@ -65,17 +85,23 @@ export function QuoteForm({ defaultCollection }: { defaultCollection?: string })
     } else {
       setStatus("error");
       setErrorMessage(result.error);
+      setShowFallback(result.fallback === true);
     }
   }
 
   if (status === "success") {
     return (
-      <div className="flex flex-col items-center gap-4 border border-border bg-card p-10 text-center">
-        <CheckCircle2 className="size-10 text-gold" aria-hidden="true" />
-        <h3 className="font-heading text-2xl text-charcoal">Request received</h3>
+      <div
+        ref={(el) => el?.focus()}
+        tabIndex={-1}
+        role="status"
+        className="flex flex-col items-center gap-4 border border-border bg-card p-10 text-center outline-none"
+      >
+        <CheckCircle2 className="size-10 text-walnut" aria-hidden="true" />
+        <h2 className="font-heading text-2xl text-charcoal">Request received</h2>
         <p className="max-w-sm text-sm text-muted-foreground">
-          Thank you — a member of the Lavish Haus team will be in touch within one
-          business day with your quote.
+          Thank you. Your request has been sent to the Lavish Haus team, who will
+          be in touch about your quote.
         </p>
         <Button variant="outline" className="rounded-none" onClick={() => setStatus("idle")}>
           Submit another request
@@ -86,7 +112,13 @@ export function QuoteForm({ defaultCollection }: { defaultCollection?: string })
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6" noValidate>
+      {piece ? (
+        <p className="mb-6 border-l-2 border-walnut pl-4 text-sm text-charcoal">
+          Enquiring about: <strong className="font-medium">{piece}</strong>
+        </p>
+      ) : null}
+      <form onSubmit={form.handleSubmit(onSubmit)} className="relative space-y-6" noValidate>
+        <HoneypotField value={honeypot} onChange={setHoneypot} />
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           <FormField
             control={form.control}
@@ -245,7 +277,13 @@ export function QuoteForm({ defaultCollection }: { defaultCollection?: string })
         />
 
         {status === "error" && errorMessage ? (
-          <p className="text-sm text-destructive">{errorMessage}</p>
+          showFallback ? (
+            <EnquiryFallback message={errorMessage} email={siteConfig.contact.salesEmail} />
+          ) : (
+            <p role="alert" className="text-sm text-destructive">
+              {errorMessage}
+            </p>
+          )
         ) : null}
 
         <Button

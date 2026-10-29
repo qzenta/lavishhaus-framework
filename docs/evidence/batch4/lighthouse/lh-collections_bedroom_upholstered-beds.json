@@ -1,0 +1,53 @@
+{
+  "url": "http://localhost:3100/collections/bedroom/upholstered-beds",
+  "fetchTime": "2026-10-29T14:44:51.833Z",
+  "lighthouseVersion": "12.8.2",
+  "throttling": "simulate",
+  "formFactor": "mobile",
+  "scores": {
+    "performance": 85,
+    "accessibility": 100,
+    "best-practices": 79,
+    "seo": 100
+  },
+  "audits": {
+    "first-contentful-paint": {
+      "displayValue": "1.1 s",
+      "numericValue": 1063.8045,
+      "score": 1
+    },
+    "largest-contentful-paint": {
+      "displayValue": "4.0 s",
+      "numericValue": 3988.406,
+      "score": 0.5
+    },
+    "total-blocking-time": {
+      "displayValue": "200 ms",
+      "numericValue": 198.5,
+      "score": 0.9
+    },
+    "cumulative-layout-shift": {
+      "displayValue": "0",
+      "numericValue": 0,
+      "score": 1
+    },
+    "speed-index": {
+      "displayValue": "1.7 s",
+      "numericValue": 1661.3620176407758,
+      "score": 1
+    },
+    "total-byte-weight": {
+      "displayValue": "Total size was 555 KiB",
+      "numericValue": 568038,
+      "score": 1
+    },
+    "largest-contentful-paint-element": {
+      "displayValue": "3,990 ms",
+      "score": 0
+    },
+    "third-party-cookies": {
+      "displayValue": "8 cookies found",
+      "score": 0
+    }
+  }
+}

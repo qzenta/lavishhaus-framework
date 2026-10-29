@@ -1,0 +1,66 @@
+{
+  "base": "http://localhost:3100",
+  "runs": 5,
+  "lighthouse": "12.8.2",
+  "formFactor": "mobile",
+  "throttling": "simulate",
+  "date": "2026-10-29T15:13:17.551Z",
+  "routes": {
+    "/": {
+      "perfRuns": [
+        84,
+        83,
+        84,
+        82,
+        86
+      ],
+      "performance": 84,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "first-contentful-paint": 1372.6840000000002,
+      "largest-contentful-paint": 4298.334,
+      "total-blocking-time": 147.49999999999955,
+      "cumulative-layout-shift": 0,
+      "speed-index": 1858.2369707794892,
+      "total-byte-weight": 579022,
+      "lcpPhasesRun1": [
+        "TTFB=471ms",
+        "Load Delay=0ms",
+        "Load Time=3050ms",
+        "Render Delay=777ms"
+      ],
+      "renderBlocking": [
+        "/_next/static/chunks/0kt3i09wy9umi.css"
+      ]
+    },
+    "/collections/bedroom/upholstered-beds": {
+      "perfRuns": [
+        87,
+        88,
+        85,
+        88,
+        88
+      ],
+      "performance": 88,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "first-contentful-paint": 1366.1680000000001,
+      "largest-contentful-paint": 3870.9400000000005,
+      "total-blocking-time": 64,
+      "cumulative-layout-shift": 0,
+      "speed-index": 1407.8386224470962,
+      "total-byte-weight": 518281,
+      "lcpPhasesRun1": [
+        "TTFB=454ms",
+        "Load Delay=0ms",
+        "Load Time=0ms",
+        "Render Delay=3475ms"
+      ],
+      "renderBlocking": [
+        "/_next/static/chunks/0kt3i09wy9umi.css"
+      ]
+    }
+  }
+}

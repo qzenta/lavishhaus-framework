@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
 
-import { categories } from "@/content/categories";
+import { visibleCategories } from "@/content/categories";
 import { collections } from "@/content/collections";
-import { projects } from "@/content/projects";
 import { siteConfig } from "@/config/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -10,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/about",
     "/collections",
-    "/projects",
+    "/craftsmanship",
     "/showroom",
     "/faqs",
     "/quote",
@@ -24,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === "" ? 1 : 0.7,
   }));
 
-  const categoryRoutes = categories.map((category) => ({
+  const categoryRoutes = visibleCategories.map((category) => ({
     url: `${siteConfig.url}/collections/${category.slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
@@ -38,12 +37,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  const projectRoutes = projects.map((project) => ({
-    url: `${siteConfig.url}/projects/${project.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.5,
-  }));
-
-  return [...staticRoutes, ...categoryRoutes, ...collectionRoutes, ...projectRoutes];
+  return [...staticRoutes, ...categoryRoutes, ...collectionRoutes];
 }

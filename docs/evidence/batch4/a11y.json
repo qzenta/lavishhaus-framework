@@ -1,0 +1,173 @@
+{
+  "axe": {
+    "/ [mobile]": [],
+    "/collections [mobile]": [],
+    "/collections/bedroom [mobile]": [],
+    "/collections/bedroom/upholstered-beds [mobile]": [],
+    "/collections/living-room/tv-wall-units [mobile]": [],
+    "/collections/custom-furniture/bespoke-commissions [mobile]": [],
+    "/collections/outdoor [mobile]": [],
+    "/craftsmanship [mobile]": [],
+    "/showroom [mobile]": [],
+    "/about [mobile]": [],
+    "/contact [mobile]": [],
+    "/quote [mobile]": [],
+    "/faqs [mobile]": [],
+    "/privacy [mobile]": [],
+    "/terms [mobile]": [],
+    "/does-not-exist [mobile]": [],
+    "/ [desktop]": [],
+    "/collections [desktop]": [],
+    "/collections/bedroom [desktop]": [],
+    "/collections/bedroom/upholstered-beds [desktop]": [],
+    "/collections/living-room/tv-wall-units [desktop]": [],
+    "/collections/custom-furniture/bespoke-commissions [desktop]": [],
+    "/collections/outdoor [desktop]": [],
+    "/craftsmanship [desktop]": [],
+    "/showroom [desktop]": [],
+    "/about [desktop]": [],
+    "/contact [desktop]": [],
+    "/quote [desktop]": [],
+    "/faqs [desktop]": [],
+    "/privacy [desktop]": [],
+    "/terms [desktop]": [],
+    "/does-not-exist [desktop]": []
+  },
+  "keyboard": {
+    "firstTab": "Skip to content",
+    "afterSkipFocus": "main",
+    "stops": [
+      {
+        "tag": "A",
+        "text": "Browse Collections",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Request a Quote",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "All collections",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Living RoomTV walls, consoles, coffee ta",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "BedroomStatement headboards, beds and be",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Dining RoomDining tables, upholstered ch",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "KitchenIslands and cabinetry for the hea",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "OfficeDesks and storage for focused work",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Custom FurnitureBespoke pieces designed ",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Living RoomTV Wall UnitsFeature walls th",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "BedroomUpholstered BedsStatement headboa",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Dining RoomDining Tables & ChairsTables,",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Start a Custom Enquiry",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "See custom work",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Request a Quote",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Contact Us",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Living Room",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Bedroom",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Dining Room",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Kitchen",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Office",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Custom Furniture",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Our Story",
+        "visible": true
+      },
+      {
+        "tag": "A",
+        "text": "Craftsmanship",
+        "visible": true
+      }
+    ],
+    "invisibleFocus": []
+  },
+  "reducedMotion": {
+    "maxAnimationMs": 0.01,
+    "maxTransitionMs": 0.01,
+    "scrollBehavior": "auto"
+  }
+}

@@ -29,7 +29,7 @@ export default function FaqsPage() {
       />
       <Breadcrumbs items={[{ name: "FAQs", href: "/faqs" }]} />
       <div className="mt-6">
-        <SectionHeading eyebrow="Support" title="Frequently Asked Questions" />
+        <SectionHeading level="h1" eyebrow="Support" title="Frequently Asked Questions" />
       </div>
 
       <div className="mt-12 space-y-12">

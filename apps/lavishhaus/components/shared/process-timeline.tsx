@@ -5,7 +5,7 @@ export function ProcessTimeline({ steps }: { steps: ProcessStep[] }) {
     <ol className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
       {steps.map((step) => (
         <li key={step.step} className="flex flex-col gap-3">
-          <span className="font-heading text-3xl text-gold">
+          <span className="font-heading text-3xl text-walnut">
             {String(step.step).padStart(2, "0")}
           </span>
           <h3 className="font-heading text-lg text-charcoal">{step.title}</h3>

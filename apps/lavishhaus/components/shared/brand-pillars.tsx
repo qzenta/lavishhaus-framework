@@ -1,53 +1,52 @@
-import { Hammer, MapPin, Gem, PenTool } from "lucide-react";
+import { Factory, MessageCircle, PenTool, Sofa } from "lucide-react";
 
+// Each pillar states only what's on file (docs/lavishhaus-facts.md).
 const pillars = [
   {
-    icon: Hammer,
-    title: "Crafted for Timeless Living",
-    description: "Every piece built to outlast trends.",
+    icon: Factory,
+    title: "Made by MicWood Furnitures",
+    description: "Lavish Haus pieces are made by our manufacturing partner.",
   },
   {
-    icon: MapPin,
-    title: "Handmade in Johannesburg",
-    description: "Manufactured by MicWood Furnitures.",
-  },
-  {
-    icon: Gem,
-    title: "Premium Materials",
-    description: "Solid timber, full-grain leather, brass hardware.",
+    icon: Sofa,
+    title: "Beds, Walls & Dining",
+    description: "Statement headboards, TV walls and dining sets.",
   },
   {
     icon: PenTool,
     title: "Custom Orders Welcome",
-    description: "Bespoke dimensions, finishes and designs.",
+    description: "Sizes, finishes and one-off designs.",
+  },
+  {
+    icon: MessageCircle,
+    title: "Quote on WhatsApp",
+    description: "Send a photo or an idea and we'll respond.",
   },
 ];
 
 export function BrandPillars() {
   return (
-    <section className="border-y border-border/60 bg-charcoal">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-4">
+    <section className="border-y border-border/60 bg-charcoal" aria-label="Why Lavish Haus">
+      <ul className="mx-auto grid max-w-7xl grid-cols-2 gap-0 lg:grid-cols-4">
         {pillars.map((pillar) => (
-          <div
+          <li
             key={pillar.title}
-            className="flex items-center gap-4 border-b border-ivory/10 px-6 py-6 sm:border-b-0 sm:border-r sm:last:border-r-0 lg:px-8 lg:py-8"
+            className="flex items-center gap-3 border-ivory/10 px-4 py-5 odd:border-r [&:nth-child(-n+2)]:border-b sm:gap-4 sm:px-6 sm:py-6 lg:border-r lg:px-8 lg:py-8 lg:[&:nth-child(-n+2)]:border-b-0 lg:last:border-r-0"
           >
             <pillar.icon
-              className="size-8 shrink-0 text-gold"
+              className="size-6 shrink-0 text-gold sm:size-7"
               strokeWidth={1.5}
               aria-hidden="true"
             />
             <div>
-              <p className="font-heading text-sm font-semibold tracking-wide text-ivory">
+              <p className="font-heading text-[0.95rem] tracking-wide text-ivory">
                 {pillar.title}
               </p>
-              <p className="mt-0.5 text-xs text-ivory/60">
-                {pillar.description}
-              </p>
+              <p className="mt-0.5 hidden text-xs text-ivory/70 sm:block">{pillar.description}</p>
             </div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "first visit shows banner",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "no Clarity request before a choice",
+    "ok": true,
+    "detail": "0 requests"
+  },
+  {
+    "name": "banner buttons reachable by keyboard",
+    "ok": true,
+    "detail": "Decline"
+  },
+  {
+    "name": "Decline (Enter key) hides banner",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "Decline remembered after reload",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "no Clarity after Decline",
+    "ok": true,
+    "detail": "0 requests"
+  },
+  {
+    "name": "stored value is 'denied'",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "Cookie settings reopens banner",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "no page errors (decline session)",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "Accept (Space key) loads Clarity",
+    "ok": true,
+    "detail": "1 requests"
+  },
+  {
+    "name": "banner gone after Accept",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "Accept remembered on next page load (Clarity loads again)",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "withdrawing consent reloads without Clarity and shows banner",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "no page errors (accept session)",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "storage blocked: banner still shown",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "storage blocked: no Clarity before choice",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "storage blocked: Decline still hides banner for this page",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "storage blocked: no page errors",
+    "ok": true,
+    "detail": ""
+  }
+]

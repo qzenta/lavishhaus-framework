@@ -54,7 +54,7 @@ export default function TermsPage() {
           <h2 className="font-heading text-xl text-charcoal">Contact Us</h2>
           <p className="mt-3 text-muted-foreground">
             Questions about these terms can be directed to{" "}
-            <a href={`mailto:${siteConfig.contact.email}`} className="text-gold hover:underline">
+            <a href={`mailto:${siteConfig.contact.email}`} className="text-walnut underline underline-offset-4 hover:text-charcoal">
               {siteConfig.contact.email}
             </a>
             .

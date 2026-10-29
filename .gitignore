@@ -12,3 +12,7 @@ Thumbs.db
 # each app/package has its own .gitignore for node_modules, .next, .env, etc.
 
 .vercel
+
+# Full-size screenshot PNGs stay local; compressed JPEGs are committed.
+docs/evidence/**/*.png
+docs/evidence/server.log

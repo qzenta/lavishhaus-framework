@@ -1,0 +1,46 @@
+{
+  "url": "http://localhost:3100/",
+  "fetchTime": "2026-10-29T14:47:40.541Z",
+  "lighthouseVersion": "12.8.2",
+  "throttling": "devtools",
+  "formFactor": "mobile",
+  "scores": {
+    "performance": 73
+  },
+  "audits": {
+    "first-contentful-paint": {
+      "displayValue": "3.3 s",
+      "numericValue": 3258.479,
+      "score": 0.41
+    },
+    "largest-contentful-paint": {
+      "displayValue": "3.6 s",
+      "numericValue": 3574.995,
+      "score": 0.62
+    },
+    "total-blocking-time": {
+      "displayValue": "420 ms",
+      "numericValue": 417.0450000000001,
+      "score": 0.66
+    },
+    "cumulative-layout-shift": {
+      "displayValue": "0",
+      "numericValue": 0,
+      "score": 1
+    },
+    "speed-index": {
+      "displayValue": "3.4 s",
+      "numericValue": 3401,
+      "score": 0.89
+    },
+    "total-byte-weight": {
+      "displayValue": "Total size was 606 KiB",
+      "numericValue": 620706,
+      "score": 1
+    },
+    "largest-contentful-paint-element": {
+      "displayValue": "3,570 ms",
+      "score": 0
+    }
+  }
+}

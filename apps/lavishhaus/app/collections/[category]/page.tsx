@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { Button } from "@/components/ui/button";
 import { Hero } from "@/components/shared/hero";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs";
 import { CollectionGrid } from "@/components/shared/collection-grid";
@@ -27,10 +29,12 @@ export async function generateMetadata({
     title: category.name,
     description: category.description,
     alternates: { canonical: `/collections/${category.slug}` },
+    // Hidden categories have no photography yet; keep them out of search.
+    robots: category.hidden ? { index: false, follow: true } : undefined,
     openGraph: {
       title: `${category.name} | ${siteConfig.name}`,
       description: category.description,
-      images: [category.heroImage.src],
+      images: category.heroImage ? [category.heroImage.src] : undefined,
     },
   };
 }
@@ -64,13 +68,27 @@ export default async function CategoryPage({
           ]}
         />
         <div className="mt-10">
-          <CollectionGrid collections={collectionsInCategory} />
+          {collectionsInCategory.length > 0 ? (
+            <CollectionGrid collections={collectionsInCategory} />
+          ) : (
+            <div className="max-w-xl border border-border bg-card p-8">
+              <p className="leading-relaxed text-muted-foreground">{category.description}</p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <Button asChild className="rounded-none bg-charcoal px-6 py-5 text-ivory hover:bg-warm-black">
+                  <Link href="/quote">Request a Quote</Link>
+                </Button>
+                <Button asChild variant="outline" className="rounded-none px-6 py-5">
+                  <Link href="/collections">Browse all collections</Link>
+                </Button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
       <CtaSection
-        title={`Considering a piece from ${category.name}?`}
-        description="Request a detailed, no-obligation quote and our team will respond within one business day."
+        title={`Considering a piece for your ${category.name.toLowerCase()}?`}
+        description="Tell us what you have in mind and we'll be in touch to discuss sizes, finishes and a no-obligation quote."
         primaryCta={{ label: "Request a Quote", href: "/quote" }}
       />
     </div>

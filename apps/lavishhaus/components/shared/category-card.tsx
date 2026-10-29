@@ -10,13 +10,17 @@ export function CategoryCard({ category }: { category: Category }) {
       href={`/collections/${category.slug}`}
       className="group relative flex aspect-4/5 overflow-hidden bg-charcoal"
     >
-      <Image
-        src={category.heroImage.src}
-        alt={category.heroImage.alt}
-        fill
-        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-        className="object-cover opacity-80 transition-transform duration-700 ease-out group-hover:scale-105"
-      />
+      {category.heroImage ? (
+        <Image
+          src={category.heroImage.src}
+          alt={category.heroImage.alt}
+          fill
+          placeholder={category.heroImage.blurDataURL ? "blur" : "empty"}
+          blurDataURL={category.heroImage.blurDataURL}
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+          className="object-cover opacity-85 transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+        />
+      ) : null}
       <div className="absolute inset-0 bg-gradient-to-t from-warm-black/90 via-warm-black/20 to-transparent" />
       <div className="relative mt-auto flex w-full items-end justify-between gap-3 p-6">
         <div>

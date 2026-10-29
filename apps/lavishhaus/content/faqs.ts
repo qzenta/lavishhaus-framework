@@ -1,52 +1,54 @@
 import type { FaqItem } from "@/types/catalog";
 
+// Answers avoid unconfirmed timelines, response times, delivery areas and
+// care promises (docs/lavishhaus-facts.md). Update when the client confirms.
 export const faqs: FaqItem[] = [
   {
     category: "General",
     question: "Who manufactures Lavish Haus furniture?",
     answer:
-      "Every Lavish Haus piece is hand-built by MicWood Furnitures, our manufacturing partner. Lavish Haus is the showroom and customer-facing brand; MicWood is the workshop behind every piece.",
+      "Lavish Haus pieces are made by MicWood Furnitures, our manufacturing partner. Lavish Haus is the showroom and customer-facing brand.",
   },
   {
     category: "General",
     question: "Where is the Lavish Haus showroom?",
     answer:
-      "Our first showroom is opening in Johannesburg. Visit the Showroom page for the address, hours and how to book a private viewing.",
+      "The showroom is at 635 Ontdekkers Road, Delarey, Randburg. Please contact us by phone or WhatsApp to arrange a visit.",
   },
   {
     category: "Quotes & Pricing",
     question: "Why don't you list prices online?",
     answer:
-      "Because most Lavish Haus pieces are made to order with a choice of timber, finish and fabric, pricing depends on your exact specification. Request a quote and we'll respond with a detailed price within one business day.",
+      "Many pieces can be made in different sizes, coverings and finishes, so the price depends on your specification. Request a quote with the details you have and we'll be in touch.",
   },
   {
     category: "Quotes & Pricing",
     question: "Can I buy online?",
     answer:
-      "Not yet. Lavish Haus currently operates as a quotation-based showroom while we prepare full online ordering. Every collection page has a Request a Quote button that starts the process.",
+      "Not at the moment. Lavish Haus works on a quotation basis: every collection page has a Request a Quote button, or you can send us a message on WhatsApp.",
   },
   {
     category: "Custom Furniture",
-    question: "Can you build a piece that isn't in your collections?",
+    question: "Can you make a piece that isn't in your collections?",
     answer:
-      "Yes — bespoke commissions are a core part of what the MicWood workshop does. Start with the Custom Furniture page or a quote request describing what you have in mind.",
+      "Yes. Start a custom enquiry describing what you have in mind. Photos, sketches and measurements all help.",
   },
   {
     category: "Custom Furniture",
-    question: "How long does a custom commission take?",
+    question: "How long does a custom piece take?",
     answer:
-      "Most custom pieces take 10–16 weeks from approved design to delivery, depending on complexity and material availability.",
+      "It depends on the piece and its finish. We'll confirm the timeline in your quote.",
   },
   {
     category: "Delivery & Care",
-    question: "Do you deliver outside Johannesburg?",
+    question: "Do you deliver?",
     answer:
-      "Yes, we deliver across South Africa. Delivery timelines and costs depend on location and are confirmed with your quote.",
+      "Delivery is arranged with you, and the details and any costs are confirmed in your quote.",
   },
   {
     category: "Delivery & Care",
-    question: "How do I care for solid timber furniture?",
+    question: "How should I care for my furniture?",
     answer:
-      "Every piece ships with finish-specific care instructions. As a general rule, keep timber out of direct sun, use coasters for hot or wet items, and re-oil open-grain finishes annually.",
+      "Care depends on the covering and finish. Ask us about your specific piece and we'll advise.",
   },
 ];

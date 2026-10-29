@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Gitignored raw photography staging (local helper scripts live there).
+    "photography-inbox/**",
   ]),
 ]);
 

@@ -5,11 +5,16 @@ import { siteConfig } from "@/config/site";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { WhatsappFab } from "@/components/shared/whatsapp-fab";
+import { ConsentBanner, ConsentedAnalytics } from "@/components/shared/consent";
 import { organizationJsonLd, localBusinessJsonLd } from "@/lib/structured-data";
 
+// Headings use a single weight, so ship one static Playfair file. Inter stays
+// variable (smaller than three static weights) and isn't preloaded, so it
+// doesn't compete with the hero image; the metric-matched fallback avoids CLS.
 const playfairDisplay = Playfair_Display({
   variable: "--font-heading",
   subsets: ["latin"],
+  weight: "400",
   display: "swap",
 });
 
@@ -17,6 +22,7 @@ const inter = Inter({
   variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -75,15 +81,20 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             __html: JSON.stringify([organizationJsonLd(), localBusinessJsonLd()]),
           }}
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","xybxgfgo4s");`,
-          }}
-        />
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-charcoal focus:px-4 focus:py-2 focus:text-sm focus:text-ivory"
+        >
+          Skip to content
+        </a>
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main id="main" tabIndex={-1} className="flex-1 outline-none">
+          {children}
+        </main>
         <Footer />
         <WhatsappFab />
+        <ConsentBanner />
+        <ConsentedAnalytics />
       </body>
     </html>
   );
