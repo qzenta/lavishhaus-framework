@@ -19,7 +19,7 @@ There was **no MX record**, so mail to `info@lavishhaus.co.za` and `sales@lavish
 
 | Date | Change | Details | Records | Status |
 |---|---|---|---|---|
-| 29 Oct 2026 | Cloudflare Email Routing | Custom addresses `info@lavishhaus.co.za` and `sales@lavishhaus.co.za` to forward to a Qzenta-held mailbox as an **interim** destination, until the client names the mailbox that should receive enquiries (see Open client decisions; address not recorded here) | MX, SPF and DKIM records published by Cloudflare; values below | Routes info@ and sales@ Active in Cloudflare dashboard 29 Oct 2026; delivery test pending |
+| 29 Oct 2026 | Cloudflare Email Routing | Custom addresses `info@lavishhaus.co.za` and `sales@lavishhaus.co.za` to forward to a Qzenta-held mailbox as an **interim** destination, until the client names the mailbox that should receive enquiries (see Open client decisions; address not recorded here) | MX, SPF and DKIM records published by Cloudflare; values below | Routes info@ and sales@ Active in Cloudflare dashboard 29 Oct 2026; delivery test Passed 29 Oct 2026, info@ forwards to the interim mailbox |
 
 ### Open client decisions
 
@@ -49,4 +49,4 @@ Records that let Brevo send the form notifications as `lavishhaus.co.za` (DKIM, 
 | Cloudflare DNS | CNAME | `brevo1._domainkey` | `b1.lavishhaus-co-za.dkim.brevo.com` | DNS only | 29 Oct 2026 | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
 | Cloudflare DNS | CNAME | `brevo2._domainkey` | `b2.lavishhaus-co-za.dkim.brevo.com` | DNS only | 29 Oct 2026 | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
 | Cloudflare DNS | TXT | `_dmarc` | `v=DMARC1; p=none; rua=mailto:rua@dmarc.brevo.com` | — | 29 Oct 2026 | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
-| Brevo | Domain | `lavishhaus.co.za` | Domain added in Brevo | — | 29 Oct 2026 | Pending authentication | Evidence: Brevo DNS records screen, 29 Oct 2026; authentication pending |
+| Brevo | Domain | `lavishhaus.co.za` | Domain added in Brevo | — | 29 Oct 2026 | Authenticated | Brevo log 29 Oct 2026 19:47: contact enquiry from no-reply@lavishhaus.co.za to info@lavishhaus.co.za Sent and Delivered; earlier 18:23 attempt was Error (sender not valid) before authentication |
