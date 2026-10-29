@@ -7,18 +7,21 @@ export function organizationJsonLd() {
     "@type": "Organization",
     name: siteConfig.name,
     url: siteConfig.url,
-    logo: `${siteConfig.url}/logo.png`,
+    logo: `${siteConfig.url}/images/logo.png`,
     description: siteConfig.description,
-    sameAs: Object.values(siteConfig.social),
+    // Only confirmed accounts (see config/site.ts).
+    sameAs: Object.values(siteConfig.social).filter(Boolean),
   };
 }
+
+export const absoluteUrl = (path: string) => (path.startsWith("http") ? path : `${siteConfig.url}${path}`);
 
 export function localBusinessJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "FurnitureStore",
     name: siteConfig.showroom.name,
-    image: `${siteConfig.url}${siteConfig.ogImage}`,
+    image: absoluteUrl(siteConfig.ogImage),
     url: siteConfig.url,
     telephone: siteConfig.contact.phone,
     email: siteConfig.contact.email,
@@ -61,32 +64,38 @@ export function faqJsonLd(items: FaqItem[]) {
   };
 }
 
-export function productJsonLd(params: {
+/**
+ * Collection pages are quote-only (no prices), so they're described as a
+ * CollectionPage listing its pieces rather than as Products with Offers,
+ * which would need a price to be valid.
+ */
+export function collectionPageJsonLd(params: {
   name: string;
   description: string;
-  image: string;
   url: string;
+  image: string;
+  items: { name: string; description: string; image: string }[];
 }) {
   return {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "CollectionPage",
     name: params.name,
     description: params.description,
-    image: params.image,
     url: params.url,
-    brand: {
-      "@type": "Brand",
-      name: siteConfig.name,
-    },
-    manufacturer: {
-      "@type": "Organization",
-      name: siteConfig.manufacturer,
-    },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "ZAR",
-      availability: "https://schema.org/MadeToOrder",
-      url: params.url,
+    image: absoluteUrl(params.image),
+    isPartOf: { "@type": "WebSite", name: siteConfig.name, url: siteConfig.url },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: params.items.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "CreativeWork",
+          name: item.name,
+          description: item.description,
+          image: absoluteUrl(item.image),
+        },
+      })),
     },
   };
 }

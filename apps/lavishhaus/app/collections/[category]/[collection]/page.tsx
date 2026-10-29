@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 
 import { Hero } from "@/components/shared/hero";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs";
@@ -17,7 +16,7 @@ import {
   getRelatedCollections,
 } from "@/content/collections";
 import { siteConfig } from "@/config/site";
-import { productJsonLd } from "@/lib/structured-data";
+import { collectionPageJsonLd } from "@/lib/structured-data";
 
 export function generateStaticParams() {
   return collections.map((collection) => ({
@@ -48,6 +47,9 @@ export async function generateMetadata({
   };
 }
 
+const whatsappHref = (text: string) =>
+  `https://wa.me/${siteConfig.contact.whatsapp}?text=${encodeURIComponent(text)}`;
+
 export default async function CollectionDetailPage({
   params,
 }: {
@@ -62,7 +64,9 @@ export default async function CollectionDetailPage({
   }
 
   const relatedCollections = getRelatedCollections(collection);
-  const url = `${siteConfig.url}/collections/${collection.categorySlug}/${collection.slug}`;
+  const path = `/collections/${collection.categorySlug}/${collection.slug}`;
+  const url = `${siteConfig.url}${path}`;
+  const quoteHref = `/quote?collection=${collection.slug}`;
 
   return (
     <div>
@@ -70,11 +74,16 @@ export default async function CollectionDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
-            productJsonLd({
+            collectionPageJsonLd({
               name: collection.name,
               description: collection.description,
-              image: collection.heroImage.src,
               url,
+              image: collection.heroImage.src,
+              items: collection.products.map((p) => ({
+                name: p.name,
+                description: p.shortDescription,
+                image: p.images[0].src,
+              })),
             })
           ),
         }}
@@ -88,134 +97,163 @@ export default async function CollectionDetailPage({
         image={collection.heroImage}
       />
 
-      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-16">
         <Breadcrumbs
           items={[
             { name: "Collections", href: "/collections" },
             { name: category.name, href: `/collections/${category.slug}` },
-            { name: collection.name, href: url },
+            { name: collection.name, href: path },
           ]}
         />
 
-        <div className="mt-10 grid grid-cols-1 gap-16 lg:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-16">
           <div className="lg:col-span-2">
-            <h2 className="font-heading text-2xl text-charcoal">The Collection</h2>
-            <p className="mt-4 leading-relaxed text-muted-foreground">
+            <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
               {collection.description}
             </p>
-            <p className="mt-4 leading-relaxed text-muted-foreground">{collection.story}</p>
 
-            <h2 className="mt-14 font-heading text-2xl text-charcoal">Gallery</h2>
-            <div className="mt-6">
-              <GalleryLightbox images={collection.gallery} />
-            </div>
-
-            {collection.products.length > 0 && (
+            {collection.products.length > 0 ? (
               <>
-                <h2 className="mt-14 font-heading text-2xl text-charcoal">Pieces in This Collection</h2>
-                <div className="mt-6 space-y-8">
+                <h2 className="mt-14 font-heading text-2xl text-charcoal">
+                  Pieces in this collection
+                </h2>
+                <ul className="mt-8 space-y-14">
                   {collection.products.map((product) => (
-                    <div
+                    <li
                       key={product.slug}
-                      className="grid grid-cols-1 gap-6 border-t border-border pt-8 sm:grid-cols-3"
+                      id={product.slug}
+                      className="grid scroll-mt-28 grid-cols-1 gap-6 border-t border-border pt-10 sm:grid-cols-2 sm:gap-10"
                     >
-                      <div className="relative aspect-4/3 overflow-hidden bg-sand">
-                        <Image
-                          src={product.images[0].src}
-                          alt={product.images[0].alt}
-                          fill
-                          sizes="(min-width: 640px) 33vw, 100vw"
-                          className="object-cover"
-                        />
-                      </div>
-                      <div className="sm:col-span-2">
-                        <h3 className="font-heading text-lg text-charcoal">{product.name}</h3>
-                        <p className="mt-1 text-sm text-muted-foreground">
+                      <GalleryLightbox
+                        images={product.images}
+                        layout="feature"
+                        sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
+                      />
+                      <div className="sm:pt-2">
+                        <h3 className="font-heading text-2xl text-charcoal">{product.name}</h3>
+                        <p className="mt-3 leading-relaxed text-muted-foreground">
                           {product.shortDescription}
                         </p>
-                        <dl className="mt-4 grid grid-cols-3 gap-3 text-sm">
-                          {product.dimensions.map((dimension) => (
-                            <div key={dimension.label}>
-                              <dt className="text-xs tracking-wide text-muted-foreground uppercase">
-                                {dimension.label}
-                              </dt>
-                              <dd className="text-charcoal">{dimension.value}</dd>
-                            </div>
-                          ))}
-                        </dl>
-                        {product.leadTime ? (
-                          <p className="mt-3 text-xs text-muted-foreground">{product.leadTime}</p>
+                        {product.dimensions?.length ? (
+                          <dl className="mt-5 grid grid-cols-3 gap-3 text-sm">
+                            {product.dimensions.map((dimension) => (
+                              <div key={dimension.label}>
+                                <dt className="text-xs tracking-wide text-muted-foreground uppercase">
+                                  {dimension.label}
+                                </dt>
+                                <dd className="text-charcoal">{dimension.value}</dd>
+                              </div>
+                            ))}
+                          </dl>
                         ) : null}
+                        <div className="mt-6 flex flex-wrap gap-3">
+                          <Button
+                            asChild
+                            className="rounded-none bg-charcoal px-5 py-5 text-ivory hover:bg-warm-black"
+                          >
+                            <Link href={`${quoteHref}&piece=${product.slug}`}>Request a Quote</Link>
+                          </Button>
+                          <Button asChild variant="outline" className="rounded-none px-5 py-5">
+                            <a
+                              href={whatsappHref(
+                                `Hi Lavish Haus, I'd like to ask about the ${product.name} (${url}#${product.slug}).`
+                              )}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <MessageCircle className="size-4" aria-hidden="true" />
+                              Ask on WhatsApp
+                              <span className="sr-only"> (opens in a new tab)</span>
+                            </a>
+                          </Button>
+                        </div>
                       </div>
-                    </div>
+                    </li>
                   ))}
+                </ul>
+              </>
+            ) : (
+              <>
+                <h2 className="mt-14 font-heading text-2xl text-charcoal">Gallery</h2>
+                <div className="mt-6">
+                  <GalleryLightbox images={collection.gallery} />
                 </div>
               </>
             )}
           </div>
 
-          <aside className="space-y-10 lg:sticky lg:top-24 lg:self-start">
+          <aside className="lg:sticky lg:top-28 lg:self-start">
             <div className="border border-border bg-card p-6">
-              <h3 className="font-heading text-lg text-charcoal">Enquire About This Collection</h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Pricing depends on your specification. Request a quote and we&apos;ll respond
-                within one business day.
+              <h2 className="font-heading text-lg text-charcoal">Enquire about this collection</h2>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Pricing depends on size, covering and finish. Send us a quote request and
+                we&apos;ll be in touch to talk it through.
               </p>
               <div className="mt-5 flex flex-col gap-3">
                 <Button
                   asChild
                   className="w-full rounded-none bg-charcoal py-5 text-ivory hover:bg-warm-black"
                 >
-                  <Link href={`/quote?collection=${collection.slug}`}>Request a Quote</Link>
+                  <Link href={quoteHref}>Request a Quote</Link>
                 </Button>
                 <Button asChild variant="outline" className="w-full rounded-none py-5">
                   <a
-                    href={`https://wa.me/${siteConfig.contact.whatsapp}?text=${encodeURIComponent(
-                      `Hi Lavish Haus, I'd like to enquire about the ${collection.name}.`
-                    )}`}
+                    href={whatsappHref(`Hi Lavish Haus, I'd like to enquire about ${collection.name} (${url}).`)}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <MessageCircle className="size-4" />
+                    <MessageCircle className="size-4" aria-hidden="true" />
                     Enquire on WhatsApp
+                    <span className="sr-only"> (opens in a new tab)</span>
                   </a>
                 </Button>
+                <a
+                  href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`}
+                  className="inline-flex items-center justify-center gap-2 py-2 text-sm text-charcoal underline-offset-4 hover:underline"
+                >
+                  <Phone className="size-4" aria-hidden="true" />
+                  {siteConfig.contact.phone}
+                </a>
               </div>
             </div>
 
-            <div>
-              <h3 className="font-heading text-lg text-charcoal">Materials</h3>
-              <ul className="mt-3 space-y-3">
-                {collection.materials.map((material) => (
-                  <li key={material.name}>
-                    <p className="text-sm font-medium text-charcoal">{material.name}</p>
-                    <p className="text-sm text-muted-foreground">{material.description}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {collection.materials?.length ? (
+              <div className="mt-10">
+                <h2 className="font-heading text-lg text-charcoal">Materials</h2>
+                <ul className="mt-3 space-y-3">
+                  {collection.materials.map((material) => (
+                    <li key={material.name}>
+                      <p className="text-sm font-medium text-charcoal">{material.name}</p>
+                      <p className="text-sm text-muted-foreground">{material.description}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
 
-            <div>
-              <h3 className="font-heading text-lg text-charcoal">Finishes</h3>
-              <ul className="mt-3 flex flex-wrap gap-3">
-                {collection.finishes.map((finish) => (
-                  <li key={finish.name} className="flex items-center gap-2">
-                    <span
-                      className="size-5 rounded-full border border-border"
-                      style={{ backgroundColor: finish.swatch }}
-                      aria-hidden="true"
-                    />
-                    <span className="text-sm text-muted-foreground">{finish.name}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {collection.finishes?.length ? (
+              <div className="mt-10">
+                <h2 className="font-heading text-lg text-charcoal">Finishes</h2>
+                <ul className="mt-3 flex flex-wrap gap-3">
+                  {collection.finishes.map((finish) => (
+                    <li key={finish.name} className="flex items-center gap-2">
+                      <span
+                        className="size-5 rounded-full border border-border"
+                        style={{ backgroundColor: finish.swatch }}
+                        aria-hidden="true"
+                      />
+                      <span className="text-sm text-muted-foreground">{finish.name}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
           </aside>
         </div>
 
         {relatedCollections.length > 0 && (
           <div className="mt-24">
-            <h2 className="font-heading text-2xl text-charcoal">Related Collections</h2>
+            <h2 className="font-heading text-2xl text-charcoal">You may also like</h2>
             <div className="mt-8">
               <CollectionGrid collections={relatedCollections} />
             </div>
@@ -225,9 +263,9 @@ export default async function CollectionDetailPage({
 
       <CtaSection
         title="Have a question before you enquire?"
-        description="Visit the Johannesburg showroom to see finishes and materials in person."
-        primaryCta={{ label: "Visit the Showroom", href: "/showroom" }}
-        secondaryCta={{ label: "View FAQs", href: "/faqs" }}
+        description="Read our FAQs, or get in touch by phone, email or WhatsApp."
+        primaryCta={{ label: "View FAQs", href: "/faqs" }}
+        secondaryCta={{ label: "Contact Us", href: "/contact" }}
       />
     </div>
   );

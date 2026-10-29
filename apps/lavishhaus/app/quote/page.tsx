@@ -23,9 +23,10 @@ export default async function QuotePage({
       <Breadcrumbs items={[{ name: "Request a Quote", href: "/quote" }]} />
       <div className="mt-6">
         <SectionHeading
+          level="h1"
           eyebrow="Request a Quote"
           title="Let's price your piece"
-          description="Share a few details and our team will respond with a detailed quote within one business day. There's no obligation to purchase."
+          description="Share a few details and we'll be in touch to discuss your quote. There's no obligation to purchase."
         />
       </div>
       <div className="mt-12">

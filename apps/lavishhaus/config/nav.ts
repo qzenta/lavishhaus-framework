@@ -1,57 +1,30 @@
+import { visibleCategories } from "@/content/categories";
+
 export interface NavCategory {
   label: string;
   slug: string;
   description: string;
 }
 
-export const collectionCategories: NavCategory[] = [
-  {
-    label: "Living Room",
-    slug: "living-room",
-    description: "Sofas, sectionals and coffee tables built for gathering.",
-  },
-  {
-    label: "Bedroom",
-    slug: "bedroom",
-    description: "Beds, headboards and nightstands for restful spaces.",
-  },
-  {
-    label: "Dining Room",
-    slug: "dining",
-    description: "Tables and chairs crafted for long, unhurried evenings.",
-  },
-  {
-    label: "Kitchen",
-    slug: "kitchen",
-    description: "Islands, cabinetry and surfaces built for the heart of the home.",
-  },
-  {
-    label: "Office",
-    slug: "office",
-    description: "Desks and seating for considered, focused work.",
-  },
-  {
-    label: "Outdoor",
-    slug: "outdoor",
-    description: "Weather-ready pieces without compromising on craft.",
-  },
-  {
-    label: "Custom Furniture",
-    slug: "custom-furniture",
-    description: "Bespoke pieces designed and built to your specification.",
-  },
-];
+// Derived from content/categories.ts so menu copy and category pages can't drift.
+export const collectionCategories: NavCategory[] = visibleCategories.map((category) => ({
+  label: category.name,
+  slug: category.slug,
+  description: category.tagline,
+}));
 
 export interface NavLink {
   label: string;
   href: string;
 }
 
+/** The entry whose href is COLLECTIONS_HREF renders as the categories dropdown. */
+export const COLLECTIONS_HREF = "/collections";
+
 export const primaryNav: NavLink[] = [
   { label: "Home", href: "/" },
-  { label: "Shop by Room", href: "/collections" },
+  { label: "Collections", href: COLLECTIONS_HREF },
   { label: "Craftsmanship", href: "/craftsmanship" },
-  { label: "Projects", href: "/projects" },
   { label: "Showroom", href: "/showroom" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
@@ -65,9 +38,9 @@ export const footerNav = {
   company: [
     { label: "Our Story", href: "/about" },
     { label: "Craftsmanship", href: "/craftsmanship" },
-    { label: "Projects", href: "/projects" },
     { label: "Showroom", href: "/showroom" },
     { label: "FAQs", href: "/faqs" },
+    { label: "Request a Quote", href: "/quote" },
     { label: "Contact", href: "/contact" },
   ],
   legal: [

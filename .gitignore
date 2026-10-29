@@ -15,3 +15,4 @@ Thumbs.db
 
 # Full-size screenshot PNGs stay local; compressed JPEGs are committed.
 docs/evidence/**/*.png
+docs/evidence/server.log

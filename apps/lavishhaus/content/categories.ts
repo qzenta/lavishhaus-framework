@@ -1,98 +1,65 @@
+import { catalogImage } from "@/lib/catalog-image";
 import type { Category } from "@/types/catalog";
 
 export const categories: Category[] = [
   {
     slug: "living-room",
     name: "Living Room",
-    tagline: "Sofas, sectionals and coffee tables built for gathering.",
+    tagline: "TV walls, consoles, coffee tables and seating.",
     description:
-      "Anchor pieces upholstered in performance fabrics and full-grain leather, designed to hold their shape and their welcome for decades.",
-    heroImage: {
-      src: "/images/rooms/living-room/chesterfield-sofa-brown-leather.jpeg",
-      alt: "A brown leather Chesterfield sofa in the Lavish Haus showroom",
-      width: 1600,
-      height: 1000,
-    },
+      "Feature TV walls, consoles, coffee tables and classic seating for the room you gather in.",
+    heroImage: catalogImage("tv-marble-01", "Marble-effect fluted TV wall with a lit glass display cabinet"),
   },
   {
     slug: "bedroom",
     name: "Bedroom",
-    tagline: "Beds, headboards and nightstands for restful spaces.",
+    tagline: "Statement headboards, beds and bedroom suites.",
     description:
-      "Upholstered frames and solid walnut casegoods, built quietly so the room can stay calm.",
-    heroImage: {
-      src: "/images/rooms/bedroom/bed-champagne-diamond-headboard-gold-trim.jpeg",
-      alt: "A champagne diamond-tufted headboard with gold trim in the Lavish Haus showroom",
-      width: 1600,
-      height: 1000,
-    },
+      "Upholstered beds with statement headboards, and suites with coordinated chests and pedestals.",
+    heroImage: catalogImage("bed-champagne-diamond", "Tall champagne diamond-tufted headboard framed in slim metallic trim"),
   },
   {
     slug: "dining",
     name: "Dining Room",
-    tagline: "Tables and chairs crafted for long, unhurried evenings.",
-    description:
-      "Solid timber dining tables and hand-finished chairs, sized for everyday meals and the evenings that run late.",
-    heroImage: {
-      src: "/images/rooms/dining-room/dining-table-rose-gold-legs-8-chairs.jpeg",
-      alt: "A rose-gold legged dining table with eight chairs in the Lavish Haus showroom",
-      width: 1600,
-      height: 1000,
-    },
+    tagline: "Dining tables, upholstered chairs and benches.",
+    description: "Dining tables, upholstered chairs and benches, sized and finished for your space.",
+    heroImage: catalogImage("dining-black-fluted", "Black gloss oval dining table with aubergine upholstered chairs and bench"),
   },
   {
     slug: "kitchen",
     name: "Kitchen",
-    tagline: "Islands, cabinetry and surfaces built for the heart of the home.",
-    description:
-      "Custom kitchen islands and storage solutions in timber and stone — designed to anchor the room you use most.",
-    heroImage: {
-      src: "/images/rooms/kitchen/kitchen-island-fluted-taupe-cabinetry.jpeg",
-      alt: "A fluted taupe kitchen island with custom cabinetry by MicWood Furnitures",
-      width: 1600,
-      height: 1000,
-    },
+    tagline: "Islands and cabinetry for the heart of the home.",
+    description: "Kitchen islands and cabinetry, designed and fitted to your space.",
+    heroImage: catalogImage("kitchen-island-fluted", "Kitchen island with a fluted front and stone-look top beside taupe cabinetry"),
   },
   {
     slug: "office",
     name: "Office",
-    tagline: "Desks and seating for considered, focused work.",
-    description:
-      "Home and executive office pieces that hold their composure — quiet hardware, real timber, no shortcuts.",
-    heroImage: {
-      src: "/images/rooms/office/desk-white-lacquer-leather-trim.jpeg",
-      alt: "A white lacquer desk with leather trim in the Lavish Haus office collection",
-      width: 1600,
-      height: 1000,
-    },
+    tagline: "Desks and storage for focused work.",
+    description: "Desks and storage for the home office and study.",
+    heroImage: catalogImage("desk-white-pedestal", "White desk with a built-in four-drawer pedestal"),
   },
   {
     slug: "outdoor",
     name: "Outdoor",
-    tagline: "Weather-ready pieces without compromising on craft.",
+    tagline: "Outdoor pieces, made to order.",
     description:
-      "Teak frames and outdoor-grade weaves, engineered for the South African climate and built to age well.",
-    heroImage: {
-      src: "/images/rooms/living-room/console-table-round-mirror-brass-legs.jpeg",
-      alt: "A console table with brass legs and round mirror",
-      width: 1600,
-      height: 1000,
-    },
+      "We're photographing our outdoor range. Tell us what you have in mind and we'll talk you through the options.",
+    // No outdoor photography yet (docs/lavishhaus-assets.md). Kept reachable at
+    // its URL but left out of navigation and listings until photos arrive.
+    hidden: true,
   },
   {
     slug: "custom-furniture",
     name: "Custom Furniture",
-    tagline: "Bespoke pieces designed and built to your specification.",
+    tagline: "Bespoke pieces designed around your space.",
     description:
-      "Work directly with the MicWood Furnitures workshop on one-of-a-kind pieces — from dimensions to timber selection to finish.",
-    heroImage: {
-      src: "/images/rooms/bedroom/bed-green-velvet-chevron-headboard.jpeg",
-      alt: "A custom green velvet chevron headboard by MicWood Furnitures",
-      width: 1600,
-      height: 1000,
-    },
+      "Built-in wall units, panelled headboard walls, kitchen islands and one-off pieces, designed with you and made by MicWood Furnitures.",
+    heroImage: catalogImage("tv-led-02", "Built-in TV wall unit with slatted side panel and lit floating shelves"),
   },
 ];
+
+export const visibleCategories = categories.filter((category) => !category.hidden);
 
 export function getCategoryBySlug(slug: string) {
   return categories.find((category) => category.slug === slug);

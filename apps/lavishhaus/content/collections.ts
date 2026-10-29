@@ -1,551 +1,306 @@
-import { placeholderImage } from "@/lib/placeholder-image";
-import type { Collection, Finish, Material, Product } from "@/types/catalog";
+import { catalogImage } from "@/lib/catalog-image";
+import type { Collection, Product } from "@/types/catalog";
 
-const finishOptions: Record<string, Finish[]> = {
-  timber: [
-    { name: "Natural Walnut", swatch: "#6b4531" },
-    { name: "Smoked Oak", swatch: "#4a3b2f" },
-    { name: "Whitewash Ash", swatch: "#d9cfba" },
-  ],
-  upholstery: [
-    { name: "Ivory Boucle", swatch: "#efe6d4" },
-    { name: "Warm Stone Linen", swatch: "#a49a89" },
-    { name: "Charcoal Performance Weave", swatch: "#2a2724" },
-  ],
-  metal: [
-    { name: "Brushed Brass", swatch: "#b08d57" },
-    { name: "Matte Black Steel", swatch: "#16130f" },
-  ],
-};
+/**
+ * Every piece here is one photographed by the client (see
+ * docs/lavishhaus-assets.md). Descriptions state only what is visible in the
+ * photos — no dimensions, lead times, guarantees or certified materials until
+ * the client confirms them (docs/lavishhaus-facts.md).
+ *
+ * Retired slugs (Aurelia, Marchetti, Linden, ...) redirect in next.config.ts.
+ */
 
-const materialLibrary: Record<string, Material> = {
-  solidWalnut: {
-    name: "Solid Walnut",
-    description: "Kiln-dried American black walnut, hand-selected for grain consistency.",
-  },
-  fsc: {
-    name: "FSC-Certified Timber",
-    description: "Responsibly sourced hardwood from certified sustainable forests.",
-  },
-  fullGrainLeather: {
-    name: "Full-Grain Leather",
-    description: "Vegetable-tanned leather that develops a natural patina with age.",
-  },
-  performanceFabric: {
-    name: "Performance Weave Fabric",
-    description: "Stain-resistant, family-friendly upholstery without sacrificing hand-feel.",
-  },
-  brass: {
-    name: "Brushed Brass Hardware",
-    description: "Solid brass fittings, brushed and lacquered to resist tarnish.",
-  },
-  teak: {
-    name: "Plantation Teak",
-    description: "Naturally weather-resistant teak suited to South African outdoor conditions.",
-  },
-};
+type CollectionInput = Omit<Collection, "heroImage" | "gallery"> &
+  Partial<Pick<Collection, "heroImage" | "gallery">>;
 
-function makeProduct(
-  slug: string,
-  name: string,
-  shortDescription: string,
-  seedPrefix: string,
-  dimensions: { label: string; value: string }[],
-  imageCount = 3
-): Product {
+// Hero defaults to the first product photo; gallery to every product photo.
+function defineCollection(input: CollectionInput): Collection {
+  const productImages = input.products.flatMap((p) => p.images);
   return {
-    slug,
-    name,
-    shortDescription,
-    dimensions,
-    leadTime: "8–12 weeks, made to order",
-    images: Array.from({ length: imageCount }, (_, i) =>
-      placeholderImage(`${seedPrefix}-${i}`, `${name} — view ${i + 1}`, 1200, 900)
-    ),
+    ...input,
+    heroImage: input.heroImage ?? productImages[0],
+    gallery: input.gallery ?? productImages,
   };
 }
 
+const product = (p: Product): Product => p;
+
 export const collections: Collection[] = [
-  {
-    slug: "aurelia-sofa-collection",
+  defineCollection({
+    slug: "tv-wall-units",
     categorySlug: "living-room",
-    name: "Aurelia Sofa Collection",
-    tagline: "A tailored silhouette built for everyday living.",
+    name: "TV Wall Units",
+    tagline: "Feature walls that bring storage, display and media together.",
     description:
-      "The Aurelia balances a low, architectural profile with deep, feather-wrapped cushioning. Hand-built frames in kiln-dried hardwood carry a 15-year structural guarantee.",
-    story:
-      "Named for its quiet confidence, Aurelia was developed with the MicWood workshop over eighteen months of prototyping — refining the arm pitch and seat depth until it disappeared into the room rather than dominating it.",
-    heroImage: {
-      src: "/images/rooms/living-room/chesterfield-sofa-brown-leather.jpeg",
-      alt: "Brown leather Chesterfield sofa in the Lavish Haus showroom",
-      width: 1600,
-      height: 1000,
-    },
-    gallery: [
-      { src: "/images/rooms/living-room/chesterfield-sofa-brown-leather.jpeg", alt: "Chesterfield sofa leather detail", width: 1200, height: 900 },
-      { src: "/images/rooms/living-room/tv-wall-console-marble-grey-01.jpeg", alt: "TV wall console with marble grey finish — living room context", width: 1200, height: 900 },
-      { src: "/images/rooms/living-room/tv-wall-console-marble-grey-03.jpeg", alt: "Living room wall console detail", width: 1200, height: 900 },
-      { src: "/images/rooms/living-room/tv-wall-console-marble-grey-04.jpeg", alt: "Wall console styled in a contemporary living space", width: 1200, height: 900 },
-      { src: "/images/rooms/living-room/tv-wall-console-marble-grey-02.jpeg", alt: "TV wall console — left angle with glass display cabinet", width: 1200, height: 900 },
-      { src: "/images/rooms/living-room/tv-wall-console-marble-grey-05.jpeg", alt: "TV wall console with sofa in foreground", width: 1200, height: 900 },
-      { src: "/images/rooms/living-room/tv-wall-console-marble-grey-06.jpeg", alt: "TV wall console — right angle detail", width: 1200, height: 900 },
-    ],
-    materials: [materialLibrary.solidWalnut, materialLibrary.performanceFabric, materialLibrary.fullGrainLeather],
-    finishes: finishOptions.upholstery,
+      "Floating and built-in TV walls combining panelled surrounds, low media consoles, lit shelving and display cabinets, each made to suit the wall it is built for.",
     products: [
-      makeProduct(
-        "aurelia-3-seater",
-        "Aurelia 3-Seater",
-        "The signature silhouette in a room-defining three-seat configuration.",
-        "lh-aurelia-3s",
-        [
-          { label: "Width", value: "228 cm" },
-          { label: "Depth", value: "96 cm" },
-          { label: "Height", value: "78 cm" },
-        ]
-      ),
-      makeProduct(
-        "aurelia-sectional",
-        "Aurelia Left-Facing Sectional",
-        "An L-shaped configuration built for open-plan living rooms.",
-        "lh-aurelia-sec",
-        [
-          { label: "Width", value: "312 cm" },
-          { label: "Depth", value: "168 cm" },
-          { label: "Height", value: "78 cm" },
-        ]
-      ),
-      makeProduct(
-        "aurelia-armchair",
-        "Aurelia Armchair",
-        "A single-seat companion piece, sold individually or in pairs.",
-        "lh-aurelia-arm",
-        [
-          { label: "Width", value: "94 cm" },
-          { label: "Depth", value: "96 cm" },
-          { label: "Height", value: "78 cm" },
-        ]
-      ),
+      product({
+        slug: "marble-effect-fluted-tv-wall",
+        name: "Marble-Effect Fluted TV Wall",
+        shortDescription:
+          "A marble-effect centre panel framed by grey fluting, with a floating media console and an illuminated glass display cabinet.",
+        images: [
+          catalogImage("tv-marble-01", "Floating TV wall with a marble-effect centre panel, grey fluted surround and lit glass display cabinet"),
+          catalogImage("tv-marble-02", "Marble-effect fluted TV wall viewed from the left, showing the lit display cabinet"),
+          catalogImage("tv-marble-03", "Marble-effect fluted TV wall with its low floating media console"),
+        ],
+      }),
+      product({
+        slug: "built-in-led-tv-wall",
+        name: "Built-In TV Wall with Lit Shelving",
+        shortDescription:
+          "A full-height built-in unit with LED-lit floating shelves, a glass display cabinet and an open low-line media console.",
+        images: [
+          catalogImage("tv-led-01", "Built-in light grey TV wall unit with LED-lit floating shelves and a glass display cabinet"),
+          catalogImage("tv-led-02", "Wide view of the built-in TV wall unit with slatted side panel and lit shelves"),
+        ],
+      }),
+      product({
+        slug: "timber-panel-tv-wall",
+        name: "Timber-Panel TV Wall",
+        shortDescription: "A timber feature panel above a white low-line media console.",
+        images: [catalogImage("tv-timber", "Timber feature panel TV wall above a white low-line media console")],
+      }),
     ],
-    relatedCollectionSlugs: ["marchetti-coffee-table", "linden-bed-frame"],
+    relatedCollectionSlugs: ["consoles-and-tables", "bespoke-commissions"],
     featured: true,
-  },
-  {
-    slug: "marchetti-coffee-table",
+  }),
+  defineCollection({
+    slug: "consoles-and-tables",
     categorySlug: "living-room",
-    name: "Marchetti Coffee Table Collection",
-    tagline: "Solid walnut, honestly joined.",
+    name: "Consoles & Occasional Tables",
+    tagline: "Console tables and coffee tables with a sculptural edge.",
     description:
-      "A single slab top over a mitred hardwood base, finished with a hand-rubbed oil that deepens the grain rather than masking it.",
-    story:
-      "Marchetti began as a workshop exercise in joinery without visible fixings — every joint is a traditional mortise and tenon, sanded through eight grits before finishing.",
-    heroImage: {
-      src: "/images/rooms/living-room/console-table-elephant-sculptures.jpeg",
-      alt: "Console table with elephant sculptures in a styled living room",
-      width: 1600,
-      height: 1000,
-    },
-    gallery: [
-      { src: "/images/rooms/living-room/console-table-elephant-sculptures.jpeg", alt: "Console table detail with decorative sculptures", width: 1200, height: 900 },
-      { src: "/images/rooms/living-room/console-table-round-mirror-brass-legs.jpeg", alt: "Console table styled with a round mirror and brass legs", width: 1200, height: 900 },
-      { src: "/images/rooms/living-room/tv-wall-console-wood-marshall-speaker.jpeg", alt: "Wall console in wood finish with styling detail", width: 1200, height: 900 },
-    ],
-    materials: [materialLibrary.solidWalnut, materialLibrary.fsc],
-    finishes: finishOptions.timber,
+      "Wall-mounted and freestanding consoles and coffee tables, in gloss, lacquer-look and fluted finishes.",
     products: [
-      makeProduct(
-        "marchetti-coffee-table-large",
-        "Marchetti Coffee Table — Large",
-        "The primary table, sized for sectional and 3-seater pairings.",
-        "lh-marchetti-l",
-        [
-          { label: "Width", value: "140 cm" },
-          { label: "Depth", value: "70 cm" },
-          { label: "Height", value: "34 cm" },
-        ]
-      ),
-      makeProduct(
-        "marchetti-nesting-pair",
-        "Marchetti Nesting Table Pair",
-        "Two tables that tuck together or split across the room.",
-        "lh-marchetti-n",
-        [
-          { label: "Width", value: "60 / 45 cm" },
-          { label: "Depth", value: "60 / 45 cm" },
-          { label: "Height", value: "38 / 32 cm" },
-        ]
-      ),
+      product({
+        slug: "pebble-coffee-tables",
+        name: "Pebble Coffee Tables",
+        shortDescription: "A nesting pair of black gloss, pebble-shaped tops on fluted pedestal bases.",
+        images: [catalogImage("coffee-tables-pebble", "Pair of black gloss pebble-shaped coffee tables on fluted pedestal bases")],
+      }),
+      product({
+        slug: "floating-fluted-console",
+        name: "Floating Fluted Console",
+        shortDescription: "A wall-mounted black gloss console with a curved, fluted front.",
+        images: [catalogImage("console-floating-fluted", "Wall-mounted black gloss console with a curved fluted front")],
+      }),
+      product({
+        slug: "two-drawer-console-brass-frame",
+        name: "Two-Drawer Console with Brass-Tone Frame",
+        shortDescription: "A white two-drawer console on a slim brass-tone frame.",
+        images: [catalogImage("console-brass-drawers", "White two-drawer console on a slim brass-tone frame beneath a round mirror")],
+      }),
+      product({
+        slug: "white-console-table",
+        name: "White Console Table",
+        shortDescription: "A clean-lined white console table with an open base.",
+        images: [catalogImage("console-white-sculpture", "Clean-lined white console table styled with two sculptures")],
+      }),
     ],
-    relatedCollectionSlugs: ["aurelia-sofa-collection"],
-  },
-  {
-    slug: "linden-bed-frame",
+    relatedCollectionSlugs: ["tv-wall-units", "sofas-and-seating"],
+  }),
+  defineCollection({
+    slug: "sofas-and-seating",
+    categorySlug: "living-room",
+    name: "Sofas & Seating",
+    tagline: "Classic upholstered seating.",
+    description:
+      "Deep-buttoned and upholstered seating. Ask us about covers, colours and sizes for your room.",
+    products: [
+      product({
+        slug: "chesterfield-sofa",
+        name: "Chesterfield Sofa",
+        shortDescription: "A deep-buttoned Chesterfield sofa with rolled arms, in brown upholstery.",
+        images: [catalogImage("sofa-chesterfield", "Deep-buttoned brown Chesterfield sofa with rolled arms")],
+      }),
+    ],
+    relatedCollectionSlugs: ["consoles-and-tables", "tv-wall-units"],
+  }),
+  defineCollection({
+    slug: "upholstered-beds",
     categorySlug: "bedroom",
-    name: "Linden Bed Frame Collection",
-    tagline: "An upholstered frame that quiets the room.",
+    name: "Upholstered Beds",
+    tagline: "Statement headboards in a range of styles.",
     description:
-      "A low headboard and solid walnut legs bring the Linden close to the floor, giving even smaller rooms a sense of proportion.",
-    story:
-      "Linden was designed around a simple brief from an early Lavish Haus client: 'a bed that doesn't compete with the art on the walls.'",
-    heroImage: {
-      src: "/images/rooms/bedroom/bed-beige-facet-headboard-01.jpeg",
-      alt: "Beige faceted headboard bed frame in a styled bedroom",
-      width: 1600,
-      height: 1000,
-    },
-    gallery: [
-      { src: "/images/rooms/bedroom/bed-beige-facet-headboard-02-wide.jpeg", alt: "Faceted headboard detail — wide angle", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-beige-facet-headboard-03.jpeg", alt: "Faceted headboard alternate view", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-black-velvet-arch-headboard-white-dresser.jpeg", alt: "Black velvet arch headboard with white dresser", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-beige-facet-headboard-04.jpeg", alt: "Faceted headboard close-up with pendant lights", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-beige-facet-headboard-05-wide.jpeg", alt: "Faceted headboard — full room view with matching pedestals", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-beige-facet-headboard-06-wide.jpeg", alt: "Faceted headboard — showroom setting with complementary pieces", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-black-velvet-arch-headboard-white-dresser-02.jpeg", alt: "White six-drawer dresser with gold knobs and arch headboard", width: 1200, height: 900 },
-    ],
-    materials: [materialLibrary.solidWalnut, materialLibrary.performanceFabric],
-    finishes: finishOptions.upholstery,
+      "Beds defined by their headboards — faceted, diamond-tufted, channelled and panelled — in a range of colours and coverings.",
+    heroImage: catalogImage("bed-navy-channel-wall", "Navy upholstered bed against a full-width ivory channel-tufted wall panel"),
     products: [
-      makeProduct(
-        "linden-queen",
-        "Linden Bed Frame — Queen",
-        "Standard South African queen size, 152 x 188 cm mattress.",
-        "lh-linden-q",
-        [
-          { label: "Width", value: "168 cm" },
-          { label: "Length", value: "212 cm" },
-          { label: "Headboard Height", value: "110 cm" },
-        ]
-      ),
-      makeProduct(
-        "linden-king",
-        "Linden Bed Frame — King",
-        "South African king size, 183 x 188 cm mattress.",
-        "lh-linden-k",
-        [
-          { label: "Width", value: "199 cm" },
-          { label: "Length", value: "212 cm" },
-          { label: "Headboard Height", value: "110 cm" },
-        ]
-      ),
+      product({
+        slug: "navy-bed-channel-wall-panel",
+        name: "Navy Bed with Channel Wall Panel",
+        shortDescription:
+          "A navy upholstered bed set against a full-width, horizontally channel-tufted wall panel.",
+        images: [catalogImage("bed-navy-channel-wall", "Navy upholstered bed against a full-width ivory channel-tufted wall panel")],
+      }),
+      product({
+        slug: "faceted-panel-headboard-bed",
+        name: "Faceted Panel Headboard Bed",
+        shortDescription:
+          "An oversized headboard of irregular faceted panels in soft beige, shown with white bedside pedestals.",
+        images: [
+          catalogImage("bed-faceted-02", "Bed with an oversized beige faceted-panel headboard and white bedside pedestals"),
+          catalogImage("bed-faceted-03", "Faceted-panel headboard bed seen from the foot, with pendant lights either side"),
+        ],
+      }),
+      product({
+        slug: "grey-channel-bed-mirror-panels",
+        name: "Grey Channel Bed with Mirror Panels",
+        shortDescription:
+          "A vertical channel-tufted grey headboard between mirrored slat panels, with a matching bolster bench.",
+        images: [catalogImage("bed-grey-channel-mirror", "Grey channel-tufted headboard between mirrored slat panels, with a bolster-cushion bench at the foot")],
+      }),
+      product({
+        slug: "champagne-diamond-tufted-bed",
+        name: "Champagne Diamond-Tufted Bed",
+        shortDescription: "A tall diamond-tufted headboard in champagne, framed in a slim metallic trim.",
+        images: [catalogImage("bed-champagne-diamond", "Tall champagne diamond-tufted headboard framed in slim metallic trim")],
+      }),
+      product({
+        slug: "cognac-diamond-panel-bed",
+        name: "Cognac Diamond-Panel Bed",
+        shortDescription: "A wall-width headboard of large diamond panels in cognac, with a matching base.",
+        images: [catalogImage("bed-cognac-panel", "Cognac diamond-panel headboard spanning the wall, with a matching upholstered base")],
+      }),
+      product({
+        slug: "green-chevron-headboard-bed",
+        name: "Green Chevron Headboard Bed",
+        shortDescription: "A deep green headboard with chevron channelling and a matching base.",
+        images: [catalogImage("bed-green-chevron", "Deep green chevron-channelled headboard bed with matching base")],
+      }),
+      product({
+        slug: "honeycomb-headboard-timber-frame",
+        name: "Honeycomb Headboard in Timber Frame",
+        shortDescription: "A honeycomb-tufted headboard set in an exposed timber frame.",
+        images: [catalogImage("bed-honeycomb-timber", "Taupe honeycomb-tufted headboard in an exposed timber frame beside a timber bedside chest")],
+      }),
+      product({
+        slug: "grey-diamond-tufted-bed",
+        name: "Grey Diamond-Tufted Bed",
+        shortDescription: "A grey diamond-tufted headboard with a matching upholstered base.",
+        images: [catalogImage("bed-grey-diamond-tufted", "Grey diamond-tufted headboard bed against patterned wallpaper")],
+      }),
+      product({
+        slug: "grey-square-panel-bed",
+        name: "Grey Square-Panel Bed",
+        shortDescription: "A tall headboard of square upholstered panels in pale grey.",
+        images: [catalogImage("bed-grey-square-panel", "Tall pale grey square-panel upholstered headboard bed")],
+      }),
     ],
-    relatedCollectionSlugs: ["aurelia-sofa-collection", "porter-nightstand"],
+    relatedCollectionSlugs: ["bedroom-suites", "bespoke-commissions"],
     featured: true,
-  },
-  {
-    slug: "porter-nightstand",
+  }),
+  defineCollection({
+    slug: "bedroom-suites",
     categorySlug: "bedroom",
-    name: "Porter Nightstand Collection",
-    tagline: "Small pieces, held to the same standard.",
+    name: "Bedroom Suites",
+    tagline: "Beds with coordinated chests, dressers and pedestals.",
     description:
-      "A single drawer with a hand-fitted brass pull, over an open shelf — sized to sit quietly beside the Linden or any bed in the house.",
-    story:
-      "Porter takes its name from the discipline of building small case pieces exactly as carefully as large ones — no shortcuts because a nightstand is 'just' a nightstand.",
-    heroImage: {
-      src: "/images/rooms/bedroom/bed-grey-square-tufted-panel-headboard.jpeg",
-      alt: "Square-tufted panel headboard styled with a bedside nightstand",
-      width: 1600,
-      height: 1000,
-    },
-    gallery: [
-      { src: "/images/rooms/bedroom/bed-grey-mirror-panel-headboard-02-wide.jpeg", alt: "Mirror panel headboard — wide angle", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-grey-mirror-panel-headboard-03.jpeg", alt: "Mirror panel headboard detail", width: 1200, height: 900 },
-    ],
-    materials: [materialLibrary.solidWalnut, materialLibrary.brass],
-    finishes: finishOptions.timber,
+      "Headboards paired with matching chests of drawers, dressers and bedside pedestals for a coordinated room.",
     products: [
-      makeProduct(
-        "porter-nightstand-single",
-        "Porter Nightstand",
-        "A single-drawer nightstand with an open lower shelf.",
-        "lh-porter-s",
-        [
-          { label: "Width", value: "48 cm" },
-          { label: "Depth", value: "40 cm" },
-          { label: "Height", value: "56 cm" },
-        ]
-      ),
+      product({
+        slug: "grey-gloss-suite-gold-inlay",
+        name: "Grey Gloss Suite with Gold-Tone Inlay",
+        shortDescription:
+          "A channel-tufted headboard between mirrored slats, with a grey gloss chest and pedestals detailed in gold-tone stripes.",
+        images: [
+          catalogImage("suite-grey-lacquer-01", "Grey gloss bedroom suite with channel-tufted headboard, mirrored slats and a gold-striped chest"),
+          catalogImage("suite-grey-lacquer-02", "Wide view of the grey gloss suite with the gold-striped chest at the foot of the bed"),
+          catalogImage("suite-grey-lacquer-03", "Channel-tufted headboard and mirrored slat panels of the grey gloss suite"),
+        ],
+      }),
+      product({
+        slug: "arch-headboard-bed-six-drawer-dresser",
+        name: "Arch Headboard Bed & Six-Drawer Dresser",
+        shortDescription: "A black arched headboard paired with a white six-drawer dresser.",
+        images: [catalogImage("bed-arch-dresser", "Black arched headboard bed behind a white six-drawer dresser")],
+      }),
     ],
-    relatedCollectionSlugs: ["linden-bed-frame"],
-  },
-  {
-    slug: "hollis-dining-table",
+    relatedCollectionSlugs: ["upholstered-beds"],
+  }),
+  defineCollection({
+    slug: "dining-sets",
     categorySlug: "dining",
-    name: "Hollis Dining Table Collection",
-    tagline: "A table built for the whole evening.",
+    name: "Dining Tables & Chairs",
+    tagline: "Tables, chairs and benches for the dining room.",
     description:
-      "A thick solid-timber top on a trestle base, engineered with breadboard ends to resist seasonal movement across South African climates.",
-    story:
-      "Hollis is the piece most requested by returning MicWood clients — the same table specified for a six-seat apartment or an eighteen-seat farmhouse, scaled to fit.",
-    heroImage: {
-      src: "/images/rooms/dining-room/dining-table-rose-gold-legs-8-chairs.jpeg",
-      alt: "Dining table with rose gold legs and eight chairs",
-      width: 1600,
-      height: 1000,
-    },
-    gallery: [
-      { src: "/images/rooms/dining-room/dining-table-rose-gold-legs-8-chairs.jpeg", alt: "Dining table detail — rose gold leg finish", width: 1200, height: 900 },
-    ],
-    materials: [materialLibrary.solidWalnut, materialLibrary.fsc],
-    finishes: finishOptions.timber,
+      "Dining tables, upholstered chairs and benches. Sizes, seat counts and coverings are discussed with your quote.",
     products: [
-      makeProduct(
-        "hollis-6-seat",
-        "Hollis Dining Table — 6 Seat",
-        "Sized for everyday family dining.",
-        "lh-hollis-6",
-        [
-          { label: "Length", value: "180 cm" },
-          { label: "Width", value: "95 cm" },
-          { label: "Height", value: "75 cm" },
-        ]
-      ),
-      makeProduct(
-        "hollis-10-seat",
-        "Hollis Dining Table — 10 Seat",
-        "A statement table for entertaining.",
-        "lh-hollis-10",
-        [
-          { label: "Length", value: "280 cm" },
-          { label: "Width", value: "100 cm" },
-          { label: "Height", value: "75 cm" },
-        ]
-      ),
+      product({
+        slug: "oval-dining-set-fluted-base",
+        name: "Oval Dining Set with Fluted Base",
+        shortDescription:
+          "A black gloss oval table on a fluted pedestal, aubergine upholstered chairs with nailhead trim and a matching bench.",
+        images: [catalogImage("dining-black-fluted", "Black gloss oval dining table on a fluted base with aubergine upholstered chairs and bench")],
+      }),
+      product({
+        slug: "eight-seater-table-rose-gold-legs",
+        name: "Eight-Seater Table with Rose-Gold Legs",
+        shortDescription: "A long rectangular table on rose-gold-tone legs, shown with eight upholstered chairs.",
+        images: [catalogImage("dining-rose-gold", "Long dining table on rose-gold-tone legs with eight upholstered chairs")],
+      }),
+      product({
+        slug: "upholstered-dining-chairs",
+        name: "Upholstered Dining Chairs",
+        shortDescription:
+          "Beige upholstered chairs with button-tufted or plain backs on dark timber legs, photographed in the workshop.",
+        images: [catalogImage("dining-chairs-tufted", "Beige upholstered dining chairs with button-tufted and plain backs in the workshop")],
+      }),
     ],
-    relatedCollectionSlugs: ["reyes-dining-chair"],
+    relatedCollectionSlugs: ["consoles-and-tables"],
     featured: true,
-  },
-  {
-    slug: "reyes-dining-chair",
-    categorySlug: "dining",
-    name: "Reyes Dining Chair Collection",
-    tagline: "Hand-shaped, upholstered where it counts.",
-    description:
-      "A sculpted timber frame with an upholstered seat pad, shaped to stay comfortable through a long dinner.",
-    story:
-      "Every Reyes seat is shaped on the same jigs the MicWood workshop developed for its very first dining chair run in 2019.",
-    heroImage: {
-      src: "/images/rooms/dining-room/dining-table-rose-gold-legs-8-chairs.jpeg",
-      alt: "Dining chairs styled around a table in the showroom",
-      width: 1600,
-      height: 1000,
-    },
-    gallery: [
-      { src: "/images/rooms/dining-room/dining-table-rose-gold-legs-8-chairs.jpeg", alt: "Dining chair arrangement detail", width: 1200, height: 900 },
-    ],
-    materials: [materialLibrary.solidWalnut, materialLibrary.performanceFabric],
-    finishes: finishOptions.upholstery,
+  }),
+  defineCollection({
+    slug: "kitchen-islands",
+    categorySlug: "kitchen",
+    name: "Kitchen Islands & Cabinetry",
+    tagline: "Islands and cabinetry for the heart of the home.",
+    description: "Kitchen islands and cabinetry, designed and fitted to your space.",
     products: [
-      makeProduct(
-        "reyes-dining-chair",
-        "Reyes Dining Chair",
-        "Sold individually; typically ordered in sets of six or more.",
-        "lh-reyes-c",
-        [
-          { label: "Width", value: "52 cm" },
-          { label: "Depth", value: "56 cm" },
-          { label: "Height", value: "82 cm" },
-        ]
-      ),
+      product({
+        slug: "fluted-kitchen-island",
+        name: "Fluted Kitchen Island",
+        shortDescription: "A kitchen island with a vertically fluted front and stone-look top, with taupe cabinetry.",
+        images: [catalogImage("kitchen-island-fluted", "Kitchen island with a fluted front and stone-look top beside taupe cabinetry")],
+      }),
     ],
-    relatedCollectionSlugs: ["hollis-dining-table"],
-  },
-  {
-    slug: "carrow-writing-desk",
+    relatedCollectionSlugs: ["bespoke-commissions"],
+  }),
+  defineCollection({
+    slug: "desks",
     categorySlug: "office",
-    name: "Carrow Writing Desk Collection",
-    tagline: "A desk with nothing to hide behind.",
-    description:
-      "A single-slab top on a slim steel-and-timber base, with an integrated cable channel built in rather than bolted on.",
-    story:
-      "Carrow was designed for the home-office era — small enough for a spare room, considered enough for an executive suite.",
-    heroImage: {
-      src: "/images/rooms/office/desk-white-lacquer-leather-trim.jpeg",
-      alt: "White lacquer desk with leather trim in a minimalist office",
-      width: 1600,
-      height: 1000,
-    },
-    gallery: [
-      { src: "/images/rooms/office/desk-white-lacquer-leather-trim.jpeg", alt: "Desk detail — lacquer and leather trim", width: 1200, height: 900 },
-    ],
-    materials: [materialLibrary.solidWalnut, materialLibrary.brass],
-    finishes: finishOptions.metal,
+    name: "Desks",
+    tagline: "Desks for the home office and study.",
+    description: "Desks and storage for focused work, made to suit your room.",
     products: [
-      makeProduct(
-        "carrow-desk-140",
-        "Carrow Writing Desk — 140cm",
-        "Sized for home offices and secondary workstations.",
-        "lh-carrow-140",
-        [
-          { label: "Width", value: "140 cm" },
-          { label: "Depth", value: "65 cm" },
-          { label: "Height", value: "75 cm" },
-        ]
-      ),
-      makeProduct(
-        "carrow-desk-180",
-        "Carrow Writing Desk — 180cm",
-        "The executive size, with room for dual monitors.",
-        "lh-carrow-180",
-        [
-          { label: "Width", value: "180 cm" },
-          { label: "Depth", value: "70 cm" },
-          { label: "Height", value: "75 cm" },
-        ]
-      ),
+      product({
+        slug: "white-desk-drawer-pedestal",
+        name: "White Desk with Drawer Pedestal",
+        shortDescription: "A white desk with a built-in drawer pedestal.",
+        images: [catalogImage("desk-white-pedestal", "White desk with a built-in four-drawer pedestal")],
+      }),
     ],
-    relatedCollectionSlugs: [],
-  },
-  {
-    slug: "solano-outdoor-lounge",
-    categorySlug: "outdoor",
-    name: "Solano Outdoor Lounge Collection",
-    tagline: "Teak and weave, built for the highveld and the coast.",
-    description:
-      "A modular outdoor seating system in plantation teak, with quick-dry cushions and a synthetic weave rated for UV and salt air.",
-    story:
-      "Solano was tested through a full South African summer on an exposed Cape Town balcony before it was approved for the Lavish Haus range.",
-    heroImage: {
-      src: "/images/rooms/bedroom/bed-grey-velvet-diamond-tufted-feather-wallpaper.jpeg",
-      alt: "Outdoor lounge collection — showroom photo coming soon",
-      width: 1600,
-      height: 1000,
-    },
-    gallery: [
-      { src: "/images/rooms/bedroom/bed-grey-velvet-diamond-tufted-feather-wallpaper.jpeg", alt: "Outdoor collection — photo coming soon", width: 1200, height: 900 },
-    ],
-    materials: [materialLibrary.teak, materialLibrary.performanceFabric],
-    finishes: finishOptions.timber,
-    products: [
-      makeProduct(
-        "solano-2-seater",
-        "Solano 2-Seater Lounge",
-        "A compact configuration for balconies and smaller patios.",
-        "lh-solano-2s",
-        [
-          { label: "Width", value: "160 cm" },
-          { label: "Depth", value: "85 cm" },
-          { label: "Height", value: "68 cm" },
-        ]
-      ),
-      makeProduct(
-        "solano-modular-corner",
-        "Solano Modular Corner Set",
-        "A configurable corner set for larger outdoor rooms.",
-        "lh-solano-cs",
-        [
-          { label: "Width", value: "280 cm" },
-          { label: "Depth", value: "280 cm" },
-          { label: "Height", value: "68 cm" },
-        ]
-      ),
-    ],
-    relatedCollectionSlugs: [],
-  },
-  {
+    relatedCollectionSlugs: ["bespoke-commissions"],
+  }),
+  defineCollection({
     slug: "bespoke-commissions",
     categorySlug: "custom-furniture",
     name: "Bespoke Commissions",
-    tagline: "Designed around your space, not the other way around.",
+    tagline: "Designed around your space.",
     description:
-      "Work with the MicWood Furnitures workshop to develop a one-of-a-kind piece — matched dimensions, timber selection and finish, from concept sketch to delivery.",
-    story:
-      "Roughly a third of Lavish Haus's workshop hours go into bespoke commissions — from a boardroom table matched to existing panelling, to a built-in bench seat shaped around a bay window.",
-    heroImage: {
-      src: "/images/rooms/bedroom/bed-honeycomb-tufted-headboard-wood-frame.jpeg",
-      alt: "Honeycomb-tufted headboard with exposed wood frame — a bespoke commission",
-      width: 1600,
-      height: 1000,
-    },
+      "Built-in wall units, panelled headboard walls, kitchen islands and one-off pieces, designed with you and made by MicWood Furnitures. Share a sketch, a photo or your measurements and we'll take it from there.",
+    heroImage: catalogImage("tv-led-02", "Built-in TV wall unit with slatted side panel and lit floating shelves"),
     gallery: [
-      { src: "/images/rooms/bedroom/bed-cognac-leather-diamond-headboard.jpeg", alt: "Cognac leather diamond-tufted headboard — bespoke bedroom commission", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-grey-square-tufted-panel-headboard.jpeg", alt: "Grey square-tufted panel headboard — custom upholstery", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-green-velvet-chevron-headboard.jpeg", alt: "Green velvet chevron headboard — alternate finish", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-green-velvet-chevron-headboard-02.jpeg", alt: "Green chevron headboard with walnut nightstands — full view", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-honeycomb-tufted-headboard-wood-frame-02.jpeg", alt: "Honeycomb headboard with gold frame and round pedestal", width: 1200, height: 900 },
+      catalogImage("tv-led-02", "Built-in TV wall unit with slatted side panel and lit floating shelves"),
+      catalogImage("bed-navy-channel-wall", "Full-width channel-tufted wall panel behind a navy upholstered bed"),
+      catalogImage("kitchen-island-fluted", "Kitchen island with a fluted front and stone-look top"),
+      catalogImage("console-floating-fluted", "Wall-mounted black gloss console with a curved fluted front"),
+      catalogImage("bed-cognac-panel", "Wall-width cognac diamond-panel headboard"),
     ],
-    materials: [materialLibrary.solidWalnut, materialLibrary.fsc, materialLibrary.fullGrainLeather],
-    finishes: [...finishOptions.timber, ...finishOptions.upholstery],
     products: [],
-    relatedCollectionSlugs: ["hollis-dining-table", "linden-bed-frame"],
+    relatedCollectionSlugs: ["tv-wall-units", "upholstered-beds"],
     featured: true,
-  },
-  {
-    slug: "palazzo-bedroom-suite",
-    categorySlug: "bedroom",
-    name: "Palazzo Bedroom Suite",
-    tagline: "Gloss lacquer meets polished brass — a suite that commands attention.",
-    description:
-      "A coordinated bedroom suite in high-gloss grey lacquer with vertical gold mirror-stripe accents. Includes a padded channel-tufted headboard, six-drawer dresser and matching nightstands — all finished with polished brass hardware.",
-    story:
-      "Palazzo was conceived as a full-room statement: every surface is finished to the same standard, so the bed, dresser and nightstands read as a single composition rather than separate pieces.",
-    heroImage: {
-      src: "/images/rooms/bedroom/bed-grey-lacquer-gold-mirror-stripe-01.jpeg",
-      alt: "Grey lacquer bed with gold mirror-stripe headboard, matching dresser and nightstand",
-      width: 1600,
-      height: 1000,
-    },
-    gallery: [
-      { src: "/images/rooms/bedroom/bed-grey-lacquer-gold-mirror-stripe-02-wide.jpeg", alt: "Palazzo suite — wide angle with dresser in foreground", width: 1200, height: 900 },
-      { src: "/images/rooms/bedroom/bed-grey-lacquer-gold-mirror-stripe-03.jpeg", alt: "Palazzo headboard detail — channel tufting and mirror accents", width: 1200, height: 900 },
-    ],
-    materials: [materialLibrary.brass, materialLibrary.performanceFabric],
-    finishes: finishOptions.metal,
-    products: [
-      makeProduct(
-        "palazzo-bed-king",
-        "Palazzo Bed Frame — King",
-        "Grey gloss lacquer frame with gold mirror-stripe headboard, SA king size.",
-        "lh-palazzo-k",
-        [
-          { label: "Width", value: "199 cm" },
-          { label: "Length", value: "212 cm" },
-          { label: "Headboard Height", value: "140 cm" },
-        ]
-      ),
-      makeProduct(
-        "palazzo-dresser",
-        "Palazzo 6-Drawer Dresser",
-        "Matching gloss lacquer dresser with polished brass stripe accents.",
-        "lh-palazzo-d",
-        [
-          { label: "Width", value: "160 cm" },
-          { label: "Depth", value: "48 cm" },
-          { label: "Height", value: "82 cm" },
-        ]
-      ),
-    ],
-    relatedCollectionSlugs: ["linden-bed-frame", "porter-nightstand"],
-    featured: false,
-  },
-  {
-    slug: "micwood-kitchen-island",
-    categorySlug: "kitchen",
-    name: "MicWood Kitchen Island Collection",
-    tagline: "The centrepiece your kitchen is built around.",
-    description:
-      "Custom kitchen islands with fluted panelling, integrated storage and stone or timber countertops — designed to anchor the room you use most.",
-    story:
-      "The kitchen island started as a client request that didn't fit any existing category — and became one of the workshop's most-requested pieces. Every island is built to the kitchen's exact dimensions.",
-    heroImage: {
-      src: "/images/rooms/kitchen/kitchen-island-fluted-taupe-cabinetry.jpeg",
-      alt: "A fluted taupe kitchen island with custom cabinetry by MicWood Furnitures",
-      width: 1600,
-      height: 1000,
-    },
-    gallery: [
-      {
-        src: "/images/rooms/kitchen/kitchen-island-fluted-taupe-cabinetry.jpeg",
-        alt: "Kitchen island fluted panel detail",
-        width: 1200,
-        height: 900,
-      },
-    ],
-    materials: [materialLibrary.solidWalnut, materialLibrary.fsc],
-    finishes: finishOptions.timber,
-    products: [],
-    relatedCollectionSlugs: ["bespoke-commissions"],
-    featured: false,
-  },
+  }),
 ];
 
 export function getCollectionsByCategory(categorySlug: string) {

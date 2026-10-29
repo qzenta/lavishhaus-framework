@@ -111,3 +111,29 @@ for (const [id, { src, crop }] of Object.entries(SOURCES)) {
 
 fs.writeFileSync(MANIFEST, JSON.stringify(manifest, null, 2) + "\n");
 console.log(`wrote ${Object.keys(manifest).length} images`);
+
+// Open Graph card (1200x630): a real photo with the logo as an ivory
+// silhouette over a dark gradient, matching the footer treatment.
+{
+  const W = 1200;
+  const H = 630;
+  const photo = await sharp(path.join(OUT, "dining-black-fluted.jpg"))
+    .resize(W, H, { fit: "cover", position: "centre" })
+    .toBuffer();
+  const gradient = Buffer.from(
+    `<svg width="${W}" height="${H}"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#16130f" stop-opacity="0.95"/><stop offset="0.6" stop-color="#16130f" stop-opacity="0.75"/><stop offset="1" stop-color="#16130f" stop-opacity="0"/></linearGradient></defs><rect width="${W}" height="${H}" fill="url(#g)"/></svg>`
+  );
+  const logoAlpha = await sharp("public/images/logo.png").resize({ width: 420 }).extractChannel("alpha").raw().toBuffer({ resolveWithObject: true });
+  const logo = await sharp({ create: { width: logoAlpha.info.width, height: logoAlpha.info.height, channels: 3, background: "#faf7f1" } })
+    .joinChannel(logoAlpha.data, { raw: { width: logoAlpha.info.width, height: logoAlpha.info.height, channels: 1 } })
+    .png()
+    .toBuffer();
+  await sharp(photo)
+    .composite([
+      { input: gradient, left: 0, top: 0 },
+      { input: logo, left: 80, top: Math.round((H - logoAlpha.info.height) / 2) },
+    ])
+    .jpeg({ quality: 82, mozjpeg: true })
+    .toFile("public/og-image.jpg");
+  console.log("wrote public/og-image.jpg");
+}
