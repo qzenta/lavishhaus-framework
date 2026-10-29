@@ -28,7 +28,7 @@ Also: edit existing routes, components and inbox folders in place; never scaffol
 | 1+2 | P0 trust and imagery (one commit, they share files): fabricated projects, testimonials and claims removed; showroom wording; AI hero out; catalog rebuilt around 31 real photos; 12 redirects; Aurelia/TV fix; OG card; contrast and heading fixes | done | see git log |
 | 3 | P0 forms: honest delivery result, HTML escaping, no PII logs, honeypot; tests | done | see git log |
 | 4 | P1 polish: mobile hero/pillars, privacy disclosure, reduced motion, skip link, contrast, perf (logo, hero priority, deferred Clarity) | done | see git log |
-| 5 | Verification: build, lint, routes, screenshots, a11y, perf, reduced motion; reports | pending | |
+| 5 | Verification: build, lint, routes, screenshots, a11y, perf, reduced motion; reports | done | see git log |
 
 ## Current state
 
@@ -39,7 +39,8 @@ Also: edit existing routes, components and inbox folders in place; never scaffol
 - Production note: if `BREVO_API_KEY` is missing in Vercel (unknown, A-30), live forms will now show the WhatsApp/phone/email fallback instead of a false "received".
 - Batch 4 checks on the final local build: route audit `docs/evidence/batch4/` 25 routes × 3 viewports, 0 console errors, 0 broken/placeholder images, 0 missing alt, 0 overflow, exactly one h1 everywhere, canonicals present, 58/58 internal links OK (only failures are cancelled `/quote?_rsc` prefetches). axe WCAG 2.1 AA: 0 violations (16 routes × 2 viewports). Keyboard: skip link first, focus visible on 25/25 stops. Reduced motion: max animation/transition 0.01 ms. Form test 9/9. Lighthouse mobile medians (3 runs): home perf 83, LCP 4.1 s, TBT 242 ms; beds collection perf 85, LCP 4.0 s; a11y 100, SEO 100, best-practices 79 (Clarity cookies).
 - Gotcha: `TaskStop` on a backgrounded `npx next start` leaves the `next start` node child running, and the old build keeps answering on the port. Before trusting results, confirm the served HTML contains a marker from the new build; kill stale `next start` processes by command line.
-- Next: batch 5 (test report, release notes, final report).
+- Batch 5: final checks in `docs/evidence/final/checks.log` (tsc 0, eslint 0, tests 8/8, all 12 redirects, key statuses). Reports: `docs/lavishhaus-test-report.md`, `docs/lavishhaus-release.md`; asset manifest updated.
+- Done for this pass. Open items: A-30, A-37, A-43, A-44 plus client facts. Nothing pushed, merged or deployed.
 
 ## Blockers / external input
 

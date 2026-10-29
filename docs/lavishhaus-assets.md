@@ -70,11 +70,28 @@ The final per-file mapping lives in `apps/lavishhaus/content/collections.ts` and
 |---|---|---|
 | Zebra-hide ottoman | Original deleted by mistake on 7 Aug (see the inbox README) | Re-supply the photo → `_unsorted/` |
 | Outdoor category (hero + any collection) | No outdoor photography exists. The previous hero was a bedroom photo | Outdoor pieces, if Lavish Haus makes them; otherwise confirm the category should be dropped |
-| Showroom page hero / interior | Used a TV console shot and a picsum placeholder; no photo of the showroom itself | Showroom exterior and interior, once its status is confirmed |
+| Showroom page hero / interior | Now uses the grey-lacquer suite photographed on the showroom floor (`suite-grey-lacquer-01/02`), but there is no exterior or wide interior shot | Showroom exterior and a wide interior, once its status is confirmed |
 | Sofas & seating | Only one sofa photo (Chesterfield); armchair held for consent | More sofas, more angles |
 | Kitchen | One photo (fluted taupe island) | More angles or projects |
 | Office | One photo (white lacquer desk) | More angles |
 | Projects / completed installations | Previous projects (Houghton, Sandton, Camps Bay) were fictional with picsum images and are removed | Client-confirmed project names, locations, permission and photos |
 | Brand / about imagery, team, workshop | Only one workshop photo (dining chairs) | Workshop and team photos |
-| Open Graph image | `public/og-image.jpg` provenance unknown (see audit A-17) | A real photo; regenerated from the hero once confirmed |
+| Open Graph image | **Filled**: `public/og-image.jpg` regenerated (1200×630) from `dining-black-fluted` + logo by `scripts/build-images.mjs` | Optional: a purpose-shot landscape photo |
 | Hero / brand film | No usable video (see above) | Stable ≥1080p landscape clip of the showroom or a finished piece |
+| Homepage hero, clean take | The navy bed photo (`bed-navy-channel-wall`) has a phone on the duvet (audit A-37) | The same bed reshot without the phone, ideally landscape |
+
+## Published web masters (`apps/lavishhaus/public/images/catalog/`)
+
+31 JPEGs, longest edge ≤ 2000 px, mozjpeg q80, metadata stripped, about 5.1 MB in total. Next/Image serves resized AVIF/WebP from these. `lib/image-manifest.json` holds dimensions and blur placeholders. Rebuild with `node scripts/build-images.mjs` (needs the local, gitignored inbox originals).
+
+| Group | IDs | Used on |
+|---|---|---|
+| Upholstered beds | bed-navy-channel-wall, bed-faceted-01/02/03, bed-grey-channel-mirror, bed-champagne-diamond, bed-cognac-panel, bed-green-chevron, bed-grey-square-panel, bed-grey-diamond-tufted, bed-honeycomb-timber | Home hero, Bedroom category, Upholstered Beds, About, Craftsmanship |
+| Bedroom suites | suite-grey-lacquer-01/02/03, bed-arch-dresser | Bedroom Suites, Showroom |
+| Dining | dining-black-fluted, dining-rose-gold, dining-chairs-tufted | Dining category and Dining Sets, About, OG card |
+| Living room | tv-marble-01/02/03, tv-timber, tv-led-01, tv-led-02, console-white-sculpture, console-brass-drawers, console-floating-fluted, coffee-tables-pebble, sofa-chesterfield | Living Room, TV Wall Units, Consoles & Tables, Sofas & Seating, Bespoke Commissions, Contact |
+| Kitchen / office | kitchen-island-fluted, desk-white-pedestal | Kitchen Islands, Desks |
+
+Crops applied in the build script (fractional boxes in `SOURCES`): `bed-grey-channel-mirror`, `bed-navy-channel-wall`, `dining-black-fluted` and `console-floating-fluted`. These cover the privacy crops for people and reflections (audit A-22) as well as framing.
+
+Removed from `public/`: `images/rooms/**` (34 earlier files, replaced by the masters above after de-duplication: 11 near-duplicate pairs, and the mislabelled `bed-honeycomb-…-02` and `bed-grey-mirror-panel-*`) and `hero-living-room.png` (AI-generated, audit A-01).
