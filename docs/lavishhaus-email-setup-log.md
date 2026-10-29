@@ -2,7 +2,7 @@
 
 Record of changes to email delivery for `lavishhaus.co.za`. Destination mailboxes and credentials are not written here.
 
-> **Rule:** a row may only say Added or Enabled after a DNS lookup against 1.1.1.1 or a visible Cloudflare screen confirms it. Until then it says "Not yet enabled, pending".
+> **Rule:** a row may only say Added, Enabled or Verified after a DNS lookup against 1.1.1.1, or a screenshot of the Cloudflare or Brevo dashboard, confirms it. Until then it says "Not yet enabled, pending".
 
 ## Finding
 
@@ -42,4 +42,4 @@ Records that let Brevo send the form notifications as `lavishhaus.co.za` (DKIM, 
 | Cloudflare DNS | CNAME | `brevo1._domainkey` | `b1.lavishhaus-co-za.dkim.brevo.com` | DNS only | 29 Oct 2026 | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
 | Cloudflare DNS | CNAME | `brevo2._domainkey` | `b2.lavishhaus-co-za.dkim.brevo.com` | DNS only | 29 Oct 2026 | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
 | Cloudflare DNS | TXT | `_dmarc` | `v=DMARC1; p=none; rua=mailto:rua@dmarc.brevo.com` | — | 29 Oct 2026 | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
-| Brevo | Domain | `lavishhaus.co.za` | Domain added in Brevo | — | 29 Oct 2026 | Pending authentication | |
+| Brevo | Domain | `lavishhaus.co.za` | Domain added in Brevo | — | 29 Oct 2026 | Pending authentication | Evidence: Brevo DNS records screen, 29 Oct 2026; authentication pending |
