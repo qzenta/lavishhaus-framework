@@ -44,10 +44,9 @@ export function Navbar() {
           <Image
             src="/images/logo.png"
             alt={siteConfig.name}
-            width={864}
-            height={368}
+            width={150}
+            height={64}
             className="h-14 w-auto lg:h-16"
-            preload
           />
         </Link>
 
@@ -131,8 +130,8 @@ export function Navbar() {
                 <Image
                   src="/images/logo.png"
                   alt={siteConfig.name}
-                  width={864}
-                  height={368}
+                  width={104}
+                  height={44}
                   className="h-11 w-auto"
                 />
               </SheetTitle>

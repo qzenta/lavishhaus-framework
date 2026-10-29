@@ -40,3 +40,9 @@ commit messages) isn't a client source; it's recorded as "agency brief".
 6. Do you make outdoor furniture?
 7. Product names: should the photographed pieces have names?
 8. The "KHUNE" Chesterfield armchair: may it be published (customer consent)?
+
+## Batch 4 additions
+
+| ID | Item | Status | Site decision |
+|---|---|---|---|
+| F-23 | Privacy policy names Brevo (form email) and Microsoft Clarity (analytics, cookies, default input masking) | Derived from the code (`services/*`, `app/layout.tsx`), not legal advice | Disclosed on `/privacy`. The client should confirm the Clarity masking settings in its dashboard and decide whether a POPIA consent banner is needed before Clarity loads. |

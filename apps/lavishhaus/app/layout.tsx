@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
@@ -75,13 +76,23 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             __html: JSON.stringify([organizationJsonLd(), localBusinessJsonLd()]),
           }}
         />
-        <script
+        <Script
+          id="microsoft-clarity"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","xybxgfgo4s");`,
           }}
         />
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-charcoal focus:px-4 focus:py-2 focus:text-sm focus:text-ivory"
+        >
+          Skip to content
+        </a>
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main id="main" tabIndex={-1} className="flex-1 outline-none">
+          {children}
+        </main>
         <Footer />
         <WhatsappFab />
       </body>

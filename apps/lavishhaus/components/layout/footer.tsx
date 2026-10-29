@@ -16,8 +16,8 @@ export function Footer() {
               <Image
                 src="/images/logo.png"
                 alt={siteConfig.name}
-                width={864}
-                height={368}
+                width={150}
+                height={64}
                 className="h-16 w-auto brightness-0 invert"
               />
             </Link>

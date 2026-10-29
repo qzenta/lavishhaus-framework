@@ -55,7 +55,8 @@ export function Hero({
             src={image.src}
             alt={image.alt}
             fill
-            preload
+            loading="eager"
+            fetchPriority="high"
             placeholder={image.blurDataURL ? "blur" : "empty"}
             blurDataURL={image.blurDataURL}
             sizes={large ? "(min-width: 1024px) 60vw, 100vw" : "100vw"}

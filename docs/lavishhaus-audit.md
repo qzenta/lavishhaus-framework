@@ -43,7 +43,7 @@ Severity: P0 (misleading, broken or unsafe) → P3 (optional).
 | A-11 | P0 | Security / privacy | User input is interpolated **unescaped into the HTML email** (HTML injection into the staff inbox) | Escape all fields | Unit test | fixed (batch 3) |
 | A-12 | P0 | Privacy | On the missing-key path the full enquiry (name, email, phone, message) is written to server logs via `console.warn(values)` | Log no PII | Unit test / code review | fixed (batch 3) |
 | A-13 | P1 | Forms | No spam protection (no honeypot, rate limit or captcha) | Add a honeypot field plus a minimum fill time | Unit test | fixed (batch 3): honeypot + 2.5 s minimum fill time |
-| A-14 | P1 | Privacy | Microsoft Clarity session recording loads without consent and isn't mentioned in the privacy policy (POPIA notice) | Disclose in the privacy policy; consent banner is a client decision | Content review | open |
+| A-14 | P1 | Privacy | Microsoft Clarity session recording loads without consent and isn't mentioned in the privacy policy (POPIA notice) | Disclose in the privacy policy; consent banner is a client decision | Content review | partly fixed (batch 4): Clarity and Brevo disclosed on /privacy; consent banner is a client decision (F-23) |
 | A-15 | P1 | Trust | Social links (`instagram.com/lavishhaus`, `facebook.com/lavishhaus`, `pinterest.com/lavishhaus`) aren't confirmed as the client's accounts and are emitted in Organization `sameAs`. The Instagram grid is picsum | Hide until confirmed; remove the placeholder grid | Screenshot | fixed (batch 1–2) |
 | A-16 | P1 | SEO | Product JSON-LD on collection pages has `offers` with no price (invalid for rich results) and a relative image URL | Replace with CollectionPage/ItemList and absolute image URLs | JSON-LD check | fixed (batch 1–2) |
 | A-17 | P1 | SEO | `og-image.jpg` provenance unknown (1600×790, not in the inbox); FurnitureStore JSON-LD uses it as `image` | Generate OG from a real photo | File check | fixed (batch 1–2) |
@@ -56,7 +56,7 @@ Severity: P0 (misleading, broken or unsafe) → P3 (optional).
 | A-24 | P2 | Content | "Shop by Room" implies e-commerce; the FAQ says there's no online ordering | Rename to "Collections" | Nav screenshot | fixed (batch 1–2) |
 | A-25 | P2 | Content | The process step "book a showroom visit" and copy about a design team "working directly with the workshop" are unverified | Soften | grep | fixed (batch 1–2) |
 | A-26 | P2 | Tests | No automated tests | Add focused tests for form actions, escaping, honeypot and redirects | `npm test` | partly fixed (batch 3): unit + browser form tests |
-| A-27 | P2 | Motion | Need to confirm framer-motion use and reduced-motion handling | Check; CSS transitions honouring `prefers-reduced-motion` | Emulated reduced motion | open |
+| A-27 | P2 | Motion | Need to confirm framer-motion use and reduced-motion handling | Check; CSS transitions honouring `prefers-reduced-motion` | Emulated reduced motion | fixed (batch 4): global prefers-reduced-motion rule, verified |
 | A-28 | P2 | Imagery | Many showroom bed photos show third-party mattress branding (RESTONIC) and showroom clutter; acceptable, but not editorial | Prefer installed-room photos for hero and feature slots | Visual | open |
 | A-29 | P3 | Video | The new video isn't usable (see the asset manifest) | Unused; request a better clip | — | wontfix (asset quality) |
 | A-30 | — | External | Production env vars unreadable, so production form delivery can't be verified | Client or Qzenta to confirm `BREVO_API_KEY` and notification addresses in Vercel | — | blocked |
@@ -77,3 +77,14 @@ See `docs/lavishhaus-facts.md`.
 | A-36 | P2 | UX | Lightbox had no keyboard arrows and no position indicator | Arrow keys; "n / total" (aria-live) | Manual (batch 5) | fixed, to verify |
 | A-37 | P2 | Imagery | The homepage hero photo shows a phone on the duvet; compact collection heroes crop portrait photos to a central band | Ask client for a clean shot; per-collection focal point | Visual | open |
 | A-38 | P1 | SEO | The old `og-image.jpg` was a badly cropped logo (monogram top and "HAUS" cut off) | Regenerated 1200×630 from a real photo + logo (`scripts/build-images.mjs`) | Visual | fixed |
+
+## 5. Additional findings (batch 4)
+
+| ID | Sev | Area | Finding | Remedy | Verification | Status |
+|---|---|---|---|---|---|---|
+| A-39 | P1 | A11y | No skip link, and `<main>` couldn't take focus | "Skip to content" link as the first tab stop; `main#main tabIndex=-1` | `scripts/a11y-check.mjs`: first Tab hits the skip link, Enter moves focus to `main` | fixed |
+| A-40 | P1 | A11y | Inline links on /privacy and /terms were distinguished by colour alone (axe `link-in-text-block`) | Always underlined, walnut | axe: 0 violations on 16 routes × 2 viewports | fixed |
+| A-41 | P2 | Perf | Logo declared as 864×368, so it downloaded at 1080/1920w and was preloaded on every page | Intrinsic size equals display size (256/384w); no preload | curl of srcset | fixed |
+| A-42 | P2 | Perf | Hero (LCP) not fetched at high priority; Clarity loaded during first render | `fetchPriority="high"` + eager; Clarity via `next/script` `lazyOnload` | Lighthouse | fixed |
+| A-43 | P2 | Perf | Lab mobile LCP still ≈ 4 s (simulated) / 3.6 s (devtools-throttled). Image load is fast; the delay is render (≈ 213 KiB JS across 13 scripts, render-blocking CSS and fonts) | Candidates: trim client components (Radix navigation menu, Select), font subsetting. Not done in this pass | Lighthouse medians in the test report | open |
+| A-44 | P3 | Best practice | Lighthouse best-practices 79, caused only by Clarity's third-party cookies | Client decision: consent banner or drop Clarity (F-23) | Lighthouse | open (client) |

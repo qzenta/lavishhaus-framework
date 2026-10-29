@@ -27,7 +27,7 @@ Also: edit existing routes, components and inbox folders in place; never scaffol
 | 0 | Baseline audit, screenshots, asset classification, fact register, tooling | done | `460eb68` |
 | 1+2 | P0 trust and imagery (one commit, they share files): fabricated projects, testimonials and claims removed; showroom wording; AI hero out; catalog rebuilt around 31 real photos; 12 redirects; Aurelia/TV fix; OG card; contrast and heading fixes | done | see git log |
 | 3 | P0 forms: honest delivery result, HTML escaping, no PII logs, honeypot; tests | done | see git log |
-| 4 | P1 redesign: first screen, cards, grids, mobile; h1s; JSON-LD; OG | pending | |
+| 4 | P1 polish: mobile hero/pillars, privacy disclosure, reduced motion, skip link, contrast, perf (logo, hero priority, deferred Clarity) | done | see git log |
 | 5 | Verification: build, lint, routes, screenshots, a11y, perf, reduced motion; reports | pending | |
 
 ## Current state
@@ -37,7 +37,9 @@ Also: edit existing routes, components and inbox folders in place; never scaffol
 - Git Bash: pass `MSYS_NO_PATHCONV=1` when giving `--routes=/…` to the audit script. `TaskStop` on `npx next start` can leave the node child holding port 3100; find it with `Get-NetTCPConnection -LocalPort 3100`.
 - Batch 3 checks: `npm test` 8/8 pass (`tests/enquiry.test.mjs`: escaping, header line breaks, honeypot/timing, Brevo not-configured/success/failure with a fake fetch). Browser test `scripts/test-forms.mjs` (refuses non-local URLs) 9/9 pass twice: against a server with no `BREVO_API_KEY` (fallback shown, no false success) and against a server with `BREVO_API_URL` pointed at a local mock on 127.0.0.1:3199 (success shown; the mock got exactly 2 requests, so the too-fast bot submit was dropped; HTML escaped). No real email was sent. Server logs contain no submitted names, emails or phones. Evidence: `docs/evidence/batch3/`.
 - Production note: if `BREVO_API_KEY` is missing in Vercel (unknown, A-30), live forms will now show the WhatsApp/phone/email fallback instead of a false "received".
-- Next: batch 4 (privacy disclosure, reduced motion, keyboard/a11y, performance, visual polish).
+- Batch 4 checks on the final local build: route audit `docs/evidence/batch4/` 25 routes × 3 viewports, 0 console errors, 0 broken/placeholder images, 0 missing alt, 0 overflow, exactly one h1 everywhere, canonicals present, 58/58 internal links OK (only failures are cancelled `/quote?_rsc` prefetches). axe WCAG 2.1 AA: 0 violations (16 routes × 2 viewports). Keyboard: skip link first, focus visible on 25/25 stops. Reduced motion: max animation/transition 0.01 ms. Form test 9/9. Lighthouse mobile medians (3 runs): home perf 83, LCP 4.1 s, TBT 242 ms; beds collection perf 85, LCP 4.0 s; a11y 100, SEO 100, best-practices 79 (Clarity cookies).
+- Gotcha: `TaskStop` on a backgrounded `npx next start` leaves the `next start` node child running, and the old build keeps answering on the port. Before trusting results, confirm the served HTML contains a marker from the new build; kill stale `next start` processes by command line.
+- Next: batch 5 (test report, release notes, final report).
 
 ## Blockers / external input
 
