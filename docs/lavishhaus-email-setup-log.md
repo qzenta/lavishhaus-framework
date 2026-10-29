@@ -20,6 +20,7 @@ There was **no MX record**, so mail to `info@lavishhaus.co.za` and `sales@lavish
 | Date | Change | Details | Records | Status |
 |---|---|---|---|---|
 | 29 Oct 2026 | Cloudflare Email Routing | Custom addresses `info@lavishhaus.co.za` and `sales@lavishhaus.co.za` to forward to a Qzenta-held mailbox as an **interim** destination, until the client names the mailbox that should receive enquiries (see Open client decisions; address not recorded here) | MX, SPF and DKIM records published by Cloudflare; values below | Routes info@ and sales@ Active in Cloudflare dashboard 29 Oct 2026; delivery test Passed 29 Oct 2026, info@ forwards to the interim mailbox |
+| 29 Oct 2026 | Production test: quote form | Quote request submitted on the live site after merge commit `960f04e` (PR #1, verified on `origin/main` after `git fetch`), notifying `sales@lavishhaus.co.za`. An earlier attempt from a stale page loaded before the deployment sent nothing. The forward from `sales@` to the interim mailbox was confirmed | — | Delivered: Brevo log 29 Oct 2026 20:06, no-reply@lavishhaus.co.za to sales@lavishhaus.co.za, Sent and Delivered; form showed Request received |
 
 ### Open client decisions
 
