@@ -26,7 +26,7 @@ Also: edit existing routes, components and inbox folders in place; never scaffol
 |---|---|---|---|
 | 0 | Baseline audit, screenshots, asset classification, fact register, tooling | done | `460eb68` |
 | 1+2 | P0 trust and imagery (one commit, they share files): fabricated projects, testimonials and claims removed; showroom wording; AI hero out; catalog rebuilt around 31 real photos; 12 redirects; Aurelia/TV fix; OG card; contrast and heading fixes | done | see git log |
-| 3 | P0 forms: honest delivery result, HTML escaping, no PII logs, honeypot; tests | pending | |
+| 3 | P0 forms: honest delivery result, HTML escaping, no PII logs, honeypot; tests | done | see git log |
 | 4 | P1 redesign: first screen, cards, grids, mobile; h1s; JSON-LD; OG | pending | |
 | 5 | Verification: build, lint, routes, screenshots, a11y, perf, reduced motion; reports | pending | |
 
@@ -35,7 +35,9 @@ Also: edit existing routes, components and inbox folders in place; never scaffol
 - Branch `lavishhaus-redesign`. Batches 0–2 committed.
 - Last successful checks (batch 2): `tsc` clean, `eslint` clean, `next build` OK (33 pages). Local audit `docs/evidence/batch2/`: 25 routes × 3 viewports, 0 console errors, 0 placeholder images, 0 overflow, one h1 per page, 58/58 internal links OK. Redirects checked with curl: 10 retired collections → 308, `/projects` and `/projects/*` → 307 to Bespoke Commissions.
 - Git Bash: pass `MSYS_NO_PATHCONV=1` when giving `--routes=/…` to the audit script. `TaskStop` on `npx next start` can leave the node child holding port 3100; find it with `Get-NetTCPConnection -LocalPort 3100`.
-- Next: batch 3 (forms: honest delivery result, escaping, no PII in logs, honeypot, tests).
+- Batch 3 checks: `npm test` 8/8 pass (`tests/enquiry.test.mjs`: escaping, header line breaks, honeypot/timing, Brevo not-configured/success/failure with a fake fetch). Browser test `scripts/test-forms.mjs` (refuses non-local URLs) 9/9 pass twice: against a server with no `BREVO_API_KEY` (fallback shown, no false success) and against a server with `BREVO_API_URL` pointed at a local mock on 127.0.0.1:3199 (success shown; the mock got exactly 2 requests, so the too-fast bot submit was dropped; HTML escaped). No real email was sent. Server logs contain no submitted names, emails or phones. Evidence: `docs/evidence/batch3/`.
+- Production note: if `BREVO_API_KEY` is missing in Vercel (unknown, A-30), live forms will now show the WhatsApp/phone/email fallback instead of a false "received".
+- Next: batch 4 (privacy disclosure, reduced motion, keyboard/a11y, performance, visual polish).
 
 ## Blockers / external input
 

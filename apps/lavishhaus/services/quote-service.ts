@@ -1,55 +1,24 @@
 import "server-only";
 import type { QuoteRequestValues } from "@/types/forms";
+import { quoteEmailHtml, sendBrevoEmail, type DeliveryResult } from "@/lib/enquiry";
 
 /**
- * Sends a quote request to Brevo (transactional email + CRM contact).
+ * Sends a quote request to the sales inbox via Brevo transactional email.
  *
  * Track 2: this module is the extraction candidate for packages/quote-engine,
  * along with a matching n8n webhook step once that integration is wired up.
  *
- * Requires BREVO_API_KEY in the environment. Until that's configured, requests
- * are logged instead of sent so the form can be exercised end-to-end locally.
+ * Without BREVO_API_KEY nothing is sent and the result says so, so the form
+ * can show an honest fallback instead of a false confirmation.
+ * BREVO_API_URL exists only so tests can point at a local mock.
  */
-export async function submitQuoteRequest(values: QuoteRequestValues) {
-  const apiKey = process.env.BREVO_API_KEY;
-  const notifyEmail = process.env.QUOTE_NOTIFY_EMAIL ?? "sales@lavishhaus.co.za";
-
-  if (!apiKey) {
-    console.warn(
-      "[quote-service] BREVO_API_KEY is not set — logging quote request instead of sending.",
-      values
-    );
-    return { delivered: false as const };
-  }
-
-  const response = await fetch("https://api.brevo.com/v3/smtp/email", {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-      "api-key": apiKey,
-    },
-    body: JSON.stringify({
-      sender: { name: "Lavish Haus Website", email: "no-reply@lavishhaus.co.za" },
-      to: [{ email: notifyEmail }],
-      replyTo: { email: values.email, name: values.fullName },
-      subject: `New quote request — ${values.fullName}`,
-      htmlContent: `
-        <h2>New Quote Request</h2>
-        <p><strong>Name:</strong> ${values.fullName}</p>
-        <p><strong>Email:</strong> ${values.email}</p>
-        <p><strong>Phone:</strong> ${values.phone}</p>
-        <p><strong>Collection:</strong> ${values.collection ?? "Not specified"}</p>
-        <p><strong>Space type:</strong> ${values.spaceType}</p>
-        <p><strong>Budget range:</strong> ${values.budgetRange ?? "Not specified"}</p>
-        <p><strong>Message:</strong><br/>${values.message}</p>
-      `,
-    }),
+export async function submitQuoteRequest(values: QuoteRequestValues): Promise<DeliveryResult> {
+  return sendBrevoEmail({
+    apiKey: process.env.BREVO_API_KEY,
+    apiUrl: process.env.BREVO_API_URL,
+    to: process.env.QUOTE_NOTIFY_EMAIL ?? "sales@lavishhaus.co.za",
+    replyTo: { email: values.email, name: values.fullName },
+    subject: `New quote request — ${values.fullName}`,
+    html: quoteEmailHtml(values),
   });
-
-  if (!response.ok) {
-    const body = await response.text();
-    throw new Error(`Brevo request failed (${response.status}): ${body}`);
-  }
-
-  return { delivered: true as const };
 }

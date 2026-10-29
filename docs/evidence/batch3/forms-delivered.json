@@ -1,0 +1,47 @@
+[
+  {
+    "name": "quote: piece prefill shown for known slug",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "quote: unknown slugs ignored",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "quote: empty submit shows validation messages",
+    "ok": true,
+    "detail": "6 messages"
+  },
+  {
+    "name": "quote: invalid fields marked aria-invalid",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "quote: success shown only when delivered",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "quote: no 'one business day' promise",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "contact: too-fast submit gets quiet success (dropped server-side)",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "contact: success when delivered",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "no console errors",
+    "ok": true,
+    "detail": ""
+  }
+]

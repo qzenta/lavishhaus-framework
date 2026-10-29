@@ -16,12 +16,20 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { EnquiryFallback } from "@/components/shared/enquiry-fallback";
+import { HoneypotField } from "@/components/shared/honeypot-field";
+import { siteConfig } from "@/config/site";
+import { HONEYPOT_FIELD } from "@/lib/enquiry";
 import { submitContactRequestAction } from "@/lib/actions";
 import { contactRequestSchema, type ContactRequestValues } from "@/types/forms";
 
 export function ContactForm() {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [showFallback, setShowFallback] = useState(false);
+  const [honeypot, setHoneypot] = useState("");
+  // Time the form was first shown, for the minimum-fill-time spam check.
+  const [startedAt] = useState(() => Date.now());
 
   const form = useForm<ContactRequestValues>({
     resolver: zodResolver(contactRequestSchema),
@@ -31,7 +39,12 @@ export function ContactForm() {
   async function onSubmit(values: ContactRequestValues) {
     setStatus("idle");
     setErrorMessage(null);
-    const result = await submitContactRequestAction(values);
+    setShowFallback(false);
+    const result = await submitContactRequestAction({
+      ...values,
+      [HONEYPOT_FIELD]: honeypot,
+      startedAt,
+    });
 
     if (result.success) {
       setStatus("success");
@@ -39,16 +52,22 @@ export function ContactForm() {
     } else {
       setStatus("error");
       setErrorMessage(result.error);
+      setShowFallback(result.fallback === true);
     }
   }
 
   if (status === "success") {
     return (
-      <div className="flex flex-col items-center gap-4 border border-border bg-card p-10 text-center">
-        <CheckCircle2 className="size-10 text-gold" aria-hidden="true" />
-        <h3 className="font-heading text-2xl text-charcoal">Message sent</h3>
+      <div
+        ref={(el) => el?.focus()}
+        tabIndex={-1}
+        role="status"
+        className="flex flex-col items-center gap-4 border border-border bg-card p-10 text-center outline-none"
+      >
+        <CheckCircle2 className="size-10 text-walnut" aria-hidden="true" />
+        <h2 className="font-heading text-2xl text-charcoal">Message sent</h2>
         <p className="max-w-sm text-sm text-muted-foreground">
-          Thank you for reaching out — we&apos;ll reply within one business day.
+          Thank you for reaching out. We&apos;ll be in touch.
         </p>
         <Button variant="outline" className="rounded-none" onClick={() => setStatus("idle")}>
           Send another message
@@ -59,7 +78,8 @@ export function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6" noValidate>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="relative space-y-6" noValidate>
+        <HoneypotField value={honeypot} onChange={setHoneypot} />
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           <FormField
             control={form.control}
@@ -118,7 +138,13 @@ export function ContactForm() {
         />
 
         {status === "error" && errorMessage ? (
-          <p className="text-sm text-destructive">{errorMessage}</p>
+          showFallback ? (
+            <EnquiryFallback message={errorMessage} email={siteConfig.contact.email} />
+          ) : (
+            <p role="alert" className="text-sm text-destructive">
+              {errorMessage}
+            </p>
+          )
         ) : null}
 
         <Button

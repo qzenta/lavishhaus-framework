@@ -3,20 +3,24 @@ import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/shared/breadcrumbs";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { QuoteForm } from "@/components/shared/quote-form";
+import { getCollectionBySlug } from "@/content/collections";
 
 export const metadata: Metadata = {
   title: "Request a Quote",
   description:
-    "Request a detailed, no-obligation quote for any Lavish Haus collection or a custom furniture commission.",
+    "Request a no-obligation quote for any Lavish Haus collection or a custom furniture commission.",
   alternates: { canonical: "/quote" },
 };
 
 export default async function QuotePage({
   searchParams,
 }: {
-  searchParams: Promise<{ collection?: string }>;
+  searchParams: Promise<{ collection?: string; piece?: string }>;
 }) {
-  const { collection } = await searchParams;
+  const params = await searchParams;
+  // Only accept known slugs from the query string.
+  const collection = params.collection ? getCollectionBySlug(params.collection) : undefined;
+  const piece = collection?.products.find((product) => product.slug === params.piece);
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-16 lg:px-8">
@@ -30,7 +34,7 @@ export default async function QuotePage({
         />
       </div>
       <div className="mt-12">
-        <QuoteForm defaultCollection={collection} />
+        <QuoteForm defaultCollection={collection?.slug} piece={piece?.name} />
       </div>
     </div>
   );
