@@ -1,0 +1,18 @@
+# Batch 6 checks 2026-10-29T15:20Z (uncommitted tree on top of ac84ea8)
+## tsc
+tsc: 0 errors
+## eslint
+eslint: 0 problems
+## npm test
+ℹ tests 8
+ℹ pass 8
+ℹ fail 0
+## a11y
+axe violations by rule: {}
+keyboard: {"firstTab":"Skip to content","afterSkip":"main","invisibleFocus":[]}
+reducedMotion: {"maxAnimationMs":0.01,"maxTransitionMs":0.01,"scrollBehavior":"auto"}
+## forms
+form checks passed: 9
+## routes
+internalLinks=59 bad=0 
+routes summary: {"shots":75,"routes":25,"status":[200],"console":0,"broken":0,"missingAlt":0,"placeholder":0,"overflow":0,"h1NotOne":0,"failed":["net::ERR_ABORTED http://localhost:3100/quote"]}

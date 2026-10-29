@@ -45,13 +45,23 @@ export default function PrivacyPolicyPage() {
           </p>
         </section>
         <section>
-          <h2 className="font-heading text-xl text-charcoal">Analytics</h2>
+          <h2 id="analytics" className="scroll-mt-24 font-heading text-xl text-charcoal">
+            Analytics and cookies
+          </h2>
           <p className="mt-3 text-muted-foreground">
-            We use Microsoft Clarity to understand how visitors use this website, for example
-            which pages are viewed and how people move through them. Clarity uses cookies and
-            records interactions such as clicks and scrolling; by default it masks
-            text typed into form fields. This information helps us improve the site and is not
-            used to identify you.
+            With your permission, we use Microsoft Clarity to understand how visitors use this
+            website, for example which pages are viewed and how people move through them.
+            Clarity sets cookies and records interactions such as clicks and scrolling; by
+            default it masks text typed into form fields. This information helps us improve the
+            site and is not used to identify you.
+          </p>
+          <p className="mt-3 text-muted-foreground">
+            Clarity is only loaded after you choose <strong>Accept</strong> in the cookie banner.
+            If you choose <strong>Decline</strong>, or make no choice, it is not loaded and no
+            analytics cookies are set. Your choice is saved in your browser&apos;s local storage
+            so we don&apos;t ask on every visit. You can change it at any time with{" "}
+            <strong>Cookie settings</strong> at the bottom of every page. We don&apos;t use
+            advertising cookies.
           </p>
         </section>
         <section>

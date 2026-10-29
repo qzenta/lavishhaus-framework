@@ -39,7 +39,7 @@ export function BrandPillars() {
               aria-hidden="true"
             />
             <div>
-              <p className="font-heading text-sm font-semibold tracking-wide text-ivory">
+              <p className="font-heading text-[0.95rem] tracking-wide text-ivory">
                 {pillar.title}
               </p>
               <p className="mt-0.5 hidden text-xs text-ivory/70 sm:block">{pillar.description}</p>

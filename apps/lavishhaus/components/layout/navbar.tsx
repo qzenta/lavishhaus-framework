@@ -2,20 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import dynamic from "next/dynamic";
+import { useRef, useState } from "react";
 import { Menu, MessageCircle } from "lucide-react";
 
 import { COLLECTIONS_HREF, collectionCategories, primaryNav } from "@/config/nav";
 import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-  SheetClose,
-} from "@/components/ui/sheet";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -25,8 +18,15 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
+// The mobile menu (Radix Dialog) is only downloaded when it's first opened.
+const MobileMenu = dynamic(() => import("./mobile-menu").then((m) => m.MobileMenu), {
+  ssr: false,
+});
+
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [menuRequested, setMenuRequested] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
 
   const collectionsIndex = primaryNav.findIndex((link) => link.href === COLLECTIONS_HREF);
   const collectionsLabel = primaryNav[collectionsIndex].label;
@@ -118,71 +118,28 @@ export function Navbar() {
           </Button>
         </div>
 
-        <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
-          <SheetTrigger asChild className="lg:hidden">
-            <Button variant="ghost" size="icon" aria-label="Open menu">
-              <Menu className="size-5" />
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="right" className="w-full max-w-sm bg-ivory">
-            <SheetHeader>
-              <SheetTitle>
-                <Image
-                  src="/images/logo.png"
-                  alt={siteConfig.name}
-                  width={104}
-                  height={44}
-                  className="h-11 w-auto"
-                />
-              </SheetTitle>
-            </SheetHeader>
-            <nav className="flex flex-col gap-1 px-4">
-              {beforeCollections.map((link) => (
-                <SheetClose asChild key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="rounded-md px-2 py-2 font-medium text-charcoal hover:bg-sand"
-                  >
-                    {link.label}
-                  </Link>
-                </SheetClose>
-              ))}
-              <p className="mt-2 mb-1 text-xs tracking-wide text-muted-foreground uppercase">
-                {collectionsLabel}
-              </p>
-              {collectionCategories.map((category) => (
-                <SheetClose asChild key={category.slug}>
-                  <Link
-                    href={`/collections/${category.slug}`}
-                    className="rounded-md px-2 py-2 text-charcoal hover:bg-sand"
-                  >
-                    {category.label}
-                  </Link>
-                </SheetClose>
-              ))}
-              <div className="my-3 h-px bg-border" />
-              {afterCollections.map((link) => (
-                <SheetClose asChild key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="rounded-md px-2 py-2 font-medium text-charcoal hover:bg-sand"
-                  >
-                    {link.label}
-                  </Link>
-                </SheetClose>
-              ))}
-              <div className="my-3 h-px bg-border" />
-              <SheetClose asChild>
-                <Button
-                  asChild
-                  className="bg-charcoal text-ivory hover:bg-warm-black rounded-none"
-                >
-                  <Link href="/quote">Request a Quote</Link>
-                </Button>
-              </SheetClose>
-            </nav>
-          </SheetContent>
-        </Sheet>
+        <Button
+          ref={menuButtonRef}
+          variant="ghost"
+          size="icon"
+          aria-label="Open menu"
+          aria-haspopup="dialog"
+          aria-expanded={mobileOpen}
+          className="lg:hidden"
+          onClick={() => {
+            setMenuRequested(true);
+            setMobileOpen(true);
+          }}
+        >
+          <Menu className="size-5" aria-hidden="true" />
+        </Button>
+        {menuRequested ? (
+          <MobileMenu
+            open={mobileOpen}
+            onOpenChange={setMobileOpen}
+            returnFocusTo={menuButtonRef}
+          />
+        ) : null}
       </div>
     </header>
   );

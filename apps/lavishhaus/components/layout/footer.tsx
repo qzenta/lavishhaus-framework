@@ -4,6 +4,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 import { footerNav } from "@/config/nav";
 import { siteConfig } from "@/config/site";
+import { CookieSettingsButton } from "@/components/shared/consent";
 import { FacebookIcon, InstagramIcon } from "@/components/shared/social-icons";
 
 export function Footer() {
@@ -117,12 +118,13 @@ export function Footer() {
           <p>
             &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
             {footerNav.legal.map((item) => (
               <Link key={item.href} href={item.href} className="hover:text-gold">
                 {item.label}
               </Link>
             ))}
+            <CookieSettingsButton className="hover:text-gold" />
             <a
               href="https://qzenta.co.za"
               target="_blank"

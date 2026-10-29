@@ -1,0 +1,1928 @@
+{
+  "baseUrl": "http://localhost:3100",
+  "results": [
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Lavish Haus — Statement Furniture, Johannesburg",
+      "description": "Lavish Haus is a Johannesburg furniture showroom for statement beds, TV walls, dining sets and bespoke pieces made by MicWood Furnitures. Request a quote online or on WhatsApp.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za",
+      "h1": [
+        "Statement furniture, made for your home."
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=5CB68i4pnAekjehf",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=tXyZJ52UQVBCVsD3"
+      ],
+      "screenshot": "home--mobile.png"
+    },
+    {
+      "route": "/",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Lavish Haus — Statement Furniture, Johannesburg",
+      "description": "Lavish Haus is a Johannesburg furniture showroom for statement beds, TV walls, dining sets and bespoke pieces made by MicWood Furnitures. Request a quote online or on WhatsApp.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za",
+      "h1": [
+        "Statement furniture, made for your home."
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=5CB68i4pnAekjehf"
+      ],
+      "screenshot": "home--tablet.png"
+    },
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Lavish Haus — Statement Furniture, Johannesburg",
+      "description": "Lavish Haus is a Johannesburg furniture showroom for statement beds, TV walls, dining sets and bespoke pieces made by MicWood Furnitures. Request a quote online or on WhatsApp.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za",
+      "h1": [
+        "Statement furniture, made for your home."
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=5CB68i4pnAekjehf",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=tXyZJ52UQVBCVsD3"
+      ],
+      "screenshot": "home--desktop.png"
+    },
+    {
+      "route": "/about",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "About Us — Our Story | Lavish Haus",
+      "description": "Lavish Haus is the furniture showroom and customer-facing brand of MicWood Furnitures, offering statement beds, TV walls, dining sets and bespoke pieces in Johannesburg.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/about",
+      "h1": [
+        "About Lavish Haus"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "about--mobile.png"
+    },
+    {
+      "route": "/about",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "About Us — Our Story | Lavish Haus",
+      "description": "Lavish Haus is the furniture showroom and customer-facing brand of MicWood Furnitures, offering statement beds, TV walls, dining sets and bespoke pieces in Johannesburg.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/about",
+      "h1": [
+        "About Lavish Haus"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "about--tablet.png"
+    },
+    {
+      "route": "/about",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "About Us — Our Story | Lavish Haus",
+      "description": "Lavish Haus is the furniture showroom and customer-facing brand of MicWood Furnitures, offering statement beds, TV walls, dining sets and bespoke pieces in Johannesburg.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/about",
+      "h1": [
+        "About Lavish Haus"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=Sdev7PUlRw12F58X",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=yMFZbW3py_RmPDJX"
+      ],
+      "screenshot": "about--desktop.png"
+    },
+    {
+      "route": "/collections",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Furniture Collections | Lavish Haus",
+      "description": "Browse Lavish Haus furniture by room: upholstered beds, bedroom suites, TV walls, consoles, dining sets, kitchen islands, desks and custom furniture made by MicWood Furnitures.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections",
+      "h1": [
+        "Browse by room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections--mobile.png"
+    },
+    {
+      "route": "/collections",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Furniture Collections | Lavish Haus",
+      "description": "Browse Lavish Haus furniture by room: upholstered beds, bedroom suites, TV walls, consoles, dining sets, kitchen islands, desks and custom furniture made by MicWood Furnitures.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections",
+      "h1": [
+        "Browse by room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections--tablet.png"
+    },
+    {
+      "route": "/collections",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Furniture Collections | Lavish Haus",
+      "description": "Browse Lavish Haus furniture by room: upholstered beds, bedroom suites, TV walls, consoles, dining sets, kitchen islands, desks and custom furniture made by MicWood Furnitures.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections",
+      "h1": [
+        "Browse by room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=S7AnLAHzIksbVbW5",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=BvNx5oLkIVJOyl4b"
+      ],
+      "screenshot": "collections--desktop.png"
+    },
+    {
+      "route": "/collections/bedroom",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Bedroom | Lavish Haus",
+      "description": "Upholstered beds with statement headboards, and suites with coordinated chests and pedestals.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom",
+      "h1": [
+        "Bedroom"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom--mobile.png"
+    },
+    {
+      "route": "/collections/bedroom",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Bedroom | Lavish Haus",
+      "description": "Upholstered beds with statement headboards, and suites with coordinated chests and pedestals.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom",
+      "h1": [
+        "Bedroom"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=zxP5f11T-NvP0Ct-"
+      ],
+      "screenshot": "collections__bedroom--tablet.png"
+    },
+    {
+      "route": "/collections/bedroom",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Bedroom | Lavish Haus",
+      "description": "Upholstered beds with statement headboards, and suites with coordinated chests and pedestals.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom",
+      "h1": [
+        "Bedroom"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom--desktop.png"
+    },
+    {
+      "route": "/collections/bedroom/bedroom-suites",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Bedroom Suites | Lavish Haus",
+      "description": "Headboards paired with matching chests of drawers, dressers and bedside pedestals for a coordinated room.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/bedroom-suites",
+      "h1": [
+        "Bedroom Suites"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__bedroom__bedroom-suites--mobile.png"
+    },
+    {
+      "route": "/collections/bedroom/bedroom-suites",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Bedroom Suites | Lavish Haus",
+      "description": "Headboards paired with matching chests of drawers, dressers and bedside pedestals for a coordinated room.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/bedroom-suites",
+      "h1": [
+        "Bedroom Suites"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=bedroom-suites&piece=grey-gloss-suite-gold-inlay&_rsc=YKkhvCEd-zevPS2x"
+      ],
+      "screenshot": "collections__bedroom__bedroom-suites--tablet.png"
+    },
+    {
+      "route": "/collections/bedroom/bedroom-suites",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Bedroom Suites | Lavish Haus",
+      "description": "Headboards paired with matching chests of drawers, dressers and bedside pedestals for a coordinated room.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/bedroom-suites",
+      "h1": [
+        "Bedroom Suites"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=_slDU4R4zR_30YIP",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=bedroom-suites&piece=grey-gloss-suite-gold-inlay&_rsc=_slDU4R4zR_30YIP",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=YKkhvCEd-zevPS2x",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=bedroom-suites&_rsc=YKkhvCEd-zevPS2x"
+      ],
+      "screenshot": "collections__bedroom__bedroom-suites--desktop.png"
+    },
+    {
+      "route": "/collections/bedroom/upholstered-beds",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Upholstered Beds | Lavish Haus",
+      "description": "Beds defined by their headboards — faceted, diamond-tufted, channelled and panelled — in a range of colours and coverings.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/upholstered-beds",
+      "h1": [
+        "Upholstered Beds"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=upholstered-beds&piece=navy-bed-channel-wall-panel&_rsc=kTvjTNN25C4vTfDM",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=GfHIolLaJAFK5V17"
+      ],
+      "screenshot": "collections__bedroom__upholstered-beds--mobile.png"
+    },
+    {
+      "route": "/collections/bedroom/upholstered-beds",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Upholstered Beds | Lavish Haus",
+      "description": "Beds defined by their headboards — faceted, diamond-tufted, channelled and panelled — in a range of colours and coverings.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/upholstered-beds",
+      "h1": [
+        "Upholstered Beds"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=upholstered-beds&piece=navy-bed-channel-wall-panel&_rsc=GfHIolLaJAFK5V17",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=upholstered-beds&piece=navy-bed-channel-wall-panel&_rsc=kTvjTNN25C4vTfDM"
+      ],
+      "screenshot": "collections__bedroom__upholstered-beds--tablet.png"
+    },
+    {
+      "route": "/collections/bedroom/upholstered-beds",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Upholstered Beds | Lavish Haus",
+      "description": "Beds defined by their headboards — faceted, diamond-tufted, channelled and panelled — in a range of colours and coverings.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/bedroom/upholstered-beds",
+      "h1": [
+        "Upholstered Beds"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=GfHIolLaJAFK5V17",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=upholstered-beds&piece=navy-bed-channel-wall-panel&_rsc=GfHIolLaJAFK5V17",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=kTvjTNN25C4vTfDM",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=upholstered-beds&piece=navy-bed-channel-wall-panel&_rsc=kTvjTNN25C4vTfDM"
+      ],
+      "screenshot": "collections__bedroom__upholstered-beds--desktop.png"
+    },
+    {
+      "route": "/collections/custom-furniture",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Custom Furniture | Lavish Haus",
+      "description": "Built-in wall units, panelled headboard walls, kitchen islands and one-off pieces, designed with you and made by MicWood Furnitures.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/custom-furniture",
+      "h1": [
+        "Custom Furniture"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__custom-furniture--mobile.png"
+    },
+    {
+      "route": "/collections/custom-furniture",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Custom Furniture | Lavish Haus",
+      "description": "Built-in wall units, panelled headboard walls, kitchen islands and one-off pieces, designed with you and made by MicWood Furnitures.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/custom-furniture",
+      "h1": [
+        "Custom Furniture"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=reBoeDgj7NTv3Ra8",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=FFy2ZZ-lPQ6HYso6"
+      ],
+      "screenshot": "collections__custom-furniture--tablet.png"
+    },
+    {
+      "route": "/collections/custom-furniture",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Custom Furniture | Lavish Haus",
+      "description": "Built-in wall units, panelled headboard walls, kitchen islands and one-off pieces, designed with you and made by MicWood Furnitures.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/custom-furniture",
+      "h1": [
+        "Custom Furniture"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=reBoeDgj7NTv3Ra8",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=FFy2ZZ-lPQ6HYso6"
+      ],
+      "screenshot": "collections__custom-furniture--desktop.png"
+    },
+    {
+      "route": "/collections/custom-furniture/bespoke-commissions",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Bespoke Commissions | Lavish Haus",
+      "description": "Built-in wall units, panelled headboard walls, kitchen islands and one-off pieces, designed with you and made by MicWood Furnitures. Share a sketch, a photo or your measurements and we'll take it from there.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/custom-furniture/bespoke-commissions",
+      "h1": [
+        "Bespoke Commissions"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__custom-furniture__bespoke-commissions--mobile.png"
+    },
+    {
+      "route": "/collections/custom-furniture/bespoke-commissions",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Bespoke Commissions | Lavish Haus",
+      "description": "Built-in wall units, panelled headboard walls, kitchen islands and one-off pieces, designed with you and made by MicWood Furnitures. Share a sketch, a photo or your measurements and we'll take it from there.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/custom-furniture/bespoke-commissions",
+      "h1": [
+        "Bespoke Commissions"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=bespoke-commissions&_rsc=S6gJpSbdejP8OtBU"
+      ],
+      "screenshot": "collections__custom-furniture__bespoke-commissions--tablet.png"
+    },
+    {
+      "route": "/collections/custom-furniture/bespoke-commissions",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Bespoke Commissions | Lavish Haus",
+      "description": "Built-in wall units, panelled headboard walls, kitchen islands and one-off pieces, designed with you and made by MicWood Furnitures. Share a sketch, a photo or your measurements and we'll take it from there.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/custom-furniture/bespoke-commissions",
+      "h1": [
+        "Bespoke Commissions"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=-zsR_lM2Gy7KuAkb",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=bespoke-commissions&_rsc=S6gJpSbdejP8OtBU"
+      ],
+      "screenshot": "collections__custom-furniture__bespoke-commissions--desktop.png"
+    },
+    {
+      "route": "/collections/dining",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Dining Room | Lavish Haus",
+      "description": "Dining tables, upholstered chairs and benches, sized and finished for your space.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/dining",
+      "h1": [
+        "Dining Room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__dining--mobile.png"
+    },
+    {
+      "route": "/collections/dining",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Dining Room | Lavish Haus",
+      "description": "Dining tables, upholstered chairs and benches, sized and finished for your space.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/dining",
+      "h1": [
+        "Dining Room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__dining--tablet.png"
+    },
+    {
+      "route": "/collections/dining",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Dining Room | Lavish Haus",
+      "description": "Dining tables, upholstered chairs and benches, sized and finished for your space.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/dining",
+      "h1": [
+        "Dining Room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=9o3ETeutstVOzyZd"
+      ],
+      "screenshot": "collections__dining--desktop.png"
+    },
+    {
+      "route": "/collections/dining/dining-sets",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Dining Tables & Chairs | Lavish Haus",
+      "description": "Dining tables, upholstered chairs and benches. Sizes, seat counts and coverings are discussed with your quote.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/dining/dining-sets",
+      "h1": [
+        "Dining Tables & Chairs"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__dining__dining-sets--mobile.png"
+    },
+    {
+      "route": "/collections/dining/dining-sets",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Dining Tables & Chairs | Lavish Haus",
+      "description": "Dining tables, upholstered chairs and benches. Sizes, seat counts and coverings are discussed with your quote.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/dining/dining-sets",
+      "h1": [
+        "Dining Tables & Chairs"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=dining-sets&piece=oval-dining-set-fluted-base&_rsc=ax0V2d7g29_sqEhR",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=dining-sets&piece=oval-dining-set-fluted-base&_rsc=-mCqFqvPz512U7Xl"
+      ],
+      "screenshot": "collections__dining__dining-sets--tablet.png"
+    },
+    {
+      "route": "/collections/dining/dining-sets",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Dining Tables & Chairs | Lavish Haus",
+      "description": "Dining tables, upholstered chairs and benches. Sizes, seat counts and coverings are discussed with your quote.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/dining/dining-sets",
+      "h1": [
+        "Dining Tables & Chairs"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=ax0V2d7g29_sqEhR",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=-mCqFqvPz512U7Xl",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=dining-sets&_rsc=-mCqFqvPz512U7Xl",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=dining-sets&piece=oval-dining-set-fluted-base&_rsc=-mCqFqvPz512U7Xl"
+      ],
+      "screenshot": "collections__dining__dining-sets--desktop.png"
+    },
+    {
+      "route": "/collections/kitchen",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Kitchen | Lavish Haus",
+      "description": "Kitchen islands and cabinetry, designed and fitted to your space.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/kitchen",
+      "h1": [
+        "Kitchen"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__kitchen--mobile.png"
+    },
+    {
+      "route": "/collections/kitchen",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Kitchen | Lavish Haus",
+      "description": "Kitchen islands and cabinetry, designed and fitted to your space.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/kitchen",
+      "h1": [
+        "Kitchen"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=o5vahOPm0720NGhP"
+      ],
+      "screenshot": "collections__kitchen--tablet.png"
+    },
+    {
+      "route": "/collections/kitchen",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Kitchen | Lavish Haus",
+      "description": "Kitchen islands and cabinetry, designed and fitted to your space.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/kitchen",
+      "h1": [
+        "Kitchen"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=57VG6eVEj_6F-aQu",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=o5vahOPm0720NGhP"
+      ],
+      "screenshot": "collections__kitchen--desktop.png"
+    },
+    {
+      "route": "/collections/kitchen/kitchen-islands",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Kitchen Islands & Cabinetry | Lavish Haus",
+      "description": "Kitchen islands and cabinetry, designed and fitted to your space.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/kitchen/kitchen-islands",
+      "h1": [
+        "Kitchen Islands & Cabinetry"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__kitchen__kitchen-islands--mobile.png"
+    },
+    {
+      "route": "/collections/kitchen/kitchen-islands",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Kitchen Islands & Cabinetry | Lavish Haus",
+      "description": "Kitchen islands and cabinetry, designed and fitted to your space.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/kitchen/kitchen-islands",
+      "h1": [
+        "Kitchen Islands & Cabinetry"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=kitchen-islands&piece=fluted-kitchen-island&_rsc=ce6FlHuyppaY_Qdo",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=kitchen-islands&piece=fluted-kitchen-island&_rsc=0V8Qdjclz2TBOI9c"
+      ],
+      "screenshot": "collections__kitchen__kitchen-islands--tablet.png"
+    },
+    {
+      "route": "/collections/kitchen/kitchen-islands",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Kitchen Islands & Cabinetry | Lavish Haus",
+      "description": "Kitchen islands and cabinetry, designed and fitted to your space.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/kitchen/kitchen-islands",
+      "h1": [
+        "Kitchen Islands & Cabinetry"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=ce6FlHuyppaY_Qdo",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=kitchen-islands&piece=fluted-kitchen-island&_rsc=ce6FlHuyppaY_Qdo",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=0V8Qdjclz2TBOI9c",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=kitchen-islands&_rsc=0V8Qdjclz2TBOI9c",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=kitchen-islands&piece=fluted-kitchen-island&_rsc=0V8Qdjclz2TBOI9c"
+      ],
+      "screenshot": "collections__kitchen__kitchen-islands--desktop.png"
+    },
+    {
+      "route": "/collections/living-room",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Living Room | Lavish Haus",
+      "description": "Feature TV walls, consoles, coffee tables and classic seating for the room you gather in.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room",
+      "h1": [
+        "Living Room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__living-room--mobile.png"
+    },
+    {
+      "route": "/collections/living-room",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Living Room | Lavish Haus",
+      "description": "Feature TV walls, consoles, coffee tables and classic seating for the room you gather in.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room",
+      "h1": [
+        "Living Room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__living-room--tablet.png"
+    },
+    {
+      "route": "/collections/living-room",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Living Room | Lavish Haus",
+      "description": "Feature TV walls, consoles, coffee tables and classic seating for the room you gather in.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room",
+      "h1": [
+        "Living Room"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=bDvQwwrlCiAqQu2N",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=0ANHuC7MzMyM1Yyh"
+      ],
+      "screenshot": "collections__living-room--desktop.png"
+    },
+    {
+      "route": "/collections/living-room/consoles-and-tables",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Consoles & Occasional Tables | Lavish Haus",
+      "description": "Wall-mounted and freestanding consoles and coffee tables, in gloss, lacquer-look and fluted finishes.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/consoles-and-tables",
+      "h1": [
+        "Consoles & Occasional Tables"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=consoles-and-tables&piece=pebble-coffee-tables&_rsc=W0BVaVJO3rwae-uH"
+      ],
+      "screenshot": "collections__living-room__consoles-and-tables--mobile.png"
+    },
+    {
+      "route": "/collections/living-room/consoles-and-tables",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Consoles & Occasional Tables | Lavish Haus",
+      "description": "Wall-mounted and freestanding consoles and coffee tables, in gloss, lacquer-look and fluted finishes.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/consoles-and-tables",
+      "h1": [
+        "Consoles & Occasional Tables"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=consoles-and-tables&piece=pebble-coffee-tables&_rsc=EglT39vQnHmuPT4E",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=consoles-and-tables&piece=pebble-coffee-tables&_rsc=W0BVaVJO3rwae-uH"
+      ],
+      "screenshot": "collections__living-room__consoles-and-tables--tablet.png"
+    },
+    {
+      "route": "/collections/living-room/consoles-and-tables",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Consoles & Occasional Tables | Lavish Haus",
+      "description": "Wall-mounted and freestanding consoles and coffee tables, in gloss, lacquer-look and fluted finishes.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/consoles-and-tables",
+      "h1": [
+        "Consoles & Occasional Tables"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=EglT39vQnHmuPT4E",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=consoles-and-tables&piece=pebble-coffee-tables&_rsc=EglT39vQnHmuPT4E",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=W0BVaVJO3rwae-uH",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=consoles-and-tables&_rsc=W0BVaVJO3rwae-uH",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=consoles-and-tables&piece=pebble-coffee-tables&_rsc=W0BVaVJO3rwae-uH"
+      ],
+      "screenshot": "collections__living-room__consoles-and-tables--desktop.png"
+    },
+    {
+      "route": "/collections/living-room/sofas-and-seating",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Sofas & Seating | Lavish Haus",
+      "description": "Deep-buttoned and upholstered seating. Ask us about covers, colours and sizes for your room.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/sofas-and-seating",
+      "h1": [
+        "Sofas & Seating"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=sofas-and-seating&piece=chesterfield-sofa&_rsc=O2XZlud9KuJ6-Fhc"
+      ],
+      "screenshot": "collections__living-room__sofas-and-seating--mobile.png"
+    },
+    {
+      "route": "/collections/living-room/sofas-and-seating",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Sofas & Seating | Lavish Haus",
+      "description": "Deep-buttoned and upholstered seating. Ask us about covers, colours and sizes for your room.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/sofas-and-seating",
+      "h1": [
+        "Sofas & Seating"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=sofas-and-seating&piece=chesterfield-sofa&_rsc=GwJH4XwOIfn1ejJE"
+      ],
+      "screenshot": "collections__living-room__sofas-and-seating--tablet.png"
+    },
+    {
+      "route": "/collections/living-room/sofas-and-seating",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Sofas & Seating | Lavish Haus",
+      "description": "Deep-buttoned and upholstered seating. Ask us about covers, colours and sizes for your room.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/sofas-and-seating",
+      "h1": [
+        "Sofas & Seating"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=GwJH4XwOIfn1ejJE",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=sofas-and-seating&piece=chesterfield-sofa&_rsc=GwJH4XwOIfn1ejJE",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=sofas-and-seating&_rsc=GwJH4XwOIfn1ejJE",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=O2XZlud9KuJ6-Fhc",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=sofas-and-seating&piece=chesterfield-sofa&_rsc=O2XZlud9KuJ6-Fhc",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=sofas-and-seating&_rsc=O2XZlud9KuJ6-Fhc"
+      ],
+      "screenshot": "collections__living-room__sofas-and-seating--desktop.png"
+    },
+    {
+      "route": "/collections/living-room/tv-wall-units",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "TV Wall Units | Lavish Haus",
+      "description": "Floating and built-in TV walls combining panelled surrounds, low media consoles, lit shelving and display cabinets, each made to suit the wall it is built for.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/tv-wall-units",
+      "h1": [
+        "TV Wall Units"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__living-room__tv-wall-units--mobile.png"
+    },
+    {
+      "route": "/collections/living-room/tv-wall-units",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "TV Wall Units | Lavish Haus",
+      "description": "Floating and built-in TV walls combining panelled surrounds, low media consoles, lit shelving and display cabinets, each made to suit the wall it is built for.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/tv-wall-units",
+      "h1": [
+        "TV Wall Units"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=tv-wall-units&piece=marble-effect-fluted-tv-wall&_rsc=LSLHMJIS1yVSh7dQ"
+      ],
+      "screenshot": "collections__living-room__tv-wall-units--tablet.png"
+    },
+    {
+      "route": "/collections/living-room/tv-wall-units",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "TV Wall Units | Lavish Haus",
+      "description": "Floating and built-in TV walls combining panelled surrounds, low media consoles, lit shelving and display cabinets, each made to suit the wall it is built for.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/living-room/tv-wall-units",
+      "h1": [
+        "TV Wall Units"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=LSLHMJIS1yVSh7dQ",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=tv-wall-units&piece=marble-effect-fluted-tv-wall&_rsc=LSLHMJIS1yVSh7dQ",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=tv-wall-units&_rsc=LSLHMJIS1yVSh7dQ",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=KLoZGJhW3X1do3aV",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=tv-wall-units&piece=marble-effect-fluted-tv-wall&_rsc=KLoZGJhW3X1do3aV"
+      ],
+      "screenshot": "collections__living-room__tv-wall-units--desktop.png"
+    },
+    {
+      "route": "/collections/office",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Office | Lavish Haus",
+      "description": "Desks and storage for the home office and study.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/office",
+      "h1": [
+        "Office"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__office--mobile.png"
+    },
+    {
+      "route": "/collections/office",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Office | Lavish Haus",
+      "description": "Desks and storage for the home office and study.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/office",
+      "h1": [
+        "Office"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "collections__office--tablet.png"
+    },
+    {
+      "route": "/collections/office",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Office | Lavish Haus",
+      "description": "Desks and storage for the home office and study.",
+      "robots": null,
+      "canonical": "https://www.lavishhaus.co.za/collections/office",
+      "h1": [
+        "Office"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=ezBAPo96kpxXrlze",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=ssxXfego9LV-N1H6"
+      ],
+      "screenshot": "collections__office--desktop.png"
+    },
+    {
+      "route": "/collections/office/desks",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Desks | Lavish Haus",
+      "description": "Desks and storage for focused work, made to suit your room.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/office/desks",
+      "h1": [
+        "Desks"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=desks&piece=white-desk-drawer-pedestal&_rsc=-R2MRtx8c9p01PZc"
+      ],
+      "screenshot": "collections__office__desks--mobile.png"
+    },
+    {
+      "route": "/collections/office/desks",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Desks | Lavish Haus",
+      "description": "Desks and storage for focused work, made to suit your room.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/office/desks",
+      "h1": [
+        "Desks"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=desks&piece=white-desk-drawer-pedestal&_rsc=-R2MRtx8c9p01PZc",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=TQ9klpAcHy8Y4AMm"
+      ],
+      "screenshot": "collections__office__desks--tablet.png"
+    },
+    {
+      "route": "/collections/office/desks",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Desks | Lavish Haus",
+      "description": "Desks and storage for focused work, made to suit your room.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/collections/office/desks",
+      "h1": [
+        "Desks"
+      ],
+      "jsonLdTypes": [
+        null,
+        "CollectionPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=TQ9klpAcHy8Y4AMm",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=desks&piece=white-desk-drawer-pedestal&_rsc=TQ9klpAcHy8Y4AMm",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=desks&piece=white-desk-drawer-pedestal&_rsc=-R2MRtx8c9p01PZc",
+        "net::ERR_ABORTED http://localhost:3100/quote?collection=desks&_rsc=-R2MRtx8c9p01PZc"
+      ],
+      "screenshot": "collections__office__desks--desktop.png"
+    },
+    {
+      "route": "/contact",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Contact Us | Lavish Haus",
+      "description": "Contact Lavish Haus by phone, email or WhatsApp, or arrange a visit to the showroom on Ontdekkers Road, Randburg.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/contact",
+      "h1": [
+        "Contact Lavish Haus"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "contact--mobile.png"
+    },
+    {
+      "route": "/contact",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Contact Us | Lavish Haus",
+      "description": "Contact Lavish Haus by phone, email or WhatsApp, or arrange a visit to the showroom on Ontdekkers Road, Randburg.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/contact",
+      "h1": [
+        "Contact Lavish Haus"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "contact--tablet.png"
+    },
+    {
+      "route": "/contact",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Contact Us | Lavish Haus",
+      "description": "Contact Lavish Haus by phone, email or WhatsApp, or arrange a visit to the showroom on Ontdekkers Road, Randburg.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/contact",
+      "h1": [
+        "Contact Lavish Haus"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "contact--desktop.png"
+    },
+    {
+      "route": "/craftsmanship",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Craftsmanship — Our Process | Lavish Haus",
+      "description": "How a Lavish Haus piece goes from enquiry to delivery: consultation, specification, manufacture by MicWood Furnitures, and placement.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/craftsmanship",
+      "h1": [
+        "Made to your specification"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "craftsmanship--mobile.png"
+    },
+    {
+      "route": "/craftsmanship",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Craftsmanship — Our Process | Lavish Haus",
+      "description": "How a Lavish Haus piece goes from enquiry to delivery: consultation, specification, manufacture by MicWood Furnitures, and placement.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/craftsmanship",
+      "h1": [
+        "Made to your specification"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "craftsmanship--tablet.png"
+    },
+    {
+      "route": "/craftsmanship",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Craftsmanship — Our Process | Lavish Haus",
+      "description": "How a Lavish Haus piece goes from enquiry to delivery: consultation, specification, manufacture by MicWood Furnitures, and placement.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/craftsmanship",
+      "h1": [
+        "Made to your specification"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=uA5lNBukMZLiUU7E"
+      ],
+      "screenshot": "craftsmanship--desktop.png"
+    },
+    {
+      "route": "/faqs",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "FAQs | Lavish Haus",
+      "description": "Answers to common questions about Lavish Haus furniture, quotes, custom commissions and delivery.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/faqs",
+      "h1": [
+        "Frequently Asked Questions"
+      ],
+      "jsonLdTypes": [
+        null,
+        "FAQPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "faqs--mobile.png"
+    },
+    {
+      "route": "/faqs",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "FAQs | Lavish Haus",
+      "description": "Answers to common questions about Lavish Haus furniture, quotes, custom commissions and delivery.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/faqs",
+      "h1": [
+        "Frequently Asked Questions"
+      ],
+      "jsonLdTypes": [
+        null,
+        "FAQPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=6qgFuPUNlgj1pRyH",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=umFcw2VpGqrqbB7q"
+      ],
+      "screenshot": "faqs--tablet.png"
+    },
+    {
+      "route": "/faqs",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "FAQs | Lavish Haus",
+      "description": "Answers to common questions about Lavish Haus furniture, quotes, custom commissions and delivery.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/faqs",
+      "h1": [
+        "Frequently Asked Questions"
+      ],
+      "jsonLdTypes": [
+        null,
+        "FAQPage"
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=6qgFuPUNlgj1pRyH",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=umFcw2VpGqrqbB7q"
+      ],
+      "screenshot": "faqs--desktop.png"
+    },
+    {
+      "route": "/privacy",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Privacy Policy | Lavish Haus",
+      "description": "How Lavish Haus collects, uses and protects your personal information.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/privacy",
+      "h1": [
+        "Privacy Policy"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "privacy--mobile.png"
+    },
+    {
+      "route": "/privacy",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Privacy Policy | Lavish Haus",
+      "description": "How Lavish Haus collects, uses and protects your personal information.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/privacy",
+      "h1": [
+        "Privacy Policy"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=UnGutxUMZihRxjHi"
+      ],
+      "screenshot": "privacy--tablet.png"
+    },
+    {
+      "route": "/privacy",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Privacy Policy | Lavish Haus",
+      "description": "How Lavish Haus collects, uses and protects your personal information.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/privacy",
+      "h1": [
+        "Privacy Policy"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=WzUDN3am5ctH078F",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=UnGutxUMZihRxjHi"
+      ],
+      "screenshot": "privacy--desktop.png"
+    },
+    {
+      "route": "/quote",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Request a Quote | Lavish Haus",
+      "description": "Request a no-obligation quote for any Lavish Haus collection or a custom furniture commission.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/quote",
+      "h1": [
+        "Let's price your piece"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "quote--mobile.png"
+    },
+    {
+      "route": "/quote",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Request a Quote | Lavish Haus",
+      "description": "Request a no-obligation quote for any Lavish Haus collection or a custom furniture commission.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/quote",
+      "h1": [
+        "Let's price your piece"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=JYOUMUV3rD2cjfsW"
+      ],
+      "screenshot": "quote--tablet.png"
+    },
+    {
+      "route": "/quote",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Request a Quote | Lavish Haus",
+      "description": "Request a no-obligation quote for any Lavish Haus collection or a custom furniture commission.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/quote",
+      "h1": [
+        "Let's price your piece"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=JYOUMUV3rD2cjfsW"
+      ],
+      "screenshot": "quote--desktop.png"
+    },
+    {
+      "route": "/showroom",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Showroom | Lavish Haus",
+      "description": "The Lavish Haus showroom at 635 Ontdekkers Road, Delarey, Randburg. Contact us to arrange a visit and see pieces in person.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/showroom",
+      "h1": [
+        "The Lavish Haus Showroom"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "showroom--mobile.png"
+    },
+    {
+      "route": "/showroom",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Showroom | Lavish Haus",
+      "description": "The Lavish Haus showroom at 635 Ontdekkers Road, Delarey, Randburg. Contact us to arrange a visit and see pieces in person.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/showroom",
+      "h1": [
+        "The Lavish Haus Showroom"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "showroom--tablet.png"
+    },
+    {
+      "route": "/showroom",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Showroom | Lavish Haus",
+      "description": "The Lavish Haus showroom at 635 Ontdekkers Road, Delarey, Randburg. Contact us to arrange a visit and see pieces in person.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/showroom",
+      "h1": [
+        "The Lavish Haus Showroom"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=eFRkpSx3rgAIk58G",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=ekcdilNtB_zRJRoT"
+      ],
+      "screenshot": "showroom--desktop.png"
+    },
+    {
+      "route": "/terms",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Terms of Service | Lavish Haus",
+      "description": "Terms of service for using the Lavish Haus website and requesting quotes.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/terms",
+      "h1": [
+        "Terms of Service"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshot": "terms--mobile.png"
+    },
+    {
+      "route": "/terms",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Terms of Service | Lavish Haus",
+      "description": "Terms of service for using the Lavish Haus website and requesting quotes.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/terms",
+      "h1": [
+        "Terms of Service"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=pfWg1qw4uMxqj7N2"
+      ],
+      "screenshot": "terms--tablet.png"
+    },
+    {
+      "route": "/terms",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Terms of Service | Lavish Haus",
+      "description": "Terms of service for using the Lavish Haus website and requesting quotes.",
+      "robots": "index, follow",
+      "canonical": "https://www.lavishhaus.co.za/terms",
+      "h1": [
+        "Terms of Service"
+      ],
+      "jsonLdTypes": [
+        null
+      ],
+      "imagesMissingAlt": [],
+      "brokenImages": [],
+      "placeholderImages": 0,
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "failedRequests": [
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=pfWg1qw4uMxqj7N2",
+        "net::ERR_ABORTED http://localhost:3100/quote?_rsc=Jm_KudBfn_F9em99"
+      ],
+      "screenshot": "terms--desktop.png"
+    }
+  ],
+  "linkStatus": {
+    "/": 200,
+    "/craftsmanship": 200,
+    "/showroom": 200,
+    "/about": 200,
+    "/contact": 200,
+    "/quote": 200,
+    "/collections": 200,
+    "/collections/living-room": 200,
+    "/collections/bedroom": 200,
+    "/collections/dining": 200,
+    "/collections/kitchen": 200,
+    "/collections/office": 200,
+    "/collections/custom-furniture": 200,
+    "/collections/living-room/tv-wall-units": 200,
+    "/collections/bedroom/upholstered-beds": 200,
+    "/collections/dining/dining-sets": 200,
+    "/quote?collection=bespoke-commissions": 200,
+    "/collections/custom-furniture/bespoke-commissions": 200,
+    "/faqs": 200,
+    "/privacy": 200,
+    "/terms": 200,
+    "/privacy#analytics": 200,
+    "/collections/bedroom/bedroom-suites": 200,
+    "/quote?collection=bedroom-suites&piece=grey-gloss-suite-gold-inlay": 200,
+    "/quote?collection=bedroom-suites&piece=arch-headboard-bed-six-drawer-dresser": 200,
+    "/quote?collection=bedroom-suites": 200,
+    "/quote?collection=upholstered-beds&piece=navy-bed-channel-wall-panel": 200,
+    "/quote?collection=upholstered-beds&piece=faceted-panel-headboard-bed": 200,
+    "/quote?collection=upholstered-beds&piece=grey-channel-bed-mirror-panels": 200,
+    "/quote?collection=upholstered-beds&piece=champagne-diamond-tufted-bed": 200,
+    "/quote?collection=upholstered-beds&piece=cognac-diamond-panel-bed": 200,
+    "/quote?collection=upholstered-beds&piece=green-chevron-headboard-bed": 200,
+    "/quote?collection=upholstered-beds&piece=honeycomb-headboard-timber-frame": 200,
+    "/quote?collection=upholstered-beds&piece=grey-diamond-tufted-bed": 200,
+    "/quote?collection=upholstered-beds&piece=grey-square-panel-bed": 200,
+    "/quote?collection=upholstered-beds": 200,
+    "/quote?collection=dining-sets&piece=oval-dining-set-fluted-base": 200,
+    "/quote?collection=dining-sets&piece=eight-seater-table-rose-gold-legs": 200,
+    "/quote?collection=dining-sets&piece=upholstered-dining-chairs": 200,
+    "/quote?collection=dining-sets": 200,
+    "/collections/living-room/consoles-and-tables": 200,
+    "/collections/kitchen/kitchen-islands": 200,
+    "/quote?collection=kitchen-islands&piece=fluted-kitchen-island": 200,
+    "/quote?collection=kitchen-islands": 200,
+    "/collections/living-room/sofas-and-seating": 200,
+    "/quote?collection=consoles-and-tables&piece=pebble-coffee-tables": 200,
+    "/quote?collection=consoles-and-tables&piece=floating-fluted-console": 200,
+    "/quote?collection=consoles-and-tables&piece=two-drawer-console-brass-frame": 200,
+    "/quote?collection=consoles-and-tables&piece=white-console-table": 200,
+    "/quote?collection=consoles-and-tables": 200,
+    "/quote?collection=sofas-and-seating&piece=chesterfield-sofa": 200,
+    "/quote?collection=sofas-and-seating": 200,
+    "/quote?collection=tv-wall-units&piece=marble-effect-fluted-tv-wall": 200,
+    "/quote?collection=tv-wall-units&piece=built-in-led-tv-wall": 200,
+    "/quote?collection=tv-wall-units&piece=timber-panel-tv-wall": 200,
+    "/quote?collection=tv-wall-units": 200,
+    "/collections/office/desks": 200,
+    "/quote?collection=desks&piece=white-desk-drawer-pedestal": 200,
+    "/quote?collection=desks": 200
+  },
+  "externalLinks": [
+    "https://wa.me/27783556579",
+    "tel:+27783556579",
+    "mailto:info@lavishhaus.co.za",
+    "https://qzenta.co.za",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20a%20piece.",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Grey%20Gloss%20Suite%20with%20Gold-Tone%20Inlay%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fbedroom-suites%23grey-gloss-suite-gold-inlay).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Arch%20Headboard%20Bed%20%26%20Six-Drawer%20Dresser%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fbedroom-suites%23arch-headboard-bed-six-drawer-dresser).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20Bedroom%20Suites%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fbedroom-suites).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Navy%20Bed%20with%20Channel%20Wall%20Panel%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23navy-bed-channel-wall-panel).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Faceted%20Panel%20Headboard%20Bed%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23faceted-panel-headboard-bed).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Grey%20Channel%20Bed%20with%20Mirror%20Panels%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23grey-channel-bed-mirror-panels).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Champagne%20Diamond-Tufted%20Bed%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23champagne-diamond-tufted-bed).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Cognac%20Diamond-Panel%20Bed%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23cognac-diamond-panel-bed).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Green%20Chevron%20Headboard%20Bed%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23green-chevron-headboard-bed).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Honeycomb%20Headboard%20in%20Timber%20Frame%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23honeycomb-headboard-timber-frame).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Grey%20Diamond-Tufted%20Bed%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23grey-diamond-tufted-bed).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Grey%20Square-Panel%20Bed%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds%23grey-square-panel-bed).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20Upholstered%20Beds%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fbedroom%2Fupholstered-beds).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20Bespoke%20Commissions%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fcustom-furniture%2Fbespoke-commissions).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Oval%20Dining%20Set%20with%20Fluted%20Base%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fdining%2Fdining-sets%23oval-dining-set-fluted-base).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Eight-Seater%20Table%20with%20Rose-Gold%20Legs%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fdining%2Fdining-sets%23eight-seater-table-rose-gold-legs).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Upholstered%20Dining%20Chairs%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fdining%2Fdining-sets%23upholstered-dining-chairs).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20Dining%20Tables%20%26%20Chairs%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fdining%2Fdining-sets).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Fluted%20Kitchen%20Island%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fkitchen%2Fkitchen-islands%23fluted-kitchen-island).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20Kitchen%20Islands%20%26%20Cabinetry%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fkitchen%2Fkitchen-islands).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Pebble%20Coffee%20Tables%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fliving-room%2Fconsoles-and-tables%23pebble-coffee-tables).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Floating%20Fluted%20Console%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fliving-room%2Fconsoles-and-tables%23floating-fluted-console).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Two-Drawer%20Console%20with%20Brass-Tone%20Frame%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fliving-room%2Fconsoles-and-tables%23two-drawer-console-brass-frame).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20White%20Console%20Table%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fliving-room%2Fconsoles-and-tables%23white-console-table).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20Consoles%20%26%20Occasional%20Tables%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fliving-room%2Fconsoles-and-tables).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Chesterfield%20Sofa%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fliving-room%2Fsofas-and-seating%23chesterfield-sofa).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20Sofas%20%26%20Seating%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fliving-room%2Fsofas-and-seating).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Marble-Effect%20Fluted%20TV%20Wall%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fliving-room%2Ftv-wall-units%23marble-effect-fluted-tv-wall).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Built-In%20TV%20Wall%20with%20Lit%20Shelving%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fliving-room%2Ftv-wall-units%23built-in-led-tv-wall).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20Timber-Panel%20TV%20Wall%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fliving-room%2Ftv-wall-units%23timber-panel-tv-wall).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20TV%20Wall%20Units%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Fliving-room%2Ftv-wall-units).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20ask%20about%20the%20White%20Desk%20with%20Drawer%20Pedestal%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Foffice%2Fdesks%23white-desk-drawer-pedestal).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20enquire%20about%20Desks%20(https%3A%2F%2Fwww.lavishhaus.co.za%2Fcollections%2Foffice%2Fdesks).",
+    "https://wa.me/27783556579?text=Hi%20Lavish%20Haus%2C%20I'd%20like%20to%20arrange%20a%20showroom%20visit.",
+    "https://www.google.com/maps/search/?api=1&query=635%20Ontdekkers%20Road%2C%20Delarey%2C%20Randburg%2C%20South%20Africa"
+  ]
+}
