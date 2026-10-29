@@ -2,6 +2,8 @@
 
 Record of changes to email delivery for `lavishhaus.co.za`. Destination mailboxes and credentials are not written here.
 
+> **Rule:** a row may only say Added or Enabled after a DNS lookup against 1.1.1.1 or a visible Cloudflare screen confirms it. Until then it says "Not yet enabled, pending".
+
 ## Finding
 
 Before 29 Oct 2026 the `lavishhaus.co.za` DNS zone held only web records:
@@ -17,18 +19,18 @@ There was **no MX record**, so mail to `info@lavishhaus.co.za` and `sales@lavish
 
 | Date | Change | Details | Records | Status |
 |---|---|---|---|---|
-| 29 Oct 2026 | Cloudflare Email Routing enabled | Custom addresses `info@lavishhaus.co.za` and `sales@lavishhaus.co.za` forward to the client mailbox (address not recorded here) | MX and SPF (TXT) records added automatically by Cloudflare; values below | Enabled; values pending |
+| 29 Oct 2026 | Cloudflare Email Routing | Custom addresses `info@lavishhaus.co.za` and `sales@lavishhaus.co.za` to forward to the client mailbox (address not recorded here) | MX and SPF (TXT) records expected from Cloudflare; values below | Not yet enabled, pending |
 
-### Records added by Cloudflare
+### Records expected from Cloudflare Email Routing
 
-_Values to be pasted from the Cloudflare dashboard._
+_Values to be pasted from the Cloudflare dashboard._ A lookup against 1.1.1.1 on 29 Oct 2026 returned no MX record and no SPF record for `lavishhaus.co.za`.
 
-| Type | Name | Value | Priority |
-|---|---|---|---|
-| MX | `lavishhaus.co.za` | _pending_ | _pending_ |
-| MX | `lavishhaus.co.za` | _pending_ | _pending_ |
-| MX | `lavishhaus.co.za` | _pending_ | _pending_ |
-| TXT (SPF) | `lavishhaus.co.za` | _pending_ | — |
+| Type | Name | Value | Priority | Status |
+|---|---|---|---|---|
+| MX | `lavishhaus.co.za` | _pending_ | _pending_ | Not yet enabled, pending |
+| MX | `lavishhaus.co.za` | _pending_ | _pending_ | Not yet enabled, pending |
+| MX | `lavishhaus.co.za` | _pending_ | _pending_ | Not yet enabled, pending |
+| TXT (SPF) | `lavishhaus.co.za` | _pending_ | — | Not yet enabled, pending |
 
 ### Brevo sender authentication
 
