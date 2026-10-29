@@ -36,8 +36,8 @@ Records that let Brevo send the form notifications as `lavishhaus.co.za` (DKIM, 
 
 | System | Type | Name | Value | Proxy | Added | Status | Result |
 |---|---|---|---|---|---|---|---|
-| Cloudflare DNS | TXT | `@` | `brevo-code:097147a167a35a74e208063b16a4b4bb` | — | 29 Oct 2026 | Added | |
-| Cloudflare DNS | CNAME | `brevo1._domainkey` | `b1.lavishhaus-co-za.dkim.brevo.com` | DNS only | 29 Oct 2026 | Added | |
-| Cloudflare DNS | CNAME | `brevo2._domainkey` | `b2.lavishhaus-co-za.dkim.brevo.com` | DNS only | 29 Oct 2026 | Added | |
-| Cloudflare DNS | TXT | `_dmarc` | `v=DMARC1; p=none; rua=mailto:rua@dmarc.brevo.com` | — | 29 Oct 2026 | Added | |
+| Cloudflare DNS | TXT | `@` | `brevo-code:097147a167a35a74e208063b16a4b4bb` | — | 29 Oct 2026 | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
+| Cloudflare DNS | CNAME | `brevo1._domainkey` | `b1.lavishhaus-co-za.dkim.brevo.com` | DNS only | 29 Oct 2026 | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
+| Cloudflare DNS | CNAME | `brevo2._domainkey` | `b2.lavishhaus-co-za.dkim.brevo.com` | DNS only | 29 Oct 2026 | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
+| Cloudflare DNS | TXT | `_dmarc` | `v=DMARC1; p=none; rua=mailto:rua@dmarc.brevo.com` | — | 29 Oct 2026 | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
 | Brevo | Domain | `lavishhaus.co.za` | Domain added in Brevo | — | 29 Oct 2026 | Pending authentication | |
