@@ -19,7 +19,7 @@ There was **no MX record**, so mail to `info@lavishhaus.co.za` and `sales@lavish
 
 | Date | Change | Details | Records | Status |
 |---|---|---|---|---|
-| 29 Oct 2026 | Cloudflare Email Routing | Custom addresses `info@lavishhaus.co.za` and `sales@lavishhaus.co.za` to forward to a Qzenta-held mailbox as an **interim** destination, until the client names the mailbox that should receive enquiries (see Open client decisions; address not recorded here) | MX and SPF (TXT) records expected from Cloudflare; values below | Not yet enabled, pending |
+| 29 Oct 2026 | Cloudflare Email Routing | Custom addresses `info@lavishhaus.co.za` and `sales@lavishhaus.co.za` to forward to a Qzenta-held mailbox as an **interim** destination, until the client names the mailbox that should receive enquiries (see Open client decisions; address not recorded here) | MX, SPF and DKIM records published by Cloudflare; values below | Routes info@ and sales@ Active in Cloudflare dashboard 29 Oct 2026; delivery test pending |
 
 ### Open client decisions
 
@@ -27,16 +27,17 @@ There was **no MX record**, so mail to `info@lavishhaus.co.za` and `sales@lavish
 |---|---|---|---|
 | D-1 | Which mailbox should receive enquiries sent to `info@` and `sales@` (including website form notifications) | Forwarding to a Qzenta-held mailbox (address not recorded here) | Open, awaiting client |
 
-### Records expected from Cloudflare Email Routing
+### Records published by Cloudflare Email Routing
 
-_Values to be pasted from the Cloudflare dashboard._ A lookup against 1.1.1.1 on 29 Oct 2026 returned no MX record and no SPF record for `lavishhaus.co.za`.
+An earlier lookup against 1.1.1.1 on 29 Oct 2026 returned no MX or SPF record. A later lookup the same day confirmed the records below.
 
-| Type | Name | Value | Priority | Status |
-|---|---|---|---|---|
-| MX | `lavishhaus.co.za` | _pending_ | _pending_ | Not yet enabled, pending |
-| MX | `lavishhaus.co.za` | _pending_ | _pending_ | Not yet enabled, pending |
-| MX | `lavishhaus.co.za` | _pending_ | _pending_ | Not yet enabled, pending |
-| TXT (SPF) | `lavishhaus.co.za` | _pending_ | — | Not yet enabled, pending |
+| Type | Name | Value | Priority | Status | Result |
+|---|---|---|---|---|---|
+| MX | `lavishhaus.co.za` | `route1.mx.cloudflare.net` | 28 | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
+| MX | `lavishhaus.co.za` | `route2.mx.cloudflare.net` | 67 | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
+| MX | `lavishhaus.co.za` | `route3.mx.cloudflare.net` | 93 | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
+| TXT (SPF) | `lavishhaus.co.za` | `v=spf1 include:_spf.mx.cloudflare.net ~all` | — | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
+| TXT (DKIM) | `cf2024-1._domainkey` | `v=DKIM1` key published by Cloudflare (key not recorded here) | — | Verified live | Confirmed via Resolve-DnsName against 1.1.1.1 on 29 Oct 2026 |
 
 ### Brevo sender authentication
 
