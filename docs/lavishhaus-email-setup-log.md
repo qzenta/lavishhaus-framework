@@ -19,14 +19,15 @@ There was **no MX record**, so mail to `info@lavishhaus.co.za` and `sales@lavish
 
 | Date | Change | Details | Records | Status |
 |---|---|---|---|---|
-| 29 Oct 2026 | Cloudflare Email Routing | Custom addresses `info@lavishhaus.co.za` and `sales@lavishhaus.co.za` to forward to a Qzenta-held mailbox as an **interim** destination, until the client names the mailbox that should receive enquiries (see Open client decisions; address not recorded here) | MX, SPF and DKIM records published by Cloudflare; values below | Routes info@ and sales@ Active in Cloudflare dashboard 29 Oct 2026; delivery test Passed 29 Oct 2026, info@ forwards to the interim mailbox |
+| 29 Oct 2026 | Cloudflare Email Routing | Custom addresses `info@lavishhaus.co.za` and `sales@lavishhaus.co.za` forward to the mailbox named and verified by the client (see D-1, closed; address not recorded here) | MX, SPF and DKIM records published by Cloudflare; values below | Routes info@ and sales@ Active in Cloudflare dashboard 29 Oct 2026; first delivery test Passed 29 Oct 2026, before the destination was changed to the client mailbox (row below) |
 | 29 Oct 2026 | Production test: quote form | Quote request submitted on the live site after merge commit `960f04e` (PR #1, verified on `origin/main` after `git fetch`), notifying `sales@lavishhaus.co.za`. An earlier attempt from a stale page loaded before the deployment sent nothing. The forward from `sales@` to the interim mailbox was confirmed | — | Delivered: Brevo log 29 Oct 2026 20:06, no-reply@lavishhaus.co.za to sales@lavishhaus.co.za, Sent and Delivered; form showed Request received |
+| 29 Oct 2026 | Routing rules changed | Both Cloudflare routing rules (`info@lavishhaus.co.za` and `sales@lavishhaus.co.za`) changed to forward to the client-named, verified mailbox instead of the interim one (address not recorded here). Test emails sent to `info@` and `sales@` | — | Test emails to info@ and sales@: Delivered (to be confirmed) |
 
 ### Open client decisions
 
 | # | Decision | Interim arrangement | Status |
 |---|---|---|---|
-| D-1 | Which mailbox should receive enquiries sent to `info@` and `sales@` (including website form notifications) | Forwarding to a Qzenta-held mailbox (address not recorded here) | Open, awaiting client |
+| D-1 | Which mailbox should receive enquiries sent to `info@` and `sales@` (including website form notifications) | Was: forwarding to a Qzenta-held mailbox (address not recorded here) | Closed 29 Oct 2026: the client named and verified the mailbox for info@ and sales@, and both Cloudflare routing rules now forward to it (address not recorded here) |
 
 ### Records published by Cloudflare Email Routing
 
