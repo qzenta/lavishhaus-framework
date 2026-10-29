@@ -19,7 +19,13 @@ There was **no MX record**, so mail to `info@lavishhaus.co.za` and `sales@lavish
 
 | Date | Change | Details | Records | Status |
 |---|---|---|---|---|
-| 29 Oct 2026 | Cloudflare Email Routing | Custom addresses `info@lavishhaus.co.za` and `sales@lavishhaus.co.za` to forward to the client mailbox (address not recorded here) | MX and SPF (TXT) records expected from Cloudflare; values below | Not yet enabled, pending |
+| 29 Oct 2026 | Cloudflare Email Routing | Custom addresses `info@lavishhaus.co.za` and `sales@lavishhaus.co.za` to forward to a Qzenta-held mailbox as an **interim** destination, until the client names the mailbox that should receive enquiries (see Open client decisions; address not recorded here) | MX and SPF (TXT) records expected from Cloudflare; values below | Not yet enabled, pending |
+
+### Open client decisions
+
+| # | Decision | Interim arrangement | Status |
+|---|---|---|---|
+| D-1 | Which mailbox should receive enquiries sent to `info@` and `sales@` (including website form notifications) | Forwarding to a Qzenta-held mailbox (address not recorded here) | Open, awaiting client |
 
 ### Records expected from Cloudflare Email Routing
 
