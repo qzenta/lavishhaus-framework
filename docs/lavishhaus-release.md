@@ -9,7 +9,7 @@
 - **New editorial design:** split hero, 4:5 cards, per-piece galleries with a keyboard lightbox, "Request a Quote" and WhatsApp per piece, plus a new OG card from a real photo.
 - **Forms are honest.** If email delivery fails or isn't configured, visitors see WhatsApp, phone and email options instead of a false "request received". Email HTML is escaped, there's a honeypot and a minimum fill time, and submitted details no longer appear in logs.
 - **Accessibility:** skip link, AA contrast, one h1 per page, reduced motion respected (axe: 0 violations).
-- **Privacy policy** now names Brevo and Microsoft Clarity.
+- **Privacy policy** names Brevo and Microsoft Clarity. Clarity now loads only after the visitor accepts in a cookie banner; "Cookie settings" in the footer changes the choice. **Clarity will record far fewer sessions than before**, since only visitors who accept are tracked.
 
 Old URLs keep working: 10 retired collection URLs permanently redirect (308) to the closest new collection. `/projects` temporarily redirects (307) to Bespoke Commissions, so it can return once real projects are supplied.
 
@@ -21,7 +21,8 @@ Old URLs keep working: 10 retired collection URLs permanently redirect (308) to 
 | `c9568f8` | Catalog rebuild and trust content (batches 1–2) |
 | `0c0002b` | Forms (batch 3) |
 | `69a116e` | Accessibility, reduced motion, privacy, performance (batch 4) |
-| *(final docs commit)* | Test report, release notes, asset manifest |
+| `ac84ea8` | Test report, release notes, asset manifest |
+| `e8805e8` | Consent-gated Clarity, font/JS deferral (batch 6) |
 
 ## Before deploying (owner / authorised person)
 
@@ -46,8 +47,8 @@ Merge `lavishhaus-redesign` → `main` (PR or fast-forward) by the authorised pe
 
 ## Known open items (not blockers)
 
-- A-43: mobile lab LCP ≈ 4 s (target 2.5 s). Next step is to trim client-side JS (Radix navigation and select).
-- A-44 / F-23: Clarity sets third-party cookies without a consent banner. This is a client or legal decision.
+- A-43: mobile lab LCP ≈ 4.3 s (target 2.5 s). Next steps: measure on a Vercel preview (HTTP/2), and replace the Radix navigation menu with a native disclosure.
+- F-23: have the consent banner and privacy wording checked for POPIA.
 - A-37: the homepage hero photo shows a phone on the duvet; a clean reshot is requested.
 - A-30: production delivery can't be verified from here.
 - Missing photography slots: `docs/lavishhaus-assets.md` (zebra-hide ottoman, outdoor, showroom exterior, more sofas/kitchen/office, projects, team).

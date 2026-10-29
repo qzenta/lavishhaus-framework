@@ -29,6 +29,7 @@ Also: edit existing routes, components and inbox folders in place; never scaffol
 | 3 | P0 forms: honest delivery result, HTML escaping, no PII logs, honeypot; tests | done | see git log |
 | 4 | P1 polish: mobile hero/pillars, privacy disclosure, reduced motion, skip link, contrast, perf (logo, hero priority, deferred Clarity) | done | see git log |
 | 5 | Verification: build, lint, routes, screenshots, a11y, perf, reduced motion; reports | done | see git log |
+| 6 | Consent banner (Clarity opt-in), fonts, lazy dialogs; Lighthouse before/after | done | `e8805e8` + docs |
 
 ## Current state
 
@@ -40,7 +41,9 @@ Also: edit existing routes, components and inbox folders in place; never scaffol
 - Batch 4 checks on the final local build: route audit `docs/evidence/batch4/` 25 routes × 3 viewports, 0 console errors, 0 broken/placeholder images, 0 missing alt, 0 overflow, exactly one h1 everywhere, canonicals present, 58/58 internal links OK (only failures are cancelled `/quote?_rsc` prefetches). axe WCAG 2.1 AA: 0 violations (16 routes × 2 viewports). Keyboard: skip link first, focus visible on 25/25 stops. Reduced motion: max animation/transition 0.01 ms. Form test 9/9. Lighthouse mobile medians (3 runs): home perf 83, LCP 4.1 s, TBT 242 ms; beds collection perf 85, LCP 4.0 s; a11y 100, SEO 100, best-practices 79 (Clarity cookies).
 - Gotcha: `TaskStop` on a backgrounded `npx next start` leaves the `next start` node child running, and the old build keeps answering on the port. Before trusting results, confirm the served HTML contains a marker from the new build; kill stale `next start` processes by command line.
 - Batch 5: final checks in `docs/evidence/final/checks.log` (tsc 0, eslint 0, tests 8/8, all 12 redirects, key statuses). Reports: `docs/lavishhaus-test-report.md`, `docs/lavishhaus-release.md`; asset manifest updated.
-- Done for this pass. Open items: A-30, A-37, A-43, A-44 plus client facts. Nothing pushed, merged or deployed.
+- Batch 6: consent 18/18, a11y 0 violations, forms 9/9, routes clean, tsc/eslint/tests clean (`docs/evidence/batch6/checks.log`). Lighthouse before/after (5 simulated + 3 devtools runs per page) in the test report: TBT −46–75%, best practices 79→100, observed LCP −0.3 to −0.8 s, simulated LCP flat, simulated FCP +0.3 s.
+- Before-build measurements were taken by `git switch --detach ac84ea8` in the main tree (a junctioned worktree is rejected by Turbopack), then switching back.
+- Open items: A-30, A-37, A-43 plus client facts. Nothing pushed, merged or deployed.
 
 ## Blockers / external input
 

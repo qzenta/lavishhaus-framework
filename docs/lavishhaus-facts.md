@@ -45,4 +45,4 @@ commit messages) isn't a client source; it's recorded as "agency brief".
 
 | ID | Item | Status | Site decision |
 |---|---|---|---|
-| F-23 | Privacy policy names Brevo (form email) and Microsoft Clarity (analytics, cookies, default input masking) | Derived from the code (`services/*`, `app/layout.tsx`), not legal advice | Disclosed on `/privacy`. The client should confirm the Clarity masking settings in its dashboard and decide whether a POPIA consent banner is needed before Clarity loads. |
+| F-23 | Privacy policy names Brevo (form email) and Microsoft Clarity (analytics, cookies, default input masking) | Derived from the code (`services/*`, `app/layout.tsx`), not legal advice | Disclosed on `/privacy`. Since batch 6 Clarity is opt-in (Accept/Decline banner). The client should confirm the Clarity masking settings in its dashboard and have the banner and policy wording checked for POPIA. |
